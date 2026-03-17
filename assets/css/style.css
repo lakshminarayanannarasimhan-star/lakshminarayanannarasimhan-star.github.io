@@ -243,7 +243,10 @@ section {
 }
 
 .tagline {
-  display: none;
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
 }
 
 

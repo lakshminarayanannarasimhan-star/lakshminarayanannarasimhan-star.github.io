@@ -371,3 +371,9 @@ section {
   color: var(--muted);
   margin-top: 10px;
 }
+
+
+.flip-front {
+  background: black !important;
+  color: white !important;
+}

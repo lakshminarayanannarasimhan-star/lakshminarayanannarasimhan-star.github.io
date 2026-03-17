@@ -386,3 +386,191 @@ section {
   padding: 40px;
   color: var(--muted);
 }
+
+
+/* =========================================
+   WORLD-CLASS TYPOGRAPHY SYSTEM (v5)
+   ========================================= */
+
+
+/* -------------------------
+   ROOT SCALE SYSTEM
+   ------------------------- */
+
+:root {
+  --fs-xs: 13px;
+  --fs-sm: 14px;
+  --fs-base: 17px;
+  --fs-md: 18px;
+  --fs-lg: 20px;
+  --fs-xl: 28px;
+  --fs-2xl: 40px;
+  --fs-3xl: 56px;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.7;
+  --lh-relaxed: 1.75;
+
+  --measure: 680px;
+  --measure-wide: 820px;
+}
+
+
+/* -------------------------
+   BODY (READING FOUNDATION)
+   ------------------------- */
+
+body {
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  letter-spacing: -0.01em;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* -------------------------
+   HEADINGS (PRECISION)
+   ------------------------- */
+
+h1, .hero-title {
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.04em;
+  font-weight: 700;
+
+  max-width: var(--measure-wide);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* -------------------------
+   BODY TEXT (PERFECT READ)
+   ------------------------- */
+
+p {
+  max-width: var(--measure);
+  line-height: var(--lh-relaxed);
+  margin-top: 14px;
+}
+
+p + p {
+  margin-top: 14px;
+}
+
+
+/* -------------------------
+   HERO SUBTEXT
+   ------------------------- */
+
+.hero-sub {
+  font-size: var(--fs-md);
+  max-width: 640px;
+  margin-top: 20px;
+  line-height: var(--lh-normal);
+}
+
+
+/* -------------------------
+   LISTS
+   ------------------------- */
+
+.content-list li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+
+/* -------------------------
+   FEATURED TEXT
+   ------------------------- */
+
+.featured p {
+  max-width: var(--measure);
+  line-height: var(--lh-normal);
+}
+
+
+/* -------------------------
+   NAV (OPTICAL BALANCE)
+   ------------------------- */
+
+.nav a {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+
+/* -------------------------
+   META
+   ------------------------- */
+
+.meta {
+  font-size: var(--fs-xs);
+  letter-spacing: 0;
+}
+
+
+/* -------------------------
+   SECTION RHYTHM
+   ------------------------- */
+
+section {
+  margin-top: 84px;
+}
+
+
+/* -------------------------
+   HEADING FLOW
+   ------------------------- */
+
+h2 + p {
+  margin-top: 8px;
+}
+
+
+/* -------------------------
+   FEATURED BLOCK IMPROVEMENT
+   ------------------------- */
+
+.featured {
+  padding: 26px;
+}
+
+
+/* -------------------------
+   DRILL READABILITY
+   ------------------------- */
+
+.drill-article {
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  max-width: var(--measure);
+}
+
+
+/* -------------------------
+   MICRO POLISH
+   ------------------------- */
+
+h1, h2, h3, p {
+  margin-bottom: 0;
+}

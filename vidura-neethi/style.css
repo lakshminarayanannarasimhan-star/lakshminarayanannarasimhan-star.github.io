@@ -31,7 +31,7 @@ body {
 }
 
 .filter-btn:hover {
-  background: #f1f5f9;
+  box-shadow: 0 0 0 1px #e2e8f0;
 }
 
 .filter-btn.active {

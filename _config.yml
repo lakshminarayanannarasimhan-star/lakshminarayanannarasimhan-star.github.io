@@ -1,6 +1,101 @@
+# =========================================
+# ELEVATE — SITE CONFIGURATION
+# =========================================
+
+# -------------------------
+# BASIC SITE INFO
+# -------------------------
+
 title: Elevate
+description: Elevate Thinking Through Systems, Not Information
+
+
+# -------------------------
+# THEME (VISUAL STYLE)
+# -------------------------
+# Change this to switch entire site look
+# Available options:
+# indigo   → tech / AI (default)
+# emerald  → strategy / consulting (recommended)
+# slate    → executive minimal
+# midnight → dark mode (deep thinking)
+# amber    → warm / authority
+# rose     → bold / expressive
+# cyan     → analytical / fresh
+# mono     → minimal black/white
+
 elevate_theme: indigo
+
+
+# -------------------------
+# URL SETTINGS (CRITICAL)
+# -------------------------
+# url → your main GitHub domain
+# baseurl → repo name (IMPORTANT)
+
+url: "https://lakshminarayanannarasimhan-star.github.io"
+
+# If repo name is "elevate", use:
+baseurl: "/elevate"
+
+# If using root repo (username.github.io), use:
+# baseurl: ""
+
+
+# -------------------------
+# COLLECTIONS (CONTENT TYPES)
+# -------------------------
+# Used for structured content like drills
 
 collections:
   drills:
-    output: true
+    output: true              # generates pages
+    permalink: /drills/:name/ # clean URLs
+
+
+# -------------------------
+# DEFAULTS (AUTO LAYOUT)
+# -------------------------
+# Automatically applies layout to drills
+
+defaults:
+  - scope:
+      path: ""
+      type: "drills"
+    values:
+      layout: "drill"
+
+
+# -------------------------
+# MARKDOWN SETTINGS
+# -------------------------
+# Controls rendering of markdown files
+
+markdown: kramdown
+highlighter: rouge
+
+
+# -------------------------
+# BUILD SETTINGS
+# -------------------------
+# Files/folders to ignore during build
+
+exclude:
+  - README.md
+  - node_modules
+
+
+# =========================================
+# HOW TO USE THIS FILE
+# =========================================
+#
+# 1. To change theme:
+#    elevate_theme: emerald
+#
+# 2. To fix broken CSS/JS:
+#    check baseurl is correct
+#
+# 3. To add new content types:
+#    extend "collections"
+#
+# =========================================

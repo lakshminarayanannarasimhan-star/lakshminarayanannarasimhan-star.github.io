@@ -273,3 +273,49 @@ body {
   border-color: var(--primary);
   color: var(--primary);
 }
+
+/* =========================
+   THEME SWITCHER (PREMIUM)
+   ========================= */
+
+.theme-switcher {
+  position: relative;
+}
+
+#theme-button {
+  border: 1px solid var(--border);
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.theme-menu {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  display: none;
+  min-width: 140px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.theme-menu div {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.theme-menu div:hover {
+  background: var(--primary-soft);
+}
+
+.theme-menu .active {
+  background: var(--primary-soft);
+  color: var(--primary);
+}

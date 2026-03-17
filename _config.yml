@@ -25,7 +25,7 @@ description: Elevate Thinking Through Systems, Not Information
 
 elevate_theme: emerald
 
-typography: executive   # options: executive, compact, spacious
+typography: spacious   # options: executive, compact, spacious
 
 # -------------------------
 # URL SETTINGS (CUSTOM DOMAIN)

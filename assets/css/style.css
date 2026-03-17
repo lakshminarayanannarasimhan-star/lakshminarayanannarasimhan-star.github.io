@@ -1,3 +1,21 @@
+/* =========================================
+   ELEVATE DESIGN SYSTEM (v1)
+   ========================================= */
+
+
+/* =========================
+   BASE VARIABLES (DEFAULT)
+   ========================= */
+
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --primary: #4f46e5;
+  --border: #e5e7eb;
+}
+
+
 /* =========================
    THEMES
    ========================= */
@@ -38,8 +56,13 @@
   --primary: #000000;
 }
 
+
+/* =========================
+   GLOBAL STYLES
+   ========================= */
+
 body {
-  font-family: Inter, system-ui;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
   font-size: 17px;
   line-height: 1.7;
   margin: 0;
@@ -47,22 +70,42 @@ body {
   color: var(--text);
 }
 
-/* Layout */
+
+/* =========================
+   LAYOUT
+   ========================= */
+
 .container {
   max-width: 1400px;
   margin: auto;
   padding: 0 48px;
 }
 
-/* Header */
+
+/* =========================
+   HEADER
+   ========================= */
+
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 28px 48px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.tagline {
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 24px;
 }
 
@@ -70,9 +113,19 @@ body {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 
-/* Hero */
+.nav a:hover {
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
 .hero {
   margin-top: 80px;
 }
@@ -80,7 +133,8 @@ body {
 .hero-title {
   font-size: 56px;
   font-weight: 700;
-  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, var(--primary), #818cf8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -88,23 +142,46 @@ body {
 .hero-sub {
   max-width: 600px;
   margin-top: 16px;
+  color: var(--muted);
 }
 
-/* Featured */
+
+/* =========================
+   FEATURED SECTION
+   ========================= */
+
 .featured {
   margin-top: 60px;
-  border-left: 4px solid #4f46e5;
   padding-left: 16px;
+  border-left: 4px solid var(--primary);
 }
 
-/* Content */
+
+/* =========================
+   CONTENT LIST
+   ========================= */
+
 .content {
   margin-top: 60px;
 }
 
 .content-list li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
+
+.content-list a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.content-list a:hover {
+  color: var(--primary);
+}
+
+
+/* =========================
+   DRILL SYSTEM
+   ========================= */
 
 .drill-article {
   max-width: 720px;
@@ -126,5 +203,35 @@ body {
 
 .meta {
   font-size: 14px;
+  color: var(--muted);
+}
+
+
+/* =========================
+   SEARCH (future-ready)
+   ========================= */
+
+#search-input {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.search-results {
+  position: absolute;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 10px;
+  width: 250px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+  text-align: center;
+  padding: 40px;
   color: var(--muted);
 }

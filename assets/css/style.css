@@ -23,7 +23,7 @@
   --fs-md: 18px;
   --fs-lg: 20px;
   --fs-xl: 28px;
-  --fs-3xl: 40px;
+  --fs-3xl: 56px;
 
   --lh-tight: 1.15;
   --lh-relaxed: 1.75;
@@ -44,7 +44,7 @@
   --fs-md: 18px;
   --fs-lg: 20px;
   --fs-xl: 28px;
-  --fs-3xl: 56px;
+  --fs-3xl: 46px;
   --measure: 680px;
   --spacing-section: 84px;
 }
@@ -54,7 +54,7 @@
   --fs-md: 16px;
   --fs-lg: 18px;
   --fs-xl: 24px;
-  --fs-3xl: 48px;
+  --fs-3xl: 42px;
   --measure: 620px;
   --spacing-section: 64px;
 }
@@ -64,7 +64,7 @@
   --fs-md: 20px;
   --fs-lg: 22px;
   --fs-xl: 32px;
-  --fs-3xl: 60px;
+  --fs-3xl: 50px;
   --measure: 720px;
   --spacing-section: 100px;
 }

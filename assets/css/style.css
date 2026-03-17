@@ -1,5 +1,5 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v4
+   ELEVATE DESIGN SYSTEM — FINAL v6
    ========================================= */
 
 
@@ -15,6 +15,23 @@
   --primary-soft: #eef2ff;
   --primary-strong: #4338ca;
   --border: #e5e7eb;
+
+  /* TYPOGRAPHY SCALE */
+  --fs-xs: 13px;
+  --fs-sm: 14px;
+  --fs-base: 17px;
+  --fs-md: 18px;
+  --fs-lg: 20px;
+  --fs-xl: 28px;
+  --fs-2xl: 40px;
+  --fs-3xl: 56px;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.7;
+  --lh-relaxed: 1.75;
+
+  --measure: 680px;
+  --measure-wide: 820px;
 }
 
 
@@ -51,33 +68,9 @@
   --primary-strong: #818cf8;
 }
 
-:root[data-theme="amber"] {
-  --primary: #d97706;
-  --primary-soft: #fffbeb;
-  --primary-strong: #b45309;
-}
-
-:root[data-theme="rose"] {
-  --primary: #e11d48;
-  --primary-soft: #fff1f2;
-  --primary-strong: #be123c;
-}
-
-:root[data-theme="cyan"] {
-  --primary: #0891b2;
-  --primary-soft: #ecfeff;
-  --primary-strong: #0e7490;
-}
-
-:root[data-theme="mono"] {
-  --primary: #000000;
-  --primary-soft: #f5f5f5;
-  --primary-strong: #111111;
-}
-
 
 /* =========================
-   GLOBAL SMOOTHNESS
+   GLOBAL
    ========================= */
 
 * {
@@ -87,63 +80,70 @@
     border-color 0.25s ease;
 }
 
-
-/* =========================
-   TYPOGRAPHY (EXECUTIVE)
-   ========================= */
-
 body {
   font-family: Inter, system-ui, -apple-system, sans-serif;
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
   letter-spacing: -0.01em;
-  font-weight: 400;
   margin: 0;
   background: var(--bg);
   color: var(--text);
+
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
 h1, .hero-title {
-  font-size: 56px;
+  font-size: var(--fs-3xl);
   font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.035em;
-  max-width: 900px;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.04em;
+  max-width: var(--measure-wide);
 }
 
 h2 {
-  font-size: 28px;
+  font-size: var(--fs-xl);
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.02em;
-  margin-top: 32px;
+  margin-top: 40px;
   margin-bottom: 12px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: var(--fs-lg);
   font-weight: 600;
 }
 
 p {
-  font-size: 17px;
-  line-height: 1.75;
-  max-width: 720px;
-  margin-top: 12px;
+  max-width: var(--measure);
+  line-height: var(--lh-relaxed);
+  margin-top: 14px;
+}
+
+p + p {
+  margin-top: 14px;
 }
 
 .hero-sub {
-  font-size: 18px;
-  line-height: 1.7;
-  max-width: 620px;
-  margin-top: 18px;
+  font-size: var(--fs-md);
+  max-width: 640px;
+  margin-top: 20px;
   color: var(--muted);
 }
 
 .meta {
-  font-size: 13px;
+  font-size: var(--fs-xs);
   color: var(--muted);
+}
+
+section {
+  margin-top: 84px;
 }
 
 
@@ -155,10 +155,6 @@ p {
   max-width: 1400px;
   margin: auto;
   padding: 0 48px;
-}
-
-section {
-  margin-top: 72px;
 }
 
 
@@ -201,7 +197,7 @@ section {
 }
 
 .nav a {
-  font-size: 14px;
+  font-size: var(--fs-sm);
   font-weight: 500;
   text-decoration: none;
   color: var(--text);
@@ -248,7 +244,7 @@ section {
    ========================= */
 
 .featured {
-  padding: 24px;
+  padding: 26px;
   background: var(--primary-soft);
   border-left: 4px solid var(--primary);
   border-radius: 10px;
@@ -256,7 +252,7 @@ section {
 }
 
 .featured p {
-  font-size: 16px;
+  max-width: var(--measure);
 }
 
 
@@ -285,7 +281,8 @@ section {
    ========================= */
 
 .drill-article {
-  max-width: 720px;
+  max-width: var(--measure);
+  line-height: var(--lh-relaxed);
 }
 
 .drill-toggle {
@@ -318,7 +315,6 @@ section {
   padding: 6px 10px;
   border-radius: 8px;
   cursor: pointer;
-  color: var(--text);
 }
 
 #theme-button:hover {
@@ -326,9 +322,6 @@ section {
   color: var(--primary);
   transform: scale(1.05);
 }
-
-
-/* DROPDOWN */
 
 .theme-menu {
   position: absolute;
@@ -349,8 +342,6 @@ section {
   pointer-events: none;
 
   transition: all 0.2s ease;
-
-  backdrop-filter: blur(8px);
 }
 
 .theme-menu.open {
@@ -368,7 +359,6 @@ section {
 
 .theme-menu div:hover {
   background: var(--primary-soft);
-  transform: translateX(2px);
 }
 
 .theme-menu .active {
@@ -385,192 +375,4 @@ section {
   text-align: center;
   padding: 40px;
   color: var(--muted);
-}
-
-
-/* =========================================
-   WORLD-CLASS TYPOGRAPHY SYSTEM (v5)
-   ========================================= */
-
-
-/* -------------------------
-   ROOT SCALE SYSTEM
-   ------------------------- */
-
-:root {
-  --fs-xs: 13px;
-  --fs-sm: 14px;
-  --fs-base: 17px;
-  --fs-md: 18px;
-  --fs-lg: 20px;
-  --fs-xl: 28px;
-  --fs-2xl: 40px;
-  --fs-3xl: 56px;
-
-  --lh-tight: 1.15;
-  --lh-normal: 1.7;
-  --lh-relaxed: 1.75;
-
-  --measure: 680px;
-  --measure-wide: 820px;
-}
-
-
-/* -------------------------
-   BODY (READING FOUNDATION)
-   ------------------------- */
-
-body {
-  font-size: var(--fs-base);
-  line-height: var(--lh-relaxed);
-  letter-spacing: -0.01em;
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-
-/* -------------------------
-   HEADINGS (PRECISION)
-   ------------------------- */
-
-h1, .hero-title {
-  font-size: var(--fs-3xl);
-  line-height: var(--lh-tight);
-  letter-spacing: -0.04em;
-  font-weight: 700;
-
-  max-width: var(--measure-wide);
-}
-
-h2 {
-  font-size: var(--fs-xl);
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.02em;
-
-  margin-top: 40px;
-  margin-bottom: 12px;
-}
-
-h3 {
-  font-size: var(--fs-lg);
-  font-weight: 600;
-  line-height: 1.4;
-}
-
-
-/* -------------------------
-   BODY TEXT (PERFECT READ)
-   ------------------------- */
-
-p {
-  max-width: var(--measure);
-  line-height: var(--lh-relaxed);
-  margin-top: 14px;
-}
-
-p + p {
-  margin-top: 14px;
-}
-
-
-/* -------------------------
-   HERO SUBTEXT
-   ------------------------- */
-
-.hero-sub {
-  font-size: var(--fs-md);
-  max-width: 640px;
-  margin-top: 20px;
-  line-height: var(--lh-normal);
-}
-
-
-/* -------------------------
-   LISTS
-   ------------------------- */
-
-.content-list li {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 12px;
-}
-
-
-/* -------------------------
-   FEATURED TEXT
-   ------------------------- */
-
-.featured p {
-  max-width: var(--measure);
-  line-height: var(--lh-normal);
-}
-
-
-/* -------------------------
-   NAV (OPTICAL BALANCE)
-   ------------------------- */
-
-.nav a {
-  font-size: var(--fs-sm);
-  font-weight: 500;
-  letter-spacing: -0.005em;
-}
-
-
-/* -------------------------
-   META
-   ------------------------- */
-
-.meta {
-  font-size: var(--fs-xs);
-  letter-spacing: 0;
-}
-
-
-/* -------------------------
-   SECTION RHYTHM
-   ------------------------- */
-
-section {
-  margin-top: 84px;
-}
-
-
-/* -------------------------
-   HEADING FLOW
-   ------------------------- */
-
-h2 + p {
-  margin-top: 8px;
-}
-
-
-/* -------------------------
-   FEATURED BLOCK IMPROVEMENT
-   ------------------------- */
-
-.featured {
-  padding: 26px;
-}
-
-
-/* -------------------------
-   DRILL READABILITY
-   ------------------------- */
-
-.drill-article {
-  font-size: var(--fs-base);
-  line-height: var(--lh-relaxed);
-  max-width: var(--measure);
-}
-
-
-/* -------------------------
-   MICRO POLISH
-   ------------------------- */
-
-h1, h2, h3, p {
-  margin-bottom: 0;
 }

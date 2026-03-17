@@ -120,7 +120,7 @@ section {
 
 
 /* =========================
-   HEADER — COMPACT (FIXED)
+   HEADER — ULTRA PREMIUM
    ========================= */
 
 .header {
@@ -132,26 +132,52 @@ section {
   justify-content: space-between;
   align-items: center;
 
-  padding: 12px 48px; /* 🔥 reduced */
+  padding: 14px 48px;
 
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
 
   border-bottom: 1px solid var(--border);
 
-  transition: all 0.25s ease;
+  transition: all 0.35s ease;
 }
 
-/* scroll state */
+/* accent line */
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+  transition: width 0.6s ease;
+}
+
+/* on scroll */
 .header.scrolled {
   padding: 8px 48px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
 }
 
+/* activate accent */
+.header.scrolled::after {
+  width: 100%;
+}
+
+/* dark theme */
 :root[data-theme="midnight"] .header {
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(15, 23, 42, 0.7);
 }
 
+:root[data-theme="midnight"] .header.scrolled {
+  background: rgba(15, 23, 42, 0.9);
+}
 
 /* =========================
    LOGO (TIGHTENED)
@@ -160,7 +186,12 @@ section {
 .logo {
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: translateY(-1px);
 }
 
 .tagline {
@@ -172,23 +203,17 @@ section {
    NAV
    ========================= */
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.nav {
-  display: flex;
-  gap: 18px;
-}
-
 .nav a {
   font-size: var(--fs-sm);
   text-decoration: none;
   color: var(--text);
   position: relative;
   padding-bottom: 3px;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--primary);
 }
 
 /* underline */
@@ -206,16 +231,6 @@ section {
 .nav a:hover::after {
   width: 100%;
 }
-
-/* active */
-.nav a.active {
-  color: var(--primary);
-}
-
-.nav a.active::after {
-  width: 100%;
-}
-
 
 /* =========================
    HERO

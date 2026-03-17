@@ -1,28 +1,75 @@
-document.addEventListener("DOMContentLoaded", () => {
+/* =========================================
+   ELEVATE — CORE JS (FINAL)
+   ========================================= */
 
-  const root = document.documentElement;
-  const button = document.getElementById("theme-button");
-  const menu = document.getElementById("theme-menu");
-  const options = menu.querySelectorAll("div");
 
-  // Load saved theme
-  const savedTheme = localStorage.getItem("theme") || "indigo";
-  root.setAttribute("data-theme", savedTheme);
+/* =========================
+   HEADER SCROLL BEHAVIOR
+   ========================= */
 
-  // Highlight active
-  options.forEach(opt => {
-    if (opt.dataset.theme === savedTheme) {
-      opt.classList.add("active");
+(function () {
+  const header = document.querySelector(".header");
+
+  if (!header) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
     }
   });
+})();
 
-  });
 
-  // Close on outside click
-  document.addEventListener("click", (e) => {
-    if (!menu.contains(e.target) && !button.contains(e.target)) {
-      menu.style.display = "none";
+/* =========================
+   ACTIVE NAV HIGHLIGHT
+   ========================= */
+
+(function () {
+  const links = document.querySelectorAll(".nav a");
+  const currentPath = window.location.pathname.replace(/\/$/, "");
+
+  links.forEach(link => {
+    let href = link.getAttribute("href");
+
+    if (!href) return;
+
+    href = href.replace(/\/$/, "");
+
+    if (
+      href === currentPath ||
+      (href !== "" && href !== "/" && currentPath.startsWith(href))
+    ) {
+      link.classList.add("active");
     }
   });
+})();
 
-});
+
+/* =========================
+   SMOOTH SCROLL
+   ========================= */
+
+(function () {
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+
+      if (targetId.length > 1) {
+        const target = document.querySelector(targetId);
+
+        if (target) {
+          e.preventDefault();
+
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: "smooth"
+          });
+        }
+      }
+    });
+  });
+})();

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div>
+    <div class="logo">{{ site.title }}</div>
+    <div class="tagline">AI · Strategy · Systems Thinking</div>
+  </div>
+
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/writing">Writing</a>
+    <a href="/drills">Drills</a>
+    <a href="/think-tank">Think Tank</a>
+  </nav>
+</header>
+
+<main class="container">
+  {{ content }}
+</main>
+
+</body>
+</html>

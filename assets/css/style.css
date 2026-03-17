@@ -23,7 +23,7 @@
   --fs-md: 18px;
   --fs-lg: 20px;
   --fs-xl: 28px;
-  --fs-3xl: 56px;
+  --fs-3xl: 40px;
 
   --lh-tight: 1.15;
   --lh-relaxed: 1.75;
@@ -212,7 +212,7 @@ body {
 
 h1, .hero-title {
   font-size: var(--fs-3xl);
-  font-weight: 400;
+  font-weight: 700;
   line-height: var(--lh-tight);
   letter-spacing: -0.04em;
   max-width: var(--measure-wide);

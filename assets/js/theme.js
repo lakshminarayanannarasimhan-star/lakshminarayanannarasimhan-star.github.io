@@ -16,25 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Toggle menu
-  button.onclick = () => {
-    menu.classList.toggle("open");
-  };
-
-  // Select theme
-  options.forEach(opt => {
-    opt.onclick = () => {
-      const theme = opt.dataset.theme;
-
-      root.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-
-      // Update active state
-      options.forEach(o => o.classList.remove("active"));
-      opt.classList.add("active");
-
-      menu.classList.remove("open");
-    };
   });
 
   // Close on outside click

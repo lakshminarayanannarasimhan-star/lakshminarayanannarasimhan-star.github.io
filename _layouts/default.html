@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="slate">
+<html data-theme="{{ site.theme | default: 'emerald' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,22 +30,6 @@
       <a href="/drills">Drills</a>
       <a href="/think-tank">Think Tank</a>
     </nav>
-
-    <div class="theme-switcher">
-      <button id="theme-button">🎨</button>
-
-      <div id="theme-menu" class="theme-menu">
-        <div data-theme="indigo">Indigo</div>
-        <div data-theme="emerald">Emerald</div>
-        <div data-theme="slate">Slate</div>
-        <div data-theme="midnight">Midnight</div>
-        <div data-theme="amber">Amber</div>
-        <div data-theme="rose">Rose</div>
-        <div data-theme="cyan">Cyan</div>
-        <div data-theme="mono">Mono</div>
-      </div>
-    </div>
-
   </div>
 
 </header>

@@ -1,5 +1,5 @@
 
-fetch('{{ "/search.json" | relative_url }}').then(r=>r.json()).then(data=>{
+fetch('/search.json').then(r=>r.json()).then(data=>{
 const input=document.getElementById("search-input");
 const out=document.getElementById("search-results");
 input.addEventListener("input",e=>{

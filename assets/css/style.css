@@ -258,3 +258,18 @@ body {
   padding: 40px;
   color: var(--muted);
 }
+
+#theme-toggle {
+  border: 1px solid var(--border);
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+#theme-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}

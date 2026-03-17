@@ -352,7 +352,8 @@ section {
    ========================= */
 
 .hero {
-  margin-top: 110px;
+  margin-top: 10px;
+  max-width: 90%;
 }
 
 .hero-title {

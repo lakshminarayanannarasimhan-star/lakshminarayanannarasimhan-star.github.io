@@ -115,6 +115,12 @@ body {
   padding: 28px 48px;
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .logo {
   font-weight: 700;
   font-size: 20px;
@@ -304,20 +310,7 @@ body {
 .theme-menu {
   position: absolute;
   right: 0;
-  margin-top: 10px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 8px;
-  min-width: 140px;
-
-  opacity: 0;
-  transform: translateY(10px);
-  pointer-events: none;
-
-  transition: all 0.2s ease;
-
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  top: 110%;
 }
 
 .theme-menu div {

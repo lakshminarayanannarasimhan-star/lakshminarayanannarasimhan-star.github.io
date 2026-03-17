@@ -1,5 +1,5 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v10
+   ELEVATE DESIGN SYSTEM — FINAL v11
    ========================================= */
 
 
@@ -16,7 +16,7 @@
   --primary-strong: #4338ca;
   --border: #e5e7eb;
 
-  /* Typography */
+  /* DEFAULT TYPOGRAPHY (fallback) */
   --fs-xs: 13px;
   --fs-sm: 14px;
   --fs-base: 17px;
@@ -30,35 +30,74 @@
 
   --measure: 680px;
   --measure-wide: 820px;
+
+  --spacing-section: 84px;
 }
 
 
 /* =========================
-   THEMES (CONFIG-DRIVEN)
+   TYPOGRAPHY MODES (CONFIG)
    ========================= */
 
-/* Indigo (default) */
+/* EXECUTIVE (default) */
+:root[data-typography="executive"] {
+  --fs-base: 17px;
+  --fs-md: 18px;
+  --fs-lg: 20px;
+  --fs-xl: 28px;
+  --fs-3xl: 56px;
+
+  --measure: 680px;
+  --spacing-section: 84px;
+}
+
+/* COMPACT */
+:root[data-typography="compact"] {
+  --fs-base: 15px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 24px;
+  --fs-3xl: 48px;
+
+  --measure: 620px;
+  --spacing-section: 64px;
+}
+
+/* SPACIOUS */
+:root[data-typography="spacious"] {
+  --fs-base: 18px;
+  --fs-md: 20px;
+  --fs-lg: 22px;
+  --fs-xl: 32px;
+  --fs-3xl: 60px;
+
+  --measure: 720px;
+  --spacing-section: 100px;
+}
+
+
+/* =========================
+   THEMES
+   ========================= */
+
 :root[data-theme="indigo"] {
   --primary: #4f46e5;
   --primary-soft: #eef2ff;
   --primary-strong: #4338ca;
 }
 
-/* Emerald (recommended) */
 :root[data-theme="emerald"] {
   --primary: #059669;
   --primary-soft: #ecfdf5;
   --primary-strong: #047857;
 }
 
-/* Slate (executive) */
 :root[data-theme="slate"] {
   --primary: #334155;
   --primary-soft: #f1f5f9;
   --primary-strong: #1e293b;
 }
 
-/* Midnight (dark) */
 :root[data-theme="midnight"] {
   --bg: #0f172a;
   --text: #e5e7eb;
@@ -70,28 +109,24 @@
   --primary-strong: #818cf8;
 }
 
-/* Amber */
 :root[data-theme="amber"] {
   --primary: #d97706;
   --primary-soft: #fffbeb;
   --primary-strong: #b45309;
 }
 
-/* Rose */
 :root[data-theme="rose"] {
   --primary: #e11d48;
   --primary-soft: #fff1f2;
   --primary-strong: #be123c;
 }
 
-/* Cyan */
 :root[data-theme="cyan"] {
   --primary: #0891b2;
   --primary-soft: #ecfeff;
   --primary-strong: #0e7490;
 }
 
-/* Mono */
 :root[data-theme="mono"] {
   --primary: #000000;
   --primary-soft: #f5f5f5;
@@ -144,10 +179,6 @@ p {
   margin-top: 14px;
 }
 
-p + p {
-  margin-top: 14px;
-}
-
 .hero-sub {
   font-size: var(--fs-md);
   margin-top: 18px;
@@ -166,12 +197,12 @@ p + p {
 }
 
 section {
-  margin-top: 84px;
+  margin-top: var(--spacing-section);
 }
 
 
 /* =========================
-   HEADER — ULTRA PREMIUM
+   HEADER
    ========================= */
 
 .header {
@@ -196,39 +227,13 @@ section {
   transition: all 0.35s ease;
 }
 
-/* accent line */
-.header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 0%;
-  background: linear-gradient(
-    90deg,
-    var(--primary),
-    var(--primary-strong)
-  );
-  transition: width 0.6s ease;
-}
-
-/* scroll state */
 .header.scrolled {
   padding: 16px 64px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.06);
 }
 
-.header.scrolled::after {
-  width: 100%;
-}
-
-/* dark theme header */
 :root[data-theme="midnight"] .header {
   background: rgba(15, 23, 42, 0.75);
-}
-
-:root[data-theme="midnight"] .header.scrolled {
-  background: rgba(15, 23, 42, 0.9);
 }
 
 
@@ -239,19 +244,16 @@ section {
 .logo {
   font-size: 26px;
   font-weight: 700;
-  letter-spacing: -0.02em;
 }
 
 .tagline {
-  display: block;
   font-size: 14px;
   color: var(--primary);
-  margin-top: 2px;
 }
 
 
 /* =========================
-   NAV — WORLD CLASS
+   NAV
    ========================= */
 
 .header-right {
@@ -267,27 +269,19 @@ section {
 
 .nav a {
   font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-
   text-decoration: none;
   color: var(--text);
   position: relative;
-  padding-bottom: 6px;
-
-  transition: color 0.2s ease;
 }
 
 .nav a:hover {
   color: var(--primary);
 }
 
-/* underline */
 .nav a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: -4px;
   width: 0%;
   height: 2px;
   background: var(--primary);
@@ -316,13 +310,4 @@ section {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-
-/* =========================
-   CONTENT
-   ========================= */
-
-.content-list li {
-  margin-bottom: 12px;
 }

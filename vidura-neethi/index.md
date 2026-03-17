@@ -3,8 +3,8 @@ layout: default
 title: Vidura Neethi Flashcards
 ---
 
-<link rel="stylesheet" href="./styles.css">
-<script src="./script.js" defer></script>
+<link rel="stylesheet" href="{{ '/vidura-neethi/styles.css' | relative_url }}">
+<script src="{{ '/vidura-neethi/script.js' | relative_url }}" defer></script>
 
 # 🧠 Vidura Neethi Flashcards
 

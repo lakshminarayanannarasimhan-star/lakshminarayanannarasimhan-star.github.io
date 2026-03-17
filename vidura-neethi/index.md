@@ -8,7 +8,7 @@ title: Vidura Neethi Flashcards
 
 # 🧠 Vidura Neethi Flashcards
 
-## 🧠 Vidura Neethi — Flashcards (Set 2)
+## 🧠 Vidura Neethi — Flashcards
 
 <div class="card-container" markdown="0">
 

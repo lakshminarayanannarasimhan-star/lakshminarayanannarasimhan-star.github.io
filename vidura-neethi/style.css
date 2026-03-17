@@ -44,3 +44,7 @@
   color: #0f172a;
   transform: rotateY(180deg);
 }
+
+body {
+  background: #fef3c7;
+}

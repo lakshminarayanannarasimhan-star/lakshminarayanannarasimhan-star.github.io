@@ -5,9 +5,9 @@ title: Home
 
 <section class="hero">
 
-  <h1 class="hero-title">
+  <h2 class="hero-title">
     Elevate Thinking Through Systems, Not Information
-  </h1>
+  </h2>
 
   <p class="hero-sub">
     A structured platform for mastering strategy, AI, and decision-making 

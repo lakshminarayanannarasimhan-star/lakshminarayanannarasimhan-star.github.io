@@ -1,19 +1,79 @@
-/* Container */
+/* =========================
+   GLOBAL
+========================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   FILTER BAR
+========================= */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 999px;
+  background: #e2e8f0;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #cbd5f5;
+}
+
+.filter-btn.active {
+  background: #4f46e5;
+  color: white;
+}
+
+/* =========================
+   CARD GRID
+========================= */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  padding: 20px;
+  padding: 10px 0;
+  align-items: start;
 }
 
-/* Card wrapper */
+/* =========================
+   CARD WRAPPER
+========================= */
 .flip-card {
   width: 100%;
-  height: 220px;
+  height: 280px;
   perspective: 1000px;
+  cursor: pointer;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Inner flip */
+/* Hover lift */
+.flip-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Hidden (filter animation) */
+.flip-card.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+/* =========================
+   INNER FLIP
+========================= */
 .flip-inner {
   position: relative;
   width: 100%;
@@ -22,12 +82,14 @@
   transform-style: preserve-3d;
 }
 
-/* Flip trigger */
+/* Flip state */
 .flip-card.flipped .flip-inner {
   transform: rotateY(180deg);
 }
 
-/* Front + Back shared */
+/* =========================
+   FRONT & BACK
+========================= */
 .flip-front,
 .flip-back {
   position: absolute;
@@ -38,27 +100,89 @@
   box-sizing: border-box;
   backface-visibility: hidden;
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
   line-height: 1.4;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-/* Front */
+/* FRONT */
 .flip-front {
   background: #1e293b;
   color: white;
+  font-weight: 600;
 }
 
-/* Back */
+/* BACK */
 .flip-back {
-  background: #f1f5f9;
+  background: #f8fafc;
   color: #0f172a;
   transform: rotateY(180deg);
 }
 
-/* Prevent text overflow */
-.flip-front small {
-  margin-top: auto;
+/* =========================
+   CARD CONTENT STRUCTURE
+========================= */
+.card-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
   opacity: 0.7;
+}
+
+.card-title:not(:first-child) {
+  margin-top: 10px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 6px;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* =========================
+   TAGS
+========================= */
+.tags {
+  margin-top: auto;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.15);
+  color: #e2e8f0;
+}
+
+/* Optional color coding */
+.tags span[data-type="self"] { background: #3b82f6; }
+.tags span[data-type="judgment"] { background: #8b5cf6; }
+.tags span[data-type="decision"] { background: #f59e0b; }
+.tags span[data-type="communication"] { background: #10b981; }
+.tags span[data-type="power"] { background: #ef4444; }
+.tags span[data-type="risk"] { background: #64748b; }
+.tags span[data-type="people"] { background: #14b8a6; }
+
+/* =========================
+   SMALL TEXT TWEAKS
+========================= */
+.flip-back {
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .flip-card {
+    height: 260px;
+  }
 }

@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL
+   GLOBAL (CALM BASE)
 ========================= */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -10,46 +10,44 @@ body {
 }
 
 /* =========================
-   FILTER BAR
+   FILTER BAR (SUBTLE)
 ========================= */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 20px 0 10px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e2e8f0;
+  gap: 8px;
+  margin: 20px 0 12px 0;
 }
 
 .filter-btn {
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: 999px;
   border: 1px solid #e2e8f0;
-  background: #ffffff;
-  color: #334155;
+  background: transparent;
+  color: #475569;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
   transition: all 0.2s ease;
 }
 
 .filter-btn:hover {
-  background: #eef2ff;
+  background: #f1f5f9;
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
-  color: white;
-  border: none;
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
 }
 
 /* =========================
-   CARD GRID
+   CARD GRID (AIRY)
 ========================= */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-  padding: 10px 0;
+  gap: 20px;
+  padding: 8px 0;
   align-items: start;
 }
 
@@ -58,22 +56,20 @@ body {
 ========================= */
 .flip-card {
   width: 100%;
-  height: 360px;
+  height: 340px;
   perspective: 1000px;
   cursor: pointer;
   position: relative;
-
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .flip-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-2px);
 }
 
-/* Hide (filter animation) */
+/* Hide (clean removal) */
 .flip-card.hidden {
   opacity: 0;
-  transform: scale(0.95);
   pointer-events: none;
   position: absolute;
 }
@@ -85,7 +81,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.5s ease;
   transform-style: preserve-3d;
 }
 
@@ -94,128 +90,91 @@ body {
 }
 
 /* =========================
-   FRONT & BACK BASE
+   FRONT (SOFT, MINIMAL)
 ========================= */
-.flip-front,
+.flip-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 14px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+
+  color: #0f172a;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* =========================
+   BACK (CLEAN + STRUCTURED)
+========================= */
 .flip-back {
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 20px;
-  border-radius: 18px;
+  border-radius: 14px;
   box-sizing: border-box;
   backface-visibility: hidden;
-  overflow: hidden;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 
-  line-height: 1.4;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.2s ease;
-}
-
-/* =========================
-   FRONT (GRADIENT + DEPTH)
-========================= */
-.flip-front {
-  color: white;
-  font-weight: 600;
-  background: linear-gradient(135deg, #1e293b, #334155);
-}
-
-/* Domain Gradients */
-.flip-card[data-tags*="self"] .flip-front {
-  background: linear-gradient(135deg, #2563eb, #1e3a8a);
-}
-
-.flip-card[data-tags*="judgment"] .flip-front {
-  background: linear-gradient(135deg, #7c3aed, #4c1d95);
-}
-
-.flip-card[data-tags*="decision"] .flip-front {
-  background: linear-gradient(135deg, #f59e0b, #b45309);
-}
-
-.flip-card[data-tags*="risk"] .flip-front {
-  background: linear-gradient(135deg, #ef4444, #7f1d1d);
-}
-
-.flip-card[data-tags*="people"] .flip-front {
-  background: linear-gradient(135deg, #10b981, #065f46);
-}
-
-/* Hover depth */
-.flip-card:hover .flip-front,
-.flip-card:hover .flip-back {
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
-}
-
-/* =========================
-   BACK (CLEAN, LIGHT)
-========================= */
-.flip-back {
   background: #ffffff;
-  color: #0f172a;
-  transform: rotateY(180deg);
   border: 1px solid #e2e8f0;
+
+  transform: rotateY(180deg);
+  overflow: hidden;
 }
 
 /* =========================
-   CARD CONTENT
+   CONTENT STRUCTURE
 ========================= */
 .card-title {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   margin-top: 8px;
-  opacity: 0.6;
+  color: #94a3b8;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
 
 .card-title:not(:first-child) {
-  margin-top: 12px;
-  border-top: 1px solid #f1f5f9;
+  margin-top: 10px;
   padding-top: 6px;
+  border-top: 1px solid #f1f5f9;
 }
 
 .card-text {
-  font-size: 14px;
+  font-size: 13px;
+  color: #1e293b;
   margin-bottom: 4px;
 }
 
 /* =========================
-   TAGS
+   TAGS (VERY SUBTLE)
 ========================= */
 .tags {
-  margin-top: auto;
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .tags span {
-  font-size: 11px;
-  padding: 4px 10px;
+  font-size: 10px;
+  padding: 3px 8px;
   border-radius: 999px;
-  color: white;
-  font-weight: 500;
-}
-
-/* Tag colors */
-.tags span[data-type="self"] { background: #3b82f6; }
-.tags span[data-type="judgment"] { background: #8b5cf6; }
-.tags span[data-type="decision"] { background: #f59e0b; }
-.tags span[data-type="risk"] { background: #64748b; }
-.tags span[data-type="people"] { background: #14b8a6; }
-
-/* =========================
-   TEXT TWEAKS
-========================= */
-.flip-back {
-  font-size: 14px;
+  background: #f1f5f9;
+  color: #475569;
 }
 
 /* =========================

@@ -1,0 +1,30 @@
+
+# Elevate Configuration
+
+site_settings:
+  # Theme options: indigo, emerald, slate, midnight, amber, rose, cyan, mono
+  theme: indigo
+
+  # Layout feel: minimal, balanced, expressive
+  feel: balanced
+
+  # Accent intensity: subtle, medium, strong
+  accent: medium
+
+  # Gradient style: subtle, none
+  gradient_style: subtle
+
+navigation:
+  - title: Home
+    url: /
+  - title: Think Tank
+    url: /think-tank
+  - title: Drills
+    url: /drills
+  - title: Writing
+    url: /writing
+  - title: About
+    url: /about
+
+title: Elevate
+tagline: AI · Strategy · Systems Thinking

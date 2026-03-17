@@ -1,0 +1,22 @@
+
+---
+layout: default
+---
+<section class="hero">
+<h1 class="hero-title">AI, Strategy, and Systems Thinking</h1>
+<p>Building systems for thinking, learning, and intelligence.</p>
+</section>
+
+<section class="featured">
+<h2>Strategic Thinking System</h2>
+<p>A structured approach built through drills.</p>
+</section>
+
+<section>
+<h2>Recent</h2>
+<ul>
+{% for post in site.posts limit:5 %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</section>

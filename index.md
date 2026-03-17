@@ -19,11 +19,11 @@ A structured platform to master strategic thinking, AI, and problem solving thro
 
 <section>
 
-## Featured
+Featured
 
 <div class="featured">
 
-### The Thinking Advantage
+The Thinking Advantage
 
 Most people consume information.  
 Very few build thinking systems.
@@ -45,40 +45,26 @@ This platform is designed to help you:
 ## What You’ll Find Here
 
 <ul class="content-list">
-
-<li><strong>Drills</strong> — Structured exercises to train thinking</li>
-
-<li><strong>AI Mastery</strong> — Practical frameworks and applications</li>
-
-<li><strong>Strategy</strong> — Real-world business and decision frameworks</li>
-
-<li><strong>Publications</strong> — Long-form structured thinking</li>
-
-<li><strong>Experiments</strong> — Ideas, explorations, and systems in progress</li>
-
+  <li><strong>Drills</strong> — Structured exercises to train thinking</li>
+  <li><strong>AI Mastery</strong> — Practical frameworks and applications</li>
+  <li><strong>Strategy</strong> — Real-world business and decision frameworks</li>
+  <li><strong>Publications</strong> — Long-form structured thinking</li>
+  <li><strong>Experiments</strong> — Ideas, explorations, and systems in progress</li>
 </ul>
 
 </section>
 
 
 <section>
+  Start Here
 
-## Start Here
-
-<ul class="content-list">
-
-<li><a href="/drills/">→ Explore Thinking Drills</a></li>
-
-<li><a href="/ai/">→ Learn AI Systems</a></li>
-
-<li><a href="/strategy/">→ Understand Strategy Frameworks</a></li>
-
-<li><a href="/blog/">→ Read Publications</a></li>
-
-</ul>
-
+  <ul class="content-list">
+  <li><a href="/drills/">→ Explore Thinking Drills</a></li>
+  <li><a href="/ai/">→ Learn AI Systems</a></li>
+  <li><a href="/strategy/">→ Understand Strategy Frameworks</a></li>
+  <li><a href="/blog/">→ Read Publications</a></li>
+  </ul>
 </section>
-
 
 <section>
 

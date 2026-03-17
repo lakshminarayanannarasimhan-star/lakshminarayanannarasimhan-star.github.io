@@ -13,7 +13,6 @@ description: Elevate Thinking Through Systems, Not Information
 # -------------------------
 # THEME (VISUAL STYLE)
 # -------------------------
-# Change this to switch entire site look
 # Available options:
 # indigo   → tech / AI (default)
 # emerald  → strategy / consulting (recommended)
@@ -28,35 +27,30 @@ elevate_theme: indigo
 
 
 # -------------------------
-# URL SETTINGS (CRITICAL)
+# URL SETTINGS (CUSTOM DOMAIN)
 # -------------------------
-# url → your main GitHub domain
-# baseurl → repo name (IMPORTANT)
 
-url: "https://lakshminarayanannarasimhan-star.github.io"
+# Your custom domain
+url: "https://indispensable.getunstuck.in"
 
-# If repo name is "elevate", use:
-baseurl: "/elevate"
-
-# If using root repo (username.github.io), use:
-# baseurl: ""
+# IMPORTANT:
+# For custom domain, baseurl MUST be empty
+baseurl: ""
 
 
 # -------------------------
 # COLLECTIONS (CONTENT TYPES)
 # -------------------------
-# Used for structured content like drills
 
 collections:
   drills:
-    output: true              # generates pages
-    permalink: /drills/:name/ # clean URLs
+    output: true
+    permalink: /drills/:name/
 
 
 # -------------------------
 # DEFAULTS (AUTO LAYOUT)
 # -------------------------
-# Automatically applies layout to drills
 
 defaults:
   - scope:
@@ -69,7 +63,6 @@ defaults:
 # -------------------------
 # MARKDOWN SETTINGS
 # -------------------------
-# Controls rendering of markdown files
 
 markdown: kramdown
 highlighter: rouge
@@ -78,7 +71,6 @@ highlighter: rouge
 # -------------------------
 # BUILD SETTINGS
 # -------------------------
-# Files/folders to ignore during build
 
 exclude:
   - README.md
@@ -86,16 +78,12 @@ exclude:
 
 
 # =========================================
-# HOW TO USE THIS FILE
+# NOTES
 # =========================================
 #
-# 1. To change theme:
-#    elevate_theme: emerald
-#
-# 2. To fix broken CSS/JS:
-#    check baseurl is correct
-#
-# 3. To add new content types:
-#    extend "collections"
+# 1. Custom domain is enabled → baseurl must be ""
+# 2. Ensure CNAME file exists with:
+#    indispensable.getunstuck.in
+# 3. DNS must point to GitHub Pages
 #
 # =========================================

@@ -1,5 +1,5 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v7
+   ELEVATE DESIGN SYSTEM — FINAL v8
    ========================================= */
 
 
@@ -33,7 +33,7 @@
 
 
 /* =========================
-   THEMES
+   THEME
    ========================= */
 
 :root[data-theme="midnight"] {
@@ -63,11 +63,64 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 
 /* =========================
-   HEADER (UPGRADED)
+   TYPOGRAPHY
+   ========================= */
+
+h1, .hero-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.04em;
+  max-width: var(--measure-wide);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+p {
+  max-width: var(--measure);
+  margin-top: 14px;
+}
+
+p + p {
+  margin-top: 14px;
+}
+
+.hero-sub {
+  font-size: var(--fs-md);
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+
+/* =========================
+   LAYOUT
+   ========================= */
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 48px;
+}
+
+section {
+  margin-top: 84px;
+}
+
+
+/* =========================
+   HEADER — COMPACT (FIXED)
    ========================= */
 
 .header {
@@ -79,7 +132,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px 48px;
+  padding: 12px 48px; /* 🔥 reduced */
 
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
@@ -89,20 +142,29 @@ body {
   transition: all 0.25s ease;
 }
 
-/* scroll effect */
+/* scroll state */
 .header.scrolled {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
-  padding: 16px 48px;
+  padding: 8px 48px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.05);
 }
 
 :root[data-theme="midnight"] .header {
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(15, 23, 42, 0.85);
 }
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+
+/* =========================
+   LOGO (TIGHTENED)
+   ========================= */
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.tagline {
+  display: none; /* removes extra height */
 }
 
 
@@ -110,9 +172,15 @@ body {
    NAV
    ========================= */
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 18px;
 }
 
 .nav a {
@@ -120,7 +188,7 @@ body {
   text-decoration: none;
   color: var(--text);
   position: relative;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 
 /* underline */
@@ -139,7 +207,7 @@ body {
   width: 100%;
 }
 
-/* active nav */
+/* active */
 .nav a.active {
   color: var(--primary);
 }
@@ -154,14 +222,10 @@ body {
    ========================= */
 
 .hero {
-  margin-top: 96px;
+  margin-top: 100px;
 }
 
 .hero-title {
-  font-size: var(--fs-3xl);
-  font-weight: 700;
-  max-width: var(--measure-wide);
-
   background: linear-gradient(
     90deg,
     var(--primary),
@@ -172,30 +236,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.hero-sub {
-  max-width: 640px;
-  margin-top: 20px;
-  color: var(--muted);
-}
-
 
 /* =========================
    CONTENT
    ========================= */
-
-.container {
-  max-width: 1400px;
-  margin: auto;
-  padding: 0 48px;
-}
-
-section {
-  margin-top: 84px;
-}
-
-p {
-  max-width: var(--measure);
-}
 
 .content-list li {
   margin-bottom: 12px;

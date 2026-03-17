@@ -6,9 +6,18 @@ title: Vidura Neethi Flashcards
 <link rel="stylesheet" href="{{ '/vidura-neethi/style.css' | relative_url }}">
 <script src="{{ '/vidura-neethi/script.js' | relative_url }}" defer></script>
 
-# 🧠 Vidura Neethi Flashcards
-
 ## 🧠 Vidura Neethi — Flashcards
+<div markdown="0">
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="self">Self</button>
+  <button class="filter-btn" data-filter="judgment">Judgment</button>
+  <button class="filter-btn" data-filter="decision">Decision</button>
+  <button class="filter-btn" data-filter="risk">Risk</button>
+</div>
+
+</div>
 
 <div class="card-container" markdown="0">
 

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Toggle menu
   button.onclick = () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    menu.classList.toggle("open");
   };
 
   // Select theme
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       options.forEach(o => o.classList.remove("active"));
       opt.classList.add("active");
 
-      menu.style.display = "none";
+      menu.classList.remove("open");
     };
   });
 

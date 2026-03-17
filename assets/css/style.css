@@ -64,3 +64,26 @@ body {
 .content-list li {
   margin-bottom: 8px;
 }
+
+.drill-article {
+  max-width: 720px;
+}
+
+.drill-toggle {
+  margin-top: 16px;
+  color: #4f46e5;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.drill-answer {
+  display: none;
+  margin-top: 16px;
+  padding-left: 12px;
+  border-left: 2px solid #e5e7eb;
+}
+
+.meta {
+  font-size: 14px;
+  color: #6b7280;
+}

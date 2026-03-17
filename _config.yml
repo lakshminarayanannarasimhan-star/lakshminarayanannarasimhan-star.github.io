@@ -1,1 +1,5 @@
 title: Elevate
+
+collections:
+  drills:
+    output: true

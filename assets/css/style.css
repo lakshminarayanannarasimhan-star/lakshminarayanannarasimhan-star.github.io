@@ -212,7 +212,7 @@ body {
 
 h1, .hero-title {
   font-size: var(--fs-3xl);
-  font-weight: 700;
+  font-weight: 400;
   line-height: var(--lh-tight);
   letter-spacing: -0.04em;
   max-width: var(--measure-wide);

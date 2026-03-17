@@ -10,11 +10,9 @@ I have spent time working across strategy, strategic thinking, execution discipl
 
 Building large teams, making them operational, and moving them forward has been an enriching experience.
 
-
 At the same time, a question kept coming back:
 
 **Can success be recreated and magnified?**
-
 
 ---
 
@@ -30,7 +28,6 @@ but the magnitude of the future can be very different.
 
 If we want to change direction, we need to learn how to think.
 
-
 ---
 
 ## Rethinking Thinking
@@ -39,16 +36,13 @@ Thinking is often assumed to be innate.
 
 It is not.
 
-It is a deliberate process —  
-training the mind to see patterns, perspectives, and possibilities.
-
+It is a deliberate process —  training the mind to see patterns, perspectives, and possibilities.
 
 ---
 
 ## Training the Mind
 
-Just like the body can be trained,  
-the mind can be trained.
+Just like the body can be trained, the mind can be trained.
 
 With the right approach:
 
@@ -57,7 +51,6 @@ With the right approach:
 - we can build structured ways of thinking  
 
 This is a trainable skill.
-
 
 ---
 
@@ -82,9 +75,7 @@ Through:
 
 This is a personal endeavor.
 
-I am building it for myself —  
-and sharing it with the world,  
-in case it helps others think better.
+I am building it for myself —  and sharing it with the world,  in case it helps others think better.
 
 ---
 

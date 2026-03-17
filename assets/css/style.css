@@ -362,3 +362,8 @@ body {
 .nav a:hover::after {
   width: 100%;
 }
+
+.nav {
+  display: flex;
+  gap: 20px;
+}

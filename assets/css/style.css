@@ -388,8 +388,8 @@ section {
    ========================================= */
 
 .hero {
-	margin: 80px auto 40px;
-	max-width: 900px;
+  margin: 40px auto 40px;
+  max-width: 900px;
 }
 
 .hero-title {

@@ -50,7 +50,7 @@ collections:
 
   reports:
     output: true
-    permalink: /_reports/:name/
+    permalink: /reports/:name/
 
 
 # -------------------------

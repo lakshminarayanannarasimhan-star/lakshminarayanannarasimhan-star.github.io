@@ -24,8 +24,9 @@ description: Elevate Thinking Through Systems, Not Information
 # mono     → minimal black/white
 # violet   → creative / visionary
 # oasis    → calm / balanced
+# berry    → vibrant / energetic
 
-elevate_theme: oasis
+elevate_theme: berry
 
 typography: executive   # options: executive, compact, spacious
 

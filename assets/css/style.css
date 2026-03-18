@@ -467,7 +467,7 @@ p {
   font-size: 12px;
   margin-top: 4px;
 
-  color: var(--muted);
+  color: var(--primary);
 
   letter-spacing: 0.02em;
   text-transform: uppercase;

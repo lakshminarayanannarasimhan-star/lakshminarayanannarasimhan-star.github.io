@@ -1,6 +1,6 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v17
-   (Stable + Theme Safe + Nav Fixed)
+   ELEVATE DESIGN SYSTEM — FINAL v18
+   (All Themes + Stable Nav + No Regression)
    ========================================= */
 
 
@@ -32,8 +32,20 @@
 
 
 /* =========================
-   THEMES
+   THEMES (FULL RESTORE)
    ========================= */
+
+:root[data-theme="indigo"] {
+  --primary: #4f46e5;
+}
+
+:root[data-theme="emerald"] {
+  --primary: #059669;
+}
+
+:root[data-theme="slate"] {
+  --primary: #334155;
+}
 
 :root[data-theme="midnight"] {
   --bg: #0f172a;
@@ -41,6 +53,22 @@
   --muted: #94a3b8;
   --border: #1e293b;
   --primary: #6366f1;
+}
+
+:root[data-theme="amber"] {
+  --primary: #d97706;
+}
+
+:root[data-theme="rose"] {
+  --primary: #e11d48;
+}
+
+:root[data-theme="cyan"] {
+  --primary: #0891b2;
+}
+
+:root[data-theme="mono"] {
+  --primary: #000000;
 }
 
 
@@ -59,8 +87,54 @@ body {
 
 
 /* =========================
-   BACKGROUND
+   BACKGROUNDS (ALL THEMES)
    ========================= */
+
+/* light */
+
+:root[data-theme="indigo"] body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(79,70,229,0.10), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(99,102,241,0.08), transparent 45%),
+    var(--bg);
+}
+
+:root[data-theme="emerald"] body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(5,150,105,0.10), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(16,185,129,0.08), transparent 45%),
+    var(--bg);
+}
+
+:root[data-theme="slate"] body {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(51,65,85,0.08), transparent 40%),
+    radial-gradient(circle at 80% 40%, rgba(100,116,139,0.06), transparent 50%),
+    var(--bg);
+}
+
+:root[data-theme="amber"] body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(217,119,6,0.12), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(245,158,11,0.08), transparent 45%),
+    var(--bg);
+}
+
+:root[data-theme="rose"] body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(225,29,72,0.10), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(244,63,94,0.08), transparent 45%),
+    var(--bg);
+}
+
+:root[data-theme="cyan"] body {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(8,145,178,0.10), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(6,182,212,0.08), transparent 45%),
+    var(--bg);
+}
+
+/* midnight */
 
 :root[data-theme="midnight"] body {
   background:
@@ -70,19 +144,10 @@ body {
     #0f172a;
 }
 
+/* mono */
 
-/* =========================
-   LAYOUT
-   ========================= */
-
-.container {
-  max-width: 1400px;
-  margin: auto;
-  padding: 0 48px;
-}
-
-section {
-  margin-top: var(--spacing-section);
+:root[data-theme="mono"] body {
+  background: var(--bg);
 }
 
 
@@ -111,9 +176,13 @@ section {
   background: rgba(15, 23, 42, 0.75);
 }
 
+:root[data-theme]:not([data-theme="midnight"]) .header {
+  background: rgba(255,255,255,0.7);
+}
+
 
 /* =========================
-   NAVIGATION
+   NAV (FIXED)
    ========================= */
 
 .header-right {
@@ -127,9 +196,6 @@ section {
   align-items: center;
   gap: 28px;
 }
-
-
-/* NAV LINKS */
 
 .nav a {
   display: inline-flex;
@@ -149,8 +215,7 @@ section {
   color: var(--primary);
 }
 
-
-/* UNDERLINE */
+/* underline */
 
 .nav a::after {
   content: "";
@@ -198,14 +263,12 @@ section {
 
 
 /* =========================
-   DROPDOWN (STABLE FIX)
+   DROPDOWN (STABLE)
    ========================= */
 
 .nav-item {
   position: relative;
 }
-
-/* invisible hover bridge */
 
 .nav-item::after {
   content: "";
@@ -215,9 +278,6 @@ section {
   width: 100%;
   height: 10px;
 }
-
-
-/* dropdown */
 
 .dropdown {
   position: absolute;
@@ -250,13 +310,9 @@ section {
   pointer-events: auto;
 }
 
-
-/* dropdown links */
-
 .dropdown a {
   display: block;
   padding: 10px 16px;
-
   font-size: 14px;
   text-decoration: none;
   color: var(--text);
@@ -265,9 +321,7 @@ section {
 .dropdown a:hover {
   background: var(--primary-soft);
   color: var(--primary);
-  transform: translateX(4px);
 }
-
 
 /* midnight dropdown */
 

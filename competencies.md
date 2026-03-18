@@ -1,9 +1,3 @@
----
-layout: default
-title: Elite Think Tank — Progress
-permalink: /competencies
----
-
 <div class="card-grid">
 
   <div class="card report-card">

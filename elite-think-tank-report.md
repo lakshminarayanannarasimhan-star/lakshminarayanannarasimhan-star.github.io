@@ -1,9 +1,3 @@
----
-layout: default
-title: AI Mastery — Progress
-permalink: /competencies/elite-think-tank-report/
----
-
 # 🧠 Elite Think Tank Mastery — Detailed Progress Report
 
 ## 📅 Report Snapshot

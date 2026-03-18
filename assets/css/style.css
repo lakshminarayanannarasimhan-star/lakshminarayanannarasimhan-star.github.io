@@ -90,9 +90,9 @@ body {
    ========================= */
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: auto;
-  padding: 0 32px;
+  padding: 0 40px;
 }
 
 section {
@@ -101,13 +101,20 @@ section {
 }
 
 .section-wide {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: var(--spacing-section) auto 0;
+  padding: auto 48px;
 }
 
 .section-wide h2 {
   font-size: 32px;
   margin-bottom: 16px;
+}
+
+/* reading content */
+.container-narrow {
+  max-width: 900px;
+  margin: auto;
 }
 
 /* =========================================
@@ -567,4 +574,14 @@ p {
 :root[data-theme="midnight"] .cred-card {
   background: var(--surface);
   border: 1px solid var(--border);
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .container-wide {
+    max-width: 1600px;
+  }
 }

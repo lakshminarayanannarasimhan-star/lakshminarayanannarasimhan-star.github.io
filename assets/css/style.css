@@ -464,7 +464,7 @@ p {
 /* TAGLINE */
 
 .tagline {
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 4px;
 
   color: var(--primary);

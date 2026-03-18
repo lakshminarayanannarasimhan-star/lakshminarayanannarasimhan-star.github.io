@@ -1,6 +1,5 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v15
-   (Optimized + Premium Nav + Chevron)
+   ELEVATE DESIGN SYSTEM — FINAL v23
    ========================================= */
 
 
@@ -12,113 +11,78 @@
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #6b7280;
+  --border: #e5e7eb;
+
   --primary: #4f46e5;
   --primary-soft: #eef2ff;
   --primary-strong: #4338ca;
-  --border: #e5e7eb;
 
-  --fs-xs: 13px;
-  --fs-sm: 14px;
+  --surface: #ffffff;
+  --surface-soft: #fafafa;
+
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
   --fs-base: 17px;
-  --fs-md: 18px;
-  --fs-lg: 20px;
   --fs-xl: 28px;
   --fs-3xl: 56px;
 
-  --lh-tight: 1.15;
-  --lh-relaxed: 1.75;
-
   --measure: 680px;
-  --measure-wide: 820px;
-  --spacing-section: 84px;
+  --spacing-section: 80px;
 }
 
 
 /* =========================
-   TYPOGRAPHY MODES
-   ========================= */
-
-:root[data-typography="executive"] {
-  --fs-base: 17px;
-  --measure: 680px;
-  --spacing-section: 84px;
-}
-
-:root[data-typography="compact"] {
-  --fs-base: 15px;
-  --measure: 620px;
-  --spacing-section: 64px;
-}
-
-:root[data-typography="spacious"] {
-  --fs-base: 18px;
-  --measure: 720px;
-  --spacing-section: 100px;
-}
-
-
-/* =========================
-   THEMES
-   ========================= */
-
-/* =========================
-   THEMES — FIXED
+   THEMES (SAFE)
    ========================= */
 
 :root[data-theme="indigo"] {
   --primary: #4f46e5;
-  --primary-soft: #eef2ff;
-  --primary-strong: #4338ca;
-  --text: #1e1b4b;
-  --muted: #6366f1;
 }
 
 :root[data-theme="emerald"] {
   --primary: #059669;
-  --primary-soft: #ecfdf5;
-  --primary-strong: #047857;
-  --text: #052e26;
-  --muted: #047857;
 }
 
 :root[data-theme="slate"] {
   --primary: #334155;
-  --primary-soft: #f1f5f9;
-  --primary-strong: #1e293b;
-  --text: #020617;
-  --muted: #475569;
 }
 
 :root[data-theme="amber"] {
   --primary: #d97706;
-  --primary-soft: #fffbeb;
-  --primary-strong: #b45309;
-  --text: #451a03;
-  --muted: #92400e;
 }
 
 :root[data-theme="rose"] {
   --primary: #e11d48;
-  --primary-soft: #fff1f2;
-  --primary-strong: #be123c;
-  --text: #4c0519;
-  --muted: #9f1239;
 }
 
 :root[data-theme="cyan"] {
   --primary: #0891b2;
-  --primary-soft: #ecfeff;
-  --primary-strong: #0e7490;
-  --text: #083344;
-  --muted: #155e75;
 }
 
-/* MIDNIGHT stays same */
+:root[data-theme="mono"] {
+  --primary: #000000;
+}
+
+/* DARK THEME */
+
 :root[data-theme="midnight"] {
   --bg: #0f172a;
   --text: #e5e7eb;
   --muted: #94a3b8;
   --border: #1e293b;
+
+  --surface: #111827;
+  --surface-soft: #0f172a;
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.5);
+  --shadow-md: 0 10px 30px rgba(0,0,0,0.6);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.7);
 
   --primary: #6366f1;
   --primary-soft: #1e293b;
@@ -133,77 +97,10 @@
 body {
   font-family: Inter, system-ui, -apple-system, sans-serif;
   font-size: var(--fs-base);
-  line-height: var(--lh-relaxed);
+  line-height: 1.7;
   margin: 0;
+  background: var(--bg);
   color: var(--text);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  transition: background 0.5s ease;
-}
-
-
-/* =========================
-   BACKGROUNDS
-   ========================= */
-
-:root[data-theme="indigo"] body {
-  background:
-    radial-gradient(circle at 20% 20%, rgba(79,70,229,0.10), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(99,102,241,0.08), transparent 45%),
-    var(--bg);
-}
-
-:root[data-theme="emerald"] body {
-  background:
-    radial-gradient(circle at 20% 20%, rgba(5,150,105,0.10), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(16,185,129,0.08), transparent 45%),
-    var(--bg);
-}
-
-:root[data-theme="slate"] body {
-  background:
-    radial-gradient(circle at 30% 20%, rgba(51,65,85,0.08), transparent 40%),
-    radial-gradient(circle at 80% 40%, rgba(100,116,139,0.06), transparent 50%),
-    var(--bg);
-}
-
-:root[data-theme="midnight"] body {
-  background:
-    radial-gradient(circle at 20% 20%, rgba(99,102,241,0.18), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(139,92,246,0.15), transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(59,130,246,0.10), transparent 50%),
-    #0f172a;
-}
-
-
-/* =========================
-   TYPOGRAPHY
-   ========================= */
-
-h1, .hero-title {
-  font-size: var(--fs-3xl);
-  font-weight: 700;
-  line-height: var(--lh-tight);
-  letter-spacing: -0.04em;
-  max-width: var(--measure-wide);
-}
-
-h2 {
-  font-size: var(--fs-xl);
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 12px;
-}
-
-p {
-  max-width: var(--measure);
-  margin-top: 14px;
-}
-
-.hero-sub {
-  font-size: var(--fs-md);
-  margin-top: 18px;
-  color: var(--muted);
 }
 
 
@@ -212,13 +109,14 @@ p {
    ========================= */
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
-  padding: 0 48px;
+  padding: 0 32px;
 }
 
 section {
-  margin-top: var(--spacing-section);
+  max-width: 900px;
+  margin: var(--spacing-section) auto 0;
 }
 
 
@@ -235,30 +133,18 @@ section {
   justify-content: space-between;
   align-items: center;
 
-  padding: 20px 64px;
-  max-width: 1400px;
-  margin: auto;
+  padding: 18px 40px;
 
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
-}
 
-.header.scrolled {
-  padding: 16px 64px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
-:root[data-theme="midnight"] .header {
-  background: rgba(15, 23, 42, 0.75);
-}
-
-:root[data-theme]:not([data-theme="midnight"]) .header {
-  background: rgba(255,255,255,0.7);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
 }
 
 
 /* =========================
-   NAV
+   NAVIGATION
    ========================= */
 
 .header-right {
@@ -269,10 +155,8 @@ section {
 
 .nav {
   display: flex;
-  gap: 28px;
+  gap: 24px;
 }
-
-/* links */
 
 .nav a {
   display: inline-flex;
@@ -281,17 +165,16 @@ section {
 
   position: relative;
 
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   color: var(--text);
 
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 
 .nav a:hover {
   color: var(--primary);
 }
-
 
 /* underline */
 
@@ -312,14 +195,13 @@ section {
   transition: transform 0.25s ease;
 }
 
-.nav a:hover::after,
-.nav a.active::after {
+.nav a:hover::after {
   transform: scaleX(1);
 }
 
 
 /* =========================
-   CHEVRON (PREMIUM)
+   CHEVRON
    ========================= */
 
 .nav a.has-dropdown::before {
@@ -331,7 +213,7 @@ section {
   border-bottom: 2px solid var(--muted);
 
   transform: rotate(45deg);
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 .nav-item:hover a.has-dropdown::before {
@@ -348,27 +230,33 @@ section {
   position: relative;
 }
 
+.nav-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 8px;
+}
+
 .dropdown {
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 0;
 
-  min-width: 200px;
-  padding: 10px 0;
+  margin-top: 4px;
+  min-width: 180px;
 
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--border);
 
-  backdrop-filter: blur(12px);
-  background: rgba(255,255,255,0.75);
-
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
 
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(6px);
   pointer-events: none;
 
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
 
 .nav-item:hover .dropdown {
@@ -379,9 +267,7 @@ section {
 
 .dropdown a {
   display: block;
-  padding: 10px 16px;
-
-  font-size: 14px;
+  padding: 8px 14px;
   text-decoration: none;
   color: var(--text);
 }
@@ -389,14 +275,6 @@ section {
 .dropdown a:hover {
   background: var(--primary-soft);
   color: var(--primary);
-  transform: translateX(4px);
-}
-
-/* midnight dropdown */
-
-:root[data-theme="midnight"] .dropdown {
-  background: rgba(15, 23, 42, 0.9);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
 
@@ -405,18 +283,108 @@ section {
    ========================= */
 
 .hero {
-  margin-top: 40px;
+  margin: 40px auto;
   max-width: 900px;
 }
 
 .hero-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+
   background: linear-gradient(
     90deg,
     var(--primary),
     var(--primary-strong)
   );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero-sub {
+  margin-top: 16px;
+  color: var(--muted);
+  max-width: var(--measure);
+}
+
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h2 {
+  font-size: var(--fs-xl);
+  margin-top: 32px;
+}
+
+p {
+  max-width: var(--measure);
+  margin-top: 12px;
+}
+
+
+/* =========================
+   ELEVATION / CARDS
+   ========================= */
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 24px;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* =========================
+   REPORT DASHBOARD
+   ========================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--primary-soft);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.card-link:hover {
+  text-decoration: underline;
 }
 
 
@@ -425,20 +393,8 @@ section {
    ========================= */
 
 .footer-copy {
+  text-align: center;
   font-size: 12px;
   color: var(--muted);
-  margin-top: 10px;
-}
-
-
-/* =========================
-   404 PAGE
-   ========================= */
-
-body[data-page="404"] .hero-title {
-  opacity: 0.9;
-}
-
-body[data-page="404"] .content-list a {
-  font-size: 16px;
+  margin: 40px 0;
 }

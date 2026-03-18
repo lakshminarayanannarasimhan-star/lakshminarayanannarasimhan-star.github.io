@@ -74,26 +74,25 @@
   });
 })();
 
-
 /* =========================
-   MOBILE NAVIGATION (NEW)
-   ========================= */
-
-/* =========================
-   MOBILE NAVIGATION (FIXED)
+   MOBILE NAVIGATION (FINAL CLEAN)
    ========================= */
 
 (function () {
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".nav");
-  const overlay = document.querySelector(".nav-overlay");
-  const links = document.querySelectorAll(".nav a");
+  console.log("Mobile nav init");
 
-  console.log(toggle, nav, overlay);
-  
-  if (!toggle || !nav || !overlay) return;
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav");
+  const overlay = document.getElementById("nav-overlay");
+
+  if (!toggle || !nav || !overlay) {
+    console.log("Nav elements missing");
+    return;
+  }
 
   toggle.addEventListener("click", () => {
+    console.log("Toggle clicked");
+
     nav.classList.toggle("open");
     overlay.classList.toggle("open");
   });
@@ -103,10 +102,4 @@
     overlay.classList.remove("open");
   });
 
-  links.forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      overlay.classList.remove("open");
-    });
-  });
 })();

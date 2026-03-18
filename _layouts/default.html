@@ -53,11 +53,7 @@
         <a href="/about">About</a>
 
         <!-- LINKEDIN -->
-        <a href="https://www.linkedin.com/in/lakshminarayanann/"
-           class="nav-linkedin-elite"
-           target="_blank"
-           rel="noopener">
-        </a>
+        <a href="#" class="nav-linkedin-elite" onclick="openLinkedIn(event)"></a>
       </nav>
 
     </div>
@@ -74,25 +70,6 @@
 
 <script src="{{ '/assets/js/drill.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
-
-<!-- 🔥 ADD THIS JS BLOCK 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("nav");
-  const overlay = document.getElementById("nav-overlay");
-
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-    overlay.classList.toggle("open");
-  });
-
-  overlay.addEventListener("click", () => {
-    nav.classList.remove("open");
-    overlay.classList.remove("open");
-  });
-});
-</script>-->
 
 <footer class="footer">
   <div class="container footer-inner">

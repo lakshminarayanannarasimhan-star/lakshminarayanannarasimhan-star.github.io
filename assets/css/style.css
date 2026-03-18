@@ -425,3 +425,60 @@ p {
 .card-link.secondary:hover {
   color: var(--primary);
 }
+
+/* =========================================
+   BRAND (LOGO + TAGLINE)
+   ========================================= */
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: all 0.25s ease;
+}
+
+/* subtle hover polish */
+.logo:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* TAGLINE */
+
+.tagline {
+  font-size: 12px;
+  margin-top: 4px;
+
+  color: var(--muted);
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  opacity: 0.8;
+}
+
+/* =========================
+   HEADER ALIGNMENT FIX
+   ========================= */
+
+.header {
+  align-items: center;
+}

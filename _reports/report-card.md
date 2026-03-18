@@ -1,16 +1,3 @@
----
-layout: default
-title: Report Card
----
-
-# Report Card
-
-A living system of my cognitive, strategic, and execution evolution.
-
----
-
-## Active Systems
-
 <div class="card-grid">
 
   <div class="card report-card">
@@ -32,7 +19,10 @@ A living system of my cognitive, strategic, and execution evolution.
     <div class="progress" style="width: 70%"></div>
   </div>
 
-  <a href="/ai-mastery" class="card-link">View System →</a>
+  <div class="card-actions">
+    <a href="/ai-mastery" class="card-link">View System →</a>
+    <a href="/report-card/ai-mastery-report/" class="card-link secondary">Progress →</a>
+  </div>
 
   </div>
 
@@ -56,7 +46,10 @@ A living system of my cognitive, strategic, and execution evolution.
     <div class="progress" style="width: 85%"></div>
   </div>
 
-  <a href="/think-tank" class="card-link">View System →</a>
+  <div class="card-actions">
+    <a href="/think-tank" class="card-link">View System →</a>
+    <a href="/report-card/elite-think-tank-report/" class="card-link secondary">Progress →</a>
+  </div>
 
   </div>
 

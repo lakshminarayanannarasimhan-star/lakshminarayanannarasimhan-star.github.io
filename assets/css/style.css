@@ -398,3 +398,30 @@ p {
   color: var(--muted);
   margin: 40px 0;
 }
+
+/* =========================
+   CARD ACTIONS (DUAL CTA)
+   ========================= */
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+/* Primary link */
+.card-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+/* Secondary (progress) */
+.card-link.secondary {
+  color: var(--muted);
+}
+
+.card-link.secondary:hover {
+  color: var(--primary);
+}

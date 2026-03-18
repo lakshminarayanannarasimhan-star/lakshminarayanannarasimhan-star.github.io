@@ -25,8 +25,9 @@ description: Elevate Thinking Through Systems, Not Information
 # violet   → creative / visionary
 # oasis    → calm / balanced
 # berry    → vibrant / energetic
+# delight   → bold / passionate
 
-elevate_theme: berry
+elevate_theme: delight
 
 typography: executive   # options: executive, compact, spacious
 

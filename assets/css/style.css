@@ -51,6 +51,7 @@
 :root[data-theme="violet"] { --primary: #7400b8; }
 :root[data-theme="oasis"] { --primary: #682d63; }
 :root[data-theme="berry"] { --primary: #963659; }
+:root[data-theme="delight"] { --primary: #ff5555; }
 
 /* DARK THEME */
 

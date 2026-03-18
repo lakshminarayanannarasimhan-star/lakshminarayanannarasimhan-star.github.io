@@ -785,37 +785,46 @@ p {
    HOVER — TRANSFORMATION
    ========================= */
 
+/* BASE — LINKEDIN BRAND TUNED */
+
+.nav-linkedin-elite::before {
+  content: "in";
+
+  font-size: 12px;          /* slightly bigger */
+  font-weight: 800;         /* stronger */
+
+  color: #0A66C2;           /* 🔥 LinkedIn official blue */
+
+  border: 1px solid rgba(10,102,194,0.25);
+  border-radius: 5px;
+
+  padding: 2px 6px;
+
+  background: rgba(10,102,194,0.08);
+
+  letter-spacing: -0.02em;
+
+  transition: all 0.3s ease;
+}
+
+/* glow activates */
+
 .nav-linkedin-elite:hover::before {
   content: "Connect ↗";
 
   color: white;
 
-  border-color: transparent;
-
   background: linear-gradient(
     90deg,
-    var(--primary),
+    #0A66C2,
     var(--primary-strong)
   );
 
-  padding: 4px 10px;
+  border-color: transparent;
+
+  padding: 4px 12px;
 
   border-radius: 999px;
 
   transform: translateY(-1px);
-}
-
-/* glow activates */
-
-.nav-linkedin-elite:hover::after {
-  opacity: 0.25;
-}
-
-
-/* =========================
-   ACTIVE CLICK FEEDBACK
-   ========================= */
-
-.nav-linkedin-elite:active::before {
-  transform: scale(0.96);
 }

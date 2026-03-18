@@ -104,17 +104,3 @@
 
 })();
 
-function openLinkedIn(e) {
-  e.preventDefault();
-
-  const appUrl = "linkedin://in/lakshminarayanann";
-  const webUrl = "https://www.linkedin.com/in/lakshminarayanann/";
-
-  // Try opening app
-  window.location.href = appUrl;
-
-  // Fallback to web after delay
-  setTimeout(() => {
-    window.location.href = webUrl;
-  }, 800);
-}

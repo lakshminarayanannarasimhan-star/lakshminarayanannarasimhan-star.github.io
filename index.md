@@ -3,6 +3,11 @@ layout: default
 title: Home
 ---
 
+
+<!-- =========================================
+     HERO
+========================================= -->
+
 <div class="hero">
 
   <h1 class="hero-title">
@@ -24,14 +29,13 @@ title: Home
 
 
 <!-- =========================================
-     CREDIBILITY SECTION
+     CREDIBILITY
 ========================================= -->
 
-<section class="credibility">
+<section class="section-wide credibility">
 
   <div class="cred-grid">
 
-    <!-- Proof -->
     <div class="cred-card">
       <div class="cred-number">1600+</div>
       <div class="cred-title">Strategic Drills Completed</div>
@@ -40,7 +44,6 @@ title: Home
       </div>
     </div>
 
-    <!-- System -->
     <div class="cred-card">
       <div class="cred-number">3</div>
       <div class="cred-title">Thinking Systems Built</div>
@@ -49,7 +52,6 @@ title: Home
       </div>
     </div>
 
-    <!-- Leadership ->
     <div class="cred-card">
       <div class="cred-number">Large Scale</div>
       <div class="cred-title">Team Building & Execution</div>
@@ -64,35 +66,91 @@ title: Home
 
 
 <!-- =========================================
-     SYSTEMS / WORK
+     DASHBOARD (CORE DIFFERENTIATOR)
 ========================================= -->
 
 <section class="section-wide">
 
-  <h2>What I Am Building</h2>
+  <div class="dashboard">
 
-  <div class="card-grid">
-
-    <div class="card">
-      <div class="meta">SYSTEM</div>
-      <h3>Elite Think Tank</h3>
-      <p>Advanced strategic thinking drills and frameworks.</p>
-
-      <div class="card-actions">
-        <a href="/elite-think-tank-report/" class="card-link">View System →</a>
-        <a href="/reports/elite-think-tank-report/" class="card-link">Progress →</a>
+    <div class="dashboard-header">
+      <h2>Report Dashboard</h2>
+      <div class="dashboard-sub">
+        Live proof of thinking, systems, and execution capability
       </div>
     </div>
 
-    <div class="card">
-      <div class="meta">SYSTEM</div>
-      <h3>AI Mastery</h3>
-      <p>Applied AI thinking and real-world execution systems.</p>
+    <div class="dashboard-grid">
 
-      <div class="card-actions">
-        <a href="/ai-mastery-report/" class="card-link">View System →</a>
-        <a href="/reports/ai-mastery-report/" class="card-link">Progress →</a>
+      <!-- Elite Think Tank -->
+      <div class="dashboard-card">
+
+        <div class="dashboard-top">
+          <div class="dashboard-title">Elite Think Tank</div>
+          <div class="badge">Advanced</div>
+        </div>
+
+        <div class="dashboard-meta">
+          Strategic thinking · Decision systems · Cognitive drills
+        </div>
+
+        <div class="progress-block">
+          <div class="progress-label">
+            <span>Progress</span>
+            <span>1600 drills</span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-actions">
+          <a href="/elite-think-tank-report/" class="btn-primary">
+            View System
+          </a>
+          <a href="/reports/elite-think-tank-report/" class="btn-ghost">
+            Progress
+          </a>
+        </div>
+
       </div>
+
+
+      <!-- AI Mastery -->
+      <div class="dashboard-card">
+
+        <div class="dashboard-top">
+          <div class="dashboard-title">AI Mastery</div>
+          <div class="badge light">Building</div>
+        </div>
+
+        <div class="dashboard-meta">
+          Applied AI · Execution systems · Real-world use cases
+        </div>
+
+        <div class="progress-block">
+          <div class="progress-label">
+            <span>Progress</span>
+            <span>In Progress</span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress" style="width: 45%"></div>
+          </div>
+        </div>
+
+        <div class="dashboard-actions">
+          <a href="/ai-mastery-report/" class="btn-primary">
+            View System
+          </a>
+          <a href="/reports/ai-mastery-report/" class="btn-ghost">
+            Progress
+          </a>
+        </div>
+
+      </div>
+
     </div>
 
   </div>

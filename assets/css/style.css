@@ -585,3 +585,154 @@ p {
     max-width: 1600px;
   }
 }
+
+/* =========================================
+   DASHBOARD — WORLD CLASS
+   ========================================= */
+
+.dashboard {
+  margin-top: 60px;
+}
+
+.dashboard-header h2 {
+  font-size: 32px;
+}
+
+.dashboard-sub {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* GRID */
+
+.dashboard-grid {
+  margin-top: 28px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+
+/* CARD */
+
+.dashboard-card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+
+  padding: 24px;
+
+  transition: all 0.25s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+
+/* TOP */
+
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* BADGE */
+
+.badge {
+  font-size: 12px;
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.badge.light {
+  background: var(--surface-soft);
+  color: var(--muted);
+}
+
+
+/* META */
+
+.dashboard-meta {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+
+/* PROGRESS */
+
+.progress-block {
+  margin-top: 20px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.progress-bar {
+  margin-top: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: var(--primary-soft);
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+}
+
+
+/* ACTIONS */
+
+.dashboard-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-ghost {
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  border: 1px solid var(--border);
+
+  text-decoration: none;
+  font-size: 14px;
+
+  color: var(--text);
+}
+
+.btn-ghost:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+
+/* DARK MODE */
+
+:root[data-theme="midnight"] .dashboard-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}

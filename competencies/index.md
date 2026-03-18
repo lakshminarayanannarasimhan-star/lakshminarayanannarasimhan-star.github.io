@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Elite Think Tank — Progress
-permalink: /competencies/elite-think-tank-report/
+permalink: /competencies
 ---
 
 <div class="card-grid">

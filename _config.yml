@@ -48,11 +48,6 @@ collections:
     output: true
     permalink: /drills/:name/
 
-  reports:
-    output: true
-    permalink: /reports/:name/
-
-
 # -------------------------
 # DEFAULTS (AUTO LAYOUT)
 # -------------------------

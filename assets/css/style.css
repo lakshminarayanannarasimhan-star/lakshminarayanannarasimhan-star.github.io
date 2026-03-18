@@ -88,21 +88,29 @@
 /* DARK THEME */
 
 :root[data-theme="midnight"] {
-	--bg: #0f172a;
-	--text: #e5e7eb;
-	--muted: #94a3b8;
-	--border: #1e293b;
+  /* BASE */
+  --bg: #020617;                /* deeper than before */
+  --text: #e6edf3;
+  --muted: #94a3b8;
+  --border: rgba(255,255,255,0.06);
 
-	--surface: #111827;
-	--surface-soft: #0f172a;
+  /* SURFACES (layered darkness) */
+  --surface: #020617;
+  --surface-soft: #020617;
 
-	--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
-	--shadow-md: 0 10px 30px rgba(0, 0, 0, 0.6);
-	--shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.7);
+  /* ELEVATION SYSTEM (subtle, not heavy shadows) */
+  --shadow-sm: 0 2px 10px rgba(0,0,0,0.4);
+  --shadow-md: 0 10px 30px rgba(0,0,0,0.5);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.6);
 
-	--primary: #6366f1;
-	--primary-soft: #1e293b;
-	--primary-strong: #818cf8;
+  /* BRAND LIGHT */
+  --primary: #6366f1;
+
+  /* 🔥 CRITICAL: glow-based soft color */
+  --primary-soft: rgba(99, 102, 241, 0.12);
+
+  /* highlight tone */
+  --primary-strong: #8b5cf6;
 }
 
 
@@ -117,6 +125,14 @@ body {
 	margin: 0;
 	background: var(--bg);
 	color: var(--text);
+}
+
+body[data-theme="midnight"] {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(99,102,241,0.12), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(139,92,246,0.10), transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(59,130,246,0.08), transparent 50%),
+    #020617;
 }
 
 
@@ -189,9 +205,10 @@ section {
 /* DARK HEADER */
 
 :root[data-theme="midnight"] .header {
-	background: rgba(15, 23, 42, 0.65);
+  background: rgba(2,6,23,0.6);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-
 :root[data-theme="midnight"] .header.scrolled {
 	background: rgba(15, 23, 42, 0.85);
 }
@@ -497,6 +514,16 @@ p {
 	transition: all 0.25s ease;
 }
 
+/* =========================================
+   MIDNIGHT — SURFACE UPGRADE
+   ========================================= */
+
+:root[data-theme="midnight"] .card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+}
+
 .card:hover {
 	transform: translateY(-3px);
 	box-shadow: var(--shadow-lg);
@@ -554,6 +581,16 @@ p {
 	border-radius: var(--radius-md);
 	padding: 24px;
 	transition: all 0.25s ease;
+}
+
+/* =========================================
+   MIDNIGHT — SURFACE UPGRADE
+   ========================================= */
+
+:root[data-theme="midnight"] .cred-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
 }
 
 .cred-card:hover {
@@ -616,6 +653,16 @@ p {
 	border: 1px solid var(--border);
 	padding: 24px;
 	transition: all 0.25s ease;
+}
+
+/* =========================================
+   MIDNIGHT — SURFACE UPGRADE
+   ========================================= */
+
+:root[data-theme="midnight"] .dashboard-card{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
 }
 
 .dashboard-card:hover {

@@ -828,3 +828,93 @@ p {
 
   transform: translateY(-1px);
 }
+
+/* =========================================
+   RESPONSIVE SYSTEM — MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* CONTAINER */
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    margin-top: 60px;
+  }
+
+  /* HEADER */
+  .header-inner {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  /* NAV */
+  .nav {
+    gap: 16px;
+    overflow-x: auto;     /* temporary fix */
+    white-space: nowrap;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    margin: 40px auto 20px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* BUTTONS */
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* CARDS */
+  .card,
+  .dashboard-card {
+    padding: 18px;
+  }
+
+  /* GRID */
+  .card-grid,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* CREDIBILITY */
+  .cred-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* TOUCH IMPROVEMENT */
+  a, button {
+    min-height: 40px;
+  }
+
+}

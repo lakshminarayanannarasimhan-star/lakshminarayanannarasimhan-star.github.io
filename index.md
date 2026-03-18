@@ -16,8 +16,7 @@ title: Home
   </h1>
 
   <p class="hero-sub">
-    A structured platform to master strategic thinking, AI, and execution 
-    through drills, systems, and real-world patterns.
+    A structured platform to master strategic thinking through systems, first principles and execution disciplie through drills, systems, and real-world patterns.
   </p>
 
   <div class="hero-actions">

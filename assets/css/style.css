@@ -211,6 +211,12 @@ section {
   gap: 28px;
 }
 
+.nav a,
+.nav-item {
+  display: flex;
+  align-items: center;   /* 🔥 ensures vertical alignment */
+}
+
 .nav a {
   position: relative;
 
@@ -220,9 +226,11 @@ section {
   text-decoration: none;
   color: var(--text);
 
-  padding-bottom: 4px;
+  line-height: 1;        /* 🔥 removes vertical shift */
+  padding: 6px 0;        /* 🔥 gives equal height */
 
   transition: color 0.2s ease;
+  letter-spacing: -0.01em;
 }
 
 .nav a:hover {
@@ -236,7 +244,7 @@ section {
   position: absolute;
 
   left: 0;
-  bottom: 0;
+  bottom: -2px;
 
   width: 100%;
   height: 2px;
@@ -249,7 +257,6 @@ section {
 
   transform: scaleX(0);
   transform-origin: left;
-
   transition: transform 0.25s ease;
 }
 
@@ -262,10 +269,6 @@ section {
 /* =========================
    DROPDOWN
    ========================= */
-
-.nav-item {
-  position: relative;
-}
 
 .nav-item::after {
   content: "";

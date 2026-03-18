@@ -27,8 +27,9 @@ description: Elevate Thinking Through Systems, Not Information
 # berry    → vibrant / energetic
 # delight   → bold / passionate
 # summer_sunset → warm / nostalgic
+# adventure → rugged / exploratory
 
-elevate_theme: summer_sunset
+elevate_theme: adventure
 
 typography: executive   # options: executive, compact, spacious
 

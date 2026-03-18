@@ -356,6 +356,16 @@ section {
   width: 100%;
 }
 
+.nav a::after {
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 100%;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+}
+
 /* =========================
    HERO
    ========================= */

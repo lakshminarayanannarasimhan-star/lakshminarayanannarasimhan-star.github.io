@@ -470,7 +470,7 @@ p {
   color: var(--primary);
 
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 
   opacity: 0.8;
 }

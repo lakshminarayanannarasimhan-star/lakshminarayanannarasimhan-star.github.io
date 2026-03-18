@@ -8,23 +8,49 @@ title: Home
      HERO
 ========================================= -->
 
-<div class="hero">
+<section class="hero hero-split">
 
-  <h1 class="hero-title">
-    Build Thinking Systems.<br>
-    Not Information.
-  </h1>
+  <!-- LEFT -->
+  <div class="hero-left">
+    <h1 class="hero-title">
+      Thinking Systems for Strategy, AI & Execution
+    </h1>
 
-  <p class="hero-sub">
-    A structured platform to master strategic thinking through systems, first principles and execution disciplie through drills, systems, and real-world patterns.
-  </p>
+    <p class="hero-sub">
+      A structured platform to master strategic thinking, AI, and problem solving
+      through drills, systems, and real-world patterns.
+    </p>
 
-  <div class="hero-actions">
-    <a href="/report/" class="btn-primary">View Report Card</a>
-    <a href="/drills/" class="btn-secondary">Explore Drills</a>
+    <div class="hero-actions">
+      <a href="/competencies/" class="btn-primary">Explore Systems</a>
+      <a href="/about" class="btn-secondary">About</a>
+    </div>
   </div>
 
-</div>
+  <!-- RIGHT (FEATURED) -->
+  <div class="hero-right">
+
+    <div class="featured-card">
+
+      <div class="featured-label">Featured</div>
+
+      <h3 class="featured-title">
+        Scaling Thinking Systems: From Drills to Strategy Engine
+      </h3>
+
+      <p class="featured-desc">
+        How structured drills evolved into a repeatable system for strategic thinking and execution.
+      </p>
+
+      <a href="/posts/thinking-systems-case-study/" class="card-link">
+        Read Case Study
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
 
 <!-- =========================================

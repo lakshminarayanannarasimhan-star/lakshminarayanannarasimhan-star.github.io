@@ -79,32 +79,34 @@
    MOBILE NAVIGATION (NEW)
    ========================= */
 
+/* =========================
+   MOBILE NAVIGATION (FIXED)
+   ========================= */
+
 (function () {
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("nav");
-  const overlay = document.getElementById("nav-overlay");
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+  const overlay = document.querySelector(".nav-overlay");
   const links = document.querySelectorAll(".nav a");
 
+  console.log(toggle, nav, overlay);
+  
   if (!toggle || !nav || !overlay) return;
 
-  // Toggle menu
   toggle.addEventListener("click", () => {
     nav.classList.toggle("open");
     overlay.classList.toggle("open");
   });
 
-  // Close on overlay click
   overlay.addEventListener("click", () => {
     nav.classList.remove("open");
     overlay.classList.remove("open");
   });
 
-  // Close when clicking any nav link (VERY IMPORTANT UX)
   links.forEach(link => {
     link.addEventListener("click", () => {
       nav.classList.remove("open");
       overlay.classList.remove("open");
     });
   });
-
 })();

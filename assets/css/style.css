@@ -918,3 +918,97 @@ p {
   }
 
 }
+
+/* =========================================
+   MOBILE NAVIGATION SYSTEM
+   ========================================= */
+
+/* HAMBURGER */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  transition: all 0.3s ease;
+}
+
+
+/* MOBILE MODE */
+
+@media (max-width: 768px) {
+
+  /* show hamburger */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* hide desktop nav */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 260px;
+
+    background: var(--surface);
+    box-shadow: var(--shadow-lg);
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 20px;
+
+    gap: 20px;
+
+    transition: right 0.3s ease;
+
+    z-index: 1001;
+  }
+
+  /* active state */
+  .nav.open {
+    right: 0;
+  }
+
+  /* overlay */
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 1000;
+  }
+
+  .nav-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* nav links spacing */
+  .nav a {
+    font-size: 16px;
+  }
+
+  /* dropdown fix (stacked) */
+  .dropdown {
+    position: static;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: none;
+    border: none;
+    padding-left: 10px;
+  }
+
+}

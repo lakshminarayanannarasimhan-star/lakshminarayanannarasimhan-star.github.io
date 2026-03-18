@@ -73,3 +73,38 @@
     });
   });
 })();
+
+
+/* =========================
+   MOBILE NAVIGATION (NEW)
+   ========================= */
+
+(function () {
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav");
+  const overlay = document.getElementById("nav-overlay");
+  const links = document.querySelectorAll(".nav a");
+
+  if (!toggle || !nav || !overlay) return;
+
+  // Toggle menu
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    overlay.classList.toggle("open");
+  });
+
+  // Close on overlay click
+  overlay.addEventListener("click", () => {
+    nav.classList.remove("open");
+    overlay.classList.remove("open");
+  });
+
+  // Close when clicking any nav link (VERY IMPORTANT UX)
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      overlay.classList.remove("open");
+    });
+  });
+
+})();

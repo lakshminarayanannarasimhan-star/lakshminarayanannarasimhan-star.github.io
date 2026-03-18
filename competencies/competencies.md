@@ -1,3 +1,9 @@
+---
+layout: default
+title: Elite Think Tank — Progress
+permalink: /competencies/elite-think-tank-report/
+---
+
 <div class="card-grid">
 
   <div class="card report-card">
@@ -53,10 +59,4 @@
 
   </div>
 
-</div>
-
-<div style="display:none">
-{% for report in site.reports %}
-  {{ report.url }}
-{% endfor %}
 </div>

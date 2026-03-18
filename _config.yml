@@ -92,5 +92,3 @@ exclude:
 # 3. DNS must point to GitHub Pages
 #
 # =========================================
-
-plugins: []

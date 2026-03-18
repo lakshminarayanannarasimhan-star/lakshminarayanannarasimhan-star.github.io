@@ -810,7 +810,7 @@ p {
 /* glow activates */
 
 .nav-linkedin-elite:hover::before {
-  content: "Connect ↗";
+  content: "LNN @ LinkedIn ↗";
 
   color: white;
 

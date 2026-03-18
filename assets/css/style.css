@@ -321,23 +321,33 @@ section {
 }
 
 .nav a {
+  display: inline-block; /* 🔥 critical fix */
+  position: relative;
+
   font-size: 16px;
   text-decoration: none;
   color: var(--text);
-  position: relative;
+
+  padding-bottom: 6px;
 }
 
 .nav a:hover {
   color: var(--primary);
 }
 
+
 .nav a::after {
   content: "";
   position: absolute;
-  bottom: -4px;
+
+  left: 0;
+  bottom: 0;   /* 🔥 fix alignment */
+  
   width: 0%;
   height: 2px;
+
   background: var(--primary);
+
   transition: width 0.25s ease;
 }
 
@@ -345,7 +355,6 @@ section {
 .nav a.active::after {
   width: 100%;
 }
-
 
 /* =========================
    HERO

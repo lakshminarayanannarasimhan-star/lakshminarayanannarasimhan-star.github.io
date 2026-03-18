@@ -100,7 +100,7 @@ title: Home
           </div>
 
           <div class="progress-bar">
-            <div class="progress" style="width: 80%"></div>
+            <div class="progress" style="width: 62%"></div>
           </div>
         </div>
 

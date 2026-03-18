@@ -53,8 +53,8 @@ permalink: /competencies/
   </div>
 
   <div class="card-actions">
-    <a href="/competencies/think-tank" class="card-link">View System →</a>
-    <a href="/competencies/elite-think-tank-report/" class="card-link secondary">Progress →</a>
+    <a href="/competencies/think-tank" class="card-link">View System</a>
+    <a href="/competencies/elite-think-tank-report/" class="card-link secondary">Progress</a>
   </div>
 
   </div>

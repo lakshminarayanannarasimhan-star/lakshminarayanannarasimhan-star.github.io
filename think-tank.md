@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Think Tank
+permalink: /competencies/think-tank
 ---
 
 # Think Tank

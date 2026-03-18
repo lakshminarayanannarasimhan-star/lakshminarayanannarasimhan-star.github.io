@@ -97,6 +97,11 @@ section {
   margin: var(--spacing-section) auto 0;
 }
 
+.section-wide {
+  max-width: 1200px;
+  margin: var(--spacing-section) auto 0;
+}
+
 
 /* =========================================
    HEADER — WORLD CLASS

@@ -48,6 +48,7 @@
 :root[data-theme="rose"] { --primary: #e11d48; }
 :root[data-theme="cyan"] { --primary: #0891b2; }
 :root[data-theme="mono"] { --primary: #000000; }
+:root[data-theme="violet"] { --primary: #7400b8; }
 
 :root[data-theme="midnight"] {
   --bg: #0f172a;

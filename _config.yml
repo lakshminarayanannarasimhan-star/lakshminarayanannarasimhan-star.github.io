@@ -22,8 +22,9 @@ description: Elevate Thinking Through Systems, Not Information
 # rose     → bold / expressive
 # cyan     → analytical / fresh
 # mono     → minimal black/white
+# violet   → creative / visionary
 
-elevate_theme: indigo
+elevate_theme: violet
 
 typography: executive   # options: executive, compact, spacious
 

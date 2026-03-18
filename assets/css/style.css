@@ -1,6 +1,6 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v18
-   (All Themes + Stable Nav + No Regression)
+   ELEVATE DESIGN SYSTEM — FINAL v19
+   (Themes + Stable Nav + Proper Layout)
    ========================================= */
 
 
@@ -32,20 +32,12 @@
 
 
 /* =========================
-   THEMES (FULL RESTORE)
+   THEMES
    ========================= */
 
-:root[data-theme="indigo"] {
-  --primary: #4f46e5;
-}
-
-:root[data-theme="emerald"] {
-  --primary: #059669;
-}
-
-:root[data-theme="slate"] {
-  --primary: #334155;
-}
+:root[data-theme="indigo"] { --primary: #4f46e5; }
+:root[data-theme="emerald"] { --primary: #059669; }
+:root[data-theme="slate"] { --primary: #334155; }
 
 :root[data-theme="midnight"] {
   --bg: #0f172a;
@@ -55,21 +47,10 @@
   --primary: #6366f1;
 }
 
-:root[data-theme="amber"] {
-  --primary: #d97706;
-}
-
-:root[data-theme="rose"] {
-  --primary: #e11d48;
-}
-
-:root[data-theme="cyan"] {
-  --primary: #0891b2;
-}
-
-:root[data-theme="mono"] {
-  --primary: #000000;
-}
+:root[data-theme="amber"] { --primary: #d97706; }
+:root[data-theme="rose"] { --primary: #e11d48; }
+:root[data-theme="cyan"] { --primary: #0891b2; }
+:root[data-theme="mono"] { --primary: #000000; }
 
 
 /* =========================
@@ -87,10 +68,8 @@ body {
 
 
 /* =========================
-   BACKGROUNDS (ALL THEMES)
+   BACKGROUNDS
    ========================= */
-
-/* light */
 
 :root[data-theme="indigo"] body {
   background:
@@ -134,8 +113,6 @@ body {
     var(--bg);
 }
 
-/* midnight */
-
 :root[data-theme="midnight"] body {
   background:
     radial-gradient(circle at 20% 20%, rgba(99,102,241,0.18), transparent 40%),
@@ -144,10 +121,55 @@ body {
     #0f172a;
 }
 
-/* mono */
-
 :root[data-theme="mono"] body {
   background: var(--bg);
+}
+
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1, .hero-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  letter-spacing: -0.04em;
+  max-width: var(--measure-wide);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+p {
+  max-width: var(--measure);
+  margin-top: 14px;
+}
+
+.hero-sub {
+  font-size: var(--fs-md);
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+
+/* =========================
+   LAYOUT (FIXED)
+   ========================= */
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 48px;
+}
+
+section {
+  max-width: 900px;
+  margin: var(--spacing-section) auto 0;
 }
 
 
@@ -182,7 +204,7 @@ body {
 
 
 /* =========================
-   NAV (FIXED)
+   NAVIGATION (STABLE)
    ========================= */
 
 .header-right {
@@ -263,7 +285,7 @@ body {
 
 
 /* =========================
-   DROPDOWN (STABLE)
+   DROPDOWN
    ========================= */
 
 .nav-item {
@@ -321,9 +343,8 @@ body {
 .dropdown a:hover {
   background: var(--primary-soft);
   color: var(--primary);
+  transform: translateX(4px);
 }
-
-/* midnight dropdown */
 
 :root[data-theme="midnight"] .dropdown {
   background: rgba(15, 23, 42, 0.9);
@@ -336,20 +357,16 @@ body {
    ========================= */
 
 .hero {
-  margin-top: 40px;
+  margin: 40px auto 0;
   max-width: 900px;
 }
 
 .hero-title {
-  font-size: var(--fs-3xl);
-  font-weight: 700;
-
   background: linear-gradient(
     90deg,
     var(--primary),
     var(--primary-strong)
   );
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

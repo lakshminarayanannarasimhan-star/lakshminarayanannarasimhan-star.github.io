@@ -80,7 +80,7 @@ title: Home
 
       <div class="card-actions">
         <a href="/elite-think-tank-report/" class="card-link">View System →</a>
-        <a href="/reports/elite-think-tank-report/" class="card-link secondary">Progress →</a>
+        <a href="/reports/elite-think-tank-report/" class="card-link">Progress →</a>
       </div>
     </div>
 
@@ -91,7 +91,7 @@ title: Home
 
       <div class="card-actions">
         <a href="/ai-mastery-report/" class="card-link">View System →</a>
-        <a href="/reports/ai-mastery-report/" class="card-link secondary">Progress →</a>
+        <a href="/reports/ai-mastery-report/" class="card-link">Progress →</a>
       </div>
     </div>
 

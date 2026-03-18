@@ -685,7 +685,7 @@ p {
 
 /* arrow indicator (premium touch) */
 .card-link::after {
-  content: "→";
+  content: "↗";
   font-size: 13px;
   transition: transform 0.2s ease;
 }

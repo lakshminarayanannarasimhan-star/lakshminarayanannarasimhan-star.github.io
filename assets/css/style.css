@@ -85,6 +85,10 @@
 	--primary: #ff5555;
 }
 
+:root[data-theme="summer_sunset"] {
+	--primary: #b9375e;
+}
+
 /* DARK THEME */
 
 :root[data-theme="midnight"] {

@@ -26,8 +26,9 @@ description: Elevate Thinking Through Systems, Not Information
 # oasis    → calm / balanced
 # berry    → vibrant / energetic
 # delight   → bold / passionate
+# summer_sunset → warm / nostalgic
 
-elevate_theme: mono
+elevate_theme: summer_sunset
 
 typography: executive   # options: executive, compact, spacious
 

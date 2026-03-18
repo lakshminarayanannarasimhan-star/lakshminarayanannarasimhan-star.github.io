@@ -661,3 +661,59 @@ p {
     max-width: 1600px;
   }
 }
+
+/* =========================================
+   CARD LINKS — FIXED + PREMIUM
+   ========================================= */
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-top: 16px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+  color: var(--primary);
+
+  transition: all 0.2s ease;
+}
+
+/* arrow indicator (premium touch) */
+.card-link::after {
+  content: "→";
+  font-size: 13px;
+  transition: transform 0.2s ease;
+}
+
+.card-link:hover {
+  color: var(--primary-strong);
+}
+
+.card-link:hover::after {
+  transform: translateX(3px);
+}
+
+
+/* SECONDARY LINK */
+
+.card-link.secondary {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.card-link.secondary::after {
+  opacity: 0.6;
+}
+
+.card-link.secondary:hover {
+  color: var(--primary);
+}
+
+.card-link.secondary:hover::after {
+  opacity: 1;
+  transform: translateX(3px);
+}

@@ -86,7 +86,7 @@ title: Home
 
         <div class="dashboard-top">
           <div class="dashboard-title">Elite Think Tank</div>
-          <div class="badge">Advanced</div>
+          <div class="badge">Foundation</div>
         </div>
 
         <div class="dashboard-meta">

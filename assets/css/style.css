@@ -493,3 +493,65 @@ p {
   color: var(--muted);
   margin: 40px 0;
 }
+
+/* =========================================
+   CREDIBILITY SECTION
+   ========================================= */
+
+.credibility {
+  margin-top: 60px;
+}
+
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.cred-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+
+  padding: 24px;
+
+  transition: all 0.25s ease;
+}
+
+.cred-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.cred-number {
+  font-size: 28px;
+  font-weight: 700;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cred-title {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.cred-desc {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+
+/* DARK MODE SUPPORT */
+
+:root[data-theme="midnight"] .cred-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}

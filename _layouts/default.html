@@ -12,49 +12,62 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <div class="theme-switcher">
-</div>
 </head>
 
 <body>
 
 <header class="header">
+  <div class="header-inner">
 
-  <div>
-    <div class="logo">{{ site.title }}</div>
-    <div class="tagline">strategy · systems thinking · execution · opulence</div>
-  </div>
-
-  <div class="header-right">
-    
-    <nav class="nav">
-      <a href="/">Home</a>      
-      <div class="nav-item">
-        <a href="/competencies/">Competencies</a>
-        <div class="dropdown">
-          <a href="/ai-mastery-report/">AI Mastery</a>
-          <a href="/elite-think-tank-report/">Elite Think Tank</a>
-        </div>
+    <!-- BRAND -->
+    <div class="brand">
+      <div class="logo">{{ site.title }}</div>
+      <div class="tagline">
+        Thinking Systems · Strategy · AI
       </div>
-      <a href="/drills">Why Drills?</a>
-      <a href="/about">About</a>
-    </nav>
-  </div>
+    </div>
 
+    <!-- NAV -->
+    <div class="header-right">
+
+      <nav class="nav">
+        <a href="/">Home</a>
+
+        <div class="nav-item">
+          <a href="/competencies/" class="has-dropdown">Competencies</a>
+          <div class="dropdown">
+            <a href="/ai-mastery-report/">AI Mastery</a>
+            <a href="/elite-think-tank-report/">Elite Think Tank</a>
+          </div>
+        </div>
+
+        <a href="/drills">Why Drills?</a>
+        <a href="/about">About</a>
+      </nav>
+
+    </div>
+
+  </div>
 </header>
 
 <main class="container">
   {{ content }}
 </main>
+
 <script src="{{ '/assets/js/drill.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+
 <footer class="footer">
   <div class="container footer-inner">
 
-    <div class="footer-copy">The Indispensable | 
-      Thinking Systems · Strategy · AI 
-      | © {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.  
+    <div class="footer-copy">
+      {{ site.title }} · Thinking Systems · Strategy · AI  
+      <br>
+      © {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.
     </div>
+
+  </div>
 </footer>
+
 </body>
 </html>

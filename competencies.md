@@ -26,8 +26,8 @@ permalink: /competencies/
   </div>
 
   <div class="card-actions">
-    <a href="/competencies/ai-mastery" class="card-link">View System →</a>
-    <a href="/competencies/ai-mastery-report/" class="card-link secondary">Progress →</a>
+    <a href="/competencies/ai-mastery" class="card-link">View System</a>
+    <a href="/competencies/ai-mastery-report/" class="card-link secondary">Progress</a>
   </div>
 
   </div>

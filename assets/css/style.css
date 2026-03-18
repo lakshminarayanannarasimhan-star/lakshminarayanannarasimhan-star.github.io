@@ -919,7 +919,7 @@ p {
 
 	/* HEADER */
 	.header-inner {
-		padding: 14px 20px;
+    padding: 22px 32px;
 	}
 
 	.logo {
@@ -944,7 +944,8 @@ p {
 
 	/* HERO */
 	.hero {
-		margin: 40px auto 20px;
+		margin: 24px auto 40px;
+    margin-top: 20px;
 	}
 
 	.hero-title {

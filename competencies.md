@@ -1,3 +1,9 @@
+---
+layout: default
+title: Competencies
+permalink: /competencies/
+---
+
 <div class="card-grid">
 
   <div class="card report-card">

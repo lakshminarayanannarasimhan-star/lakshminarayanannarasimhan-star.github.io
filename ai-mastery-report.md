@@ -1,3 +1,9 @@
+---
+layout: default
+title: AI Mastery — Progress
+permalink: /competencies/ai-mastery-report/
+---
+
 # AI Mastery — Progress
 
 Tracking progress in applied AI and systems thinking.

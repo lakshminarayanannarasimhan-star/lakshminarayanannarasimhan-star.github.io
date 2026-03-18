@@ -1,3 +1,9 @@
+---
+layout: default
+title: Elite Think Tank — Progress
+permalink: /competencies/elite-think-tank-report/
+---
+
 # 🧠 Elite Think Tank Mastery — Detailed Progress Report
 
 ## 📅 Report Snapshot

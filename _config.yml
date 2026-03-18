@@ -14,9 +14,9 @@ description: Elevate Thinking Through Systems, Not Information
 # THEME (VISUAL STYLE)
 # --------------------------
 # Available options:
-# indigo   → tech / AI (default)
+# indigo   → tech / AI (default) 
 # emerald  → strategy / consulting (recommended)
-# slate    → executive minimal
+# slate    → executive minimal 
 # midnight → dark mode (deep thinking)
 # amber    → warm / authority
 # rose     → bold / expressive
@@ -26,12 +26,12 @@ description: Elevate Thinking Through Systems, Not Information
 # oasis    → calm / balanced
 # berry    → vibrant / energetic
 # delight   → bold / passionate
-# summer_sunset → warm / nostalgic
+# summer_sunset → warm / nostalgic 
 # adventure → rugged / exploratory
 
 elevate_theme: adventure
 
-typography: executive   # options: executive, compact, spacious
+typography: compact   # options: executive, compact, spacious
 
 # -------------------------
 # URL SETTINGS (CUSTOM DOMAIN)

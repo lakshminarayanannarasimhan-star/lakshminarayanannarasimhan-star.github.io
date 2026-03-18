@@ -6,46 +6,80 @@ sitemap: false
 robots: noindex
 ---
 
-<section class="theme-lab">
+<section class="theme-lab-pro">
 
-  <h1 class="hero-title">Theme System</h1>
-  <p class="hero-sub">
-    Internal design playground — visualizing all themes, surfaces, and components.
-  </p>
-
-  <div class="theme-grid">
-
-    <!-- AUTO THEMES -->
-
-    <div class="theme-tile" data-theme="indigo"><div class="theme-preview"></div><span>Indigo</span></div>
-    <div class="theme-tile" data-theme="emerald"><div class="theme-preview"></div><span>Emerald</span></div>
-    <div class="theme-tile" data-theme="slate"><div class="theme-preview"></div><span>Slate</span></div>
-    <div class="theme-tile" data-theme="amber"><div class="theme-preview"></div><span>Amber</span></div>
-    <div class="theme-tile" data-theme="rose"><div class="theme-preview"></div><span>Rose</span></div>
-    <div class="theme-tile" data-theme="cyan"><div class="theme-preview"></div><span>Cyan</span></div>
-    <div class="theme-tile" data-theme="mono"><div class="theme-preview"></div><span>Mono</span></div>
-    <div class="theme-tile" data-theme="violet"><div class="theme-preview"></div><span>Violet</span></div>
-    <div class="theme-tile" data-theme="oasis"><div class="theme-preview"></div><span>Oasis</span></div>
-    <div class="theme-tile" data-theme="berry"><div class="theme-preview"></div><span>Berry</span></div>
-    <div class="theme-tile" data-theme="delight"><div class="theme-preview"></div><span>Delight</span></div>
-    <div class="theme-tile" data-theme="summer_sunset"><div class="theme-preview"></div><span>Summer Sunset</span></div>
-    <div class="theme-tile" data-theme="adventure"><div class="theme-preview"></div><span>Adventure</span></div>
-    <div class="theme-tile" data-theme="midnight"><div class="theme-preview"></div><span>Midnight</span></div>
-
+  <!-- HEADER -->
+  <div class="lab-header">
+    <div>
+      <h1>Design System</h1>
+      <p>Theme engine · surfaces · interaction model</p>
+    </div>
   </div>
 
-  <!-- LIVE PREVIEW -->
-  <div class="theme-live-preview">
+  <!-- LAYOUT -->
+  <div class="lab-layout">
 
-    <div class="card">
-      <h3>Card Preview</h3>
-      <p>This uses your real surface, border, and text tokens.</p>
-      <a href="#" class="card-link">Explore</a>
+    <!-- LEFT: THEME SELECTOR -->
+    <div class="theme-sidebar">
+
+      <div class="theme-group-title">Themes</div>
+
+      <div class="theme-list">
+        <div class="theme-item" data-theme="indigo">Indigo</div>
+        <div class="theme-item" data-theme="emerald">Emerald</div>
+        <div class="theme-item" data-theme="slate">Slate</div>
+        <div class="theme-item" data-theme="amber">Amber</div>
+        <div class="theme-item" data-theme="rose">Rose</div>
+        <div class="theme-item" data-theme="cyan">Cyan</div>
+        <div class="theme-item" data-theme="violet">Violet</div>
+        <div class="theme-item" data-theme="berry">Berry</div>
+        <div class="theme-item" data-theme="oasis">Oasis</div>
+        <div class="theme-item" data-theme="delight">Delight</div>
+        <div class="theme-item" data-theme="summer_sunset">Summer Sunset</div>
+        <div class="theme-item" data-theme="adventure">Adventure</div>
+
+        <div class="theme-group-title" style="margin-top:20px;">Dark</div>
+        <div class="theme-item" data-theme="midnight">Midnight</div>
+      </div>
+
     </div>
 
-    <div style="margin-top:20px;">
-      <a class="btn-primary">Primary</a>
-      <a class="btn-secondary">Secondary</a>
+    <!-- RIGHT: LIVE SYSTEM -->
+    <div class="theme-canvas">
+
+      <!-- PRIMARY CARD -->
+      <div class="card lab-card">
+        <h3>System Card</h3>
+        <p>
+          This reflects your real surface, border, elevation and typography system.
+        </p>
+
+        <div style="margin-top:16px;">
+          <a class="btn-primary">Primary Action</a>
+          <a class="btn-secondary">Secondary</a>
+        </div>
+      </div>
+
+      <!-- COMPONENT GRID -->
+      <div class="lab-grid">
+
+        <div class="card">
+          <div class="meta">Surface</div>
+          <h4>Base Layer</h4>
+        </div>
+
+        <div class="card">
+          <div class="meta">Elevation</div>
+          <h4>Hover System</h4>
+        </div>
+
+        <div class="card">
+          <div class="meta">Accent</div>
+          <h4>Primary Color</h4>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
@@ -53,10 +87,14 @@ robots: noindex
 </section>
 
 <script>
-document.querySelectorAll(".theme-tile").forEach(tile => {
-  tile.addEventListener("click", () => {
-    const theme = tile.getAttribute("data-theme");
+document.querySelectorAll(".theme-item").forEach(item => {
+  item.addEventListener("click", () => {
+    const theme = item.getAttribute("data-theme");
+
     document.documentElement.setAttribute("data-theme", theme);
+
+    document.querySelectorAll(".theme-item").forEach(i => i.classList.remove("active"));
+    item.classList.add("active");
   });
 });
 </script>

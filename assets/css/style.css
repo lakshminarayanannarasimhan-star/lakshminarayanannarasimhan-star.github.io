@@ -1307,3 +1307,146 @@ p {
   border: 1px solid rgba(255,255,255,0.06);
   backdrop-filter: blur(10px);
 }
+
+/* =========================================
+   THEME LAB — PRO DASHBOARD
+   ========================================= */
+
+.theme-lab-pro {
+  margin-top: 40px;
+}
+
+/* HEADER */
+
+.lab-header h1 {
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.lab-header p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* LAYOUT */
+
+.lab-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* SIDEBAR */
+
+.theme-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+/* GROUP */
+
+.theme-group-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* LIST */
+
+.theme-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ITEM */
+
+.theme-item {
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.theme-item:hover {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+/* ACTIVE */
+
+.theme-item.active {
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+  color: white;
+}
+
+/* CANVAS */
+
+.theme-canvas {
+  max-width: 720px;
+}
+
+/* MAIN CARD */
+
+.lab-card {
+  padding: 28px;
+}
+
+/* GRID */
+
+.lab-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* MIDNIGHT */
+
+:root[data-theme="midnight"] .theme-item:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+:root[data-theme="midnight"] .theme-item.active {
+  background: linear-gradient(
+    90deg,
+    #6366f1,
+    #8b5cf6
+  );
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .lab-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-sidebar {
+    position: static;
+  }
+
+  .theme-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .theme-item {
+    font-size: 12px;
+  }
+
+}

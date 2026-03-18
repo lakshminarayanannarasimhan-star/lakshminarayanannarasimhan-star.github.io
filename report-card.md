@@ -124,5 +124,4 @@ Initially, the focus was on:
 
 As the number of drills increased:
 
-```text
-Repetition → Pattern recognition → Cognitive compression
+```Repetition → Pattern recognition → Cognitive compression```

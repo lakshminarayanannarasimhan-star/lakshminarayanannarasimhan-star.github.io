@@ -169,9 +169,9 @@ section {
   margin-top: 4px;
 
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 
-  color: var(--muted);
+  color: var(--primary);
   opacity: 0.7;
 }
 

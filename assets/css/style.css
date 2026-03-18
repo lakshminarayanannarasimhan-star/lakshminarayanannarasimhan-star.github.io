@@ -1,6 +1,5 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v19
-   (Themes + Stable Nav + Proper Layout)
+   ELEVATE DESIGN SYSTEM — FINAL v20
    ========================================= */
 
 
@@ -12,10 +11,11 @@
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #6b7280;
+  --border: #e5e7eb;
+
   --primary: #4f46e5;
   --primary-soft: #eef2ff;
   --primary-strong: #4338ca;
-  --border: #e5e7eb;
 
   --fs-base: 17px;
   --fs-md: 18px;
@@ -32,25 +32,61 @@
 
 
 /* =========================
-   THEMES
+   THEMES — FULL COLOR SYSTEM
    ========================= */
 
-:root[data-theme="indigo"] { --primary: #4f46e5; }
-:root[data-theme="emerald"] { --primary: #059669; }
-:root[data-theme="slate"] { --primary: #334155; }
+:root[data-theme="indigo"] {
+  --primary: #4f46e5;
+  --primary-soft: #eef2ff;
+  --primary-strong: #4338ca;
+}
+
+:root[data-theme="emerald"] {
+  --primary: #059669;
+  --primary-soft: #ecfdf5;
+  --primary-strong: #047857;
+}
+
+:root[data-theme="slate"] {
+  --primary: #334155;
+  --primary-soft: #f1f5f9;
+  --primary-strong: #1e293b;
+}
 
 :root[data-theme="midnight"] {
   --bg: #0f172a;
   --text: #e5e7eb;
   --muted: #94a3b8;
   --border: #1e293b;
+
   --primary: #6366f1;
+  --primary-soft: #1e293b;
+  --primary-strong: #818cf8;
 }
 
-:root[data-theme="amber"] { --primary: #d97706; }
-:root[data-theme="rose"] { --primary: #e11d48; }
-:root[data-theme="cyan"] { --primary: #0891b2; }
-:root[data-theme="mono"] { --primary: #000000; }
+:root[data-theme="amber"] {
+  --primary: #d97706;
+  --primary-soft: #fffbeb;
+  --primary-strong: #b45309;
+}
+
+:root[data-theme="rose"] {
+  --primary: #e11d48;
+  --primary-soft: #fff1f2;
+  --primary-strong: #be123c;
+}
+
+:root[data-theme="cyan"] {
+  --primary: #0891b2;
+  --primary-soft: #ecfeff;
+  --primary-strong: #0e7490;
+}
+
+:root[data-theme="mono"] {
+  --primary: #000000;
+  --primary-soft: #f5f5f5;
+  --primary-strong: #111111;
+}
 
 
 /* =========================
@@ -68,7 +104,7 @@ body {
 
 
 /* =========================
-   BACKGROUNDS
+   BACKGROUNDS (THEME-AWARE)
    ========================= */
 
 :root[data-theme="indigo"] body {
@@ -158,7 +194,7 @@ p {
 
 
 /* =========================
-   LAYOUT (FIXED)
+   LAYOUT (CENTERED)
    ========================= */
 
 .container {
@@ -204,7 +240,7 @@ section {
 
 
 /* =========================
-   NAVIGATION (STABLE)
+   NAVIGATION
    ========================= */
 
 .header-right {

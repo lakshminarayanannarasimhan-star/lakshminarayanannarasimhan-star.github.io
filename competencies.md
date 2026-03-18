@@ -8,7 +8,7 @@ permalink: /competencies/
 
   <div class="card report-card">
     
-  ### AI Mastery
+  <h3> AI Mastery </h3>
 
   <div class="meta">
   Focus: AI, Systems Thinking, Applied Intelligence
@@ -26,8 +26,8 @@ permalink: /competencies/
   </div>
 
   <div class="card-actions">
-    <a href="/ai-mastery" class="card-link">View System →</a>
-    <a href="/report-card/ai-mastery-report/" class="card-link secondary">Progress →</a>
+    <a href="/competencies/ai-mastery" class="card-link">View System →</a>
+    <a href="/competencies/ai-mastery-report/" class="card-link secondary">Progress →</a>
   </div>
 
   </div>
@@ -35,7 +35,7 @@ permalink: /competencies/
 
   <div class="card report-card">
 
-  ### Elite Think Tank
+  <h3>Elite Think Tank </h3>
 
   <div class="meta">
   Focus: Strategic Thinking, Decision Systems

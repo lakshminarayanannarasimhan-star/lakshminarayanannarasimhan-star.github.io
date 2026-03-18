@@ -54,3 +54,9 @@
   </div>
 
 </div>
+
+<div style="display:none">
+{% for report in site.reports %}
+  {{ report.url }}
+{% endfor %}
+</div>

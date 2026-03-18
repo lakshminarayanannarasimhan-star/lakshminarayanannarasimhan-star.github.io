@@ -1,6 +1,6 @@
 /* =========================================
-   ELEVATE DESIGN SYSTEM — FINAL v15
-   (Optimized + Premium Nav + Chevron)
+   ELEVATE DESIGN SYSTEM — FINAL v16
+   (Dropdown Fix + Stable Navigation)
    ========================================= */
 
 
@@ -17,11 +17,8 @@
   --primary-strong: #4338ca;
   --border: #e5e7eb;
 
-  --fs-xs: 13px;
-  --fs-sm: 14px;
   --fs-base: 17px;
   --fs-md: 18px;
-  --fs-lg: 20px;
   --fs-xl: 28px;
   --fs-3xl: 56px;
 
@@ -35,35 +32,8 @@
 
 
 /* =========================
-   TYPOGRAPHY MODES
-   ========================= */
-
-:root[data-typography="executive"] {
-  --fs-base: 17px;
-  --measure: 680px;
-  --spacing-section: 84px;
-}
-
-:root[data-typography="compact"] {
-  --fs-base: 15px;
-  --measure: 620px;
-  --spacing-section: 64px;
-}
-
-:root[data-typography="spacious"] {
-  --fs-base: 18px;
-  --measure: 720px;
-  --spacing-section: 100px;
-}
-
-
-/* =========================
    THEMES
    ========================= */
-
-:root[data-theme="indigo"] { --primary: #4f46e5; }
-:root[data-theme="emerald"] { --primary: #059669; }
-:root[data-theme="slate"] { --primary: #334155; }
 
 :root[data-theme="midnight"] {
   --bg: #0f172a;
@@ -73,52 +43,24 @@
   --primary: #6366f1;
 }
 
-:root[data-theme="amber"] { --primary: #d97706; }
-:root[data-theme="rose"] { --primary: #e11d48; }
-:root[data-theme="cyan"] { --primary: #0891b2; }
-:root[data-theme="mono"] { --primary: #000000; }
-
 
 /* =========================
    GLOBAL
    ========================= */
 
 body {
-  font-family: Inter, system-ui, -apple-system, sans-serif;
+  font-family: Inter, system-ui;
   font-size: var(--fs-base);
   line-height: var(--lh-relaxed);
   margin: 0;
   color: var(--text);
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   transition: background 0.5s ease;
 }
 
 
 /* =========================
-   BACKGROUNDS
+   BACKGROUND
    ========================= */
-
-:root[data-theme="indigo"] body {
-  background:
-    radial-gradient(circle at 20% 20%, rgba(79,70,229,0.10), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(99,102,241,0.08), transparent 45%),
-    var(--bg);
-}
-
-:root[data-theme="emerald"] body {
-  background:
-    radial-gradient(circle at 20% 20%, rgba(5,150,105,0.10), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(16,185,129,0.08), transparent 45%),
-    var(--bg);
-}
-
-:root[data-theme="slate"] body {
-  background:
-    radial-gradient(circle at 30% 20%, rgba(51,65,85,0.08), transparent 40%),
-    radial-gradient(circle at 80% 40%, rgba(100,116,139,0.06), transparent 50%),
-    var(--bg);
-}
 
 :root[data-theme="midnight"] body {
   background:
@@ -126,37 +68,6 @@ body {
     radial-gradient(circle at 80% 30%, rgba(139,92,246,0.15), transparent 45%),
     radial-gradient(circle at 50% 80%, rgba(59,130,246,0.10), transparent 50%),
     #0f172a;
-}
-
-
-/* =========================
-   TYPOGRAPHY
-   ========================= */
-
-h1, .hero-title {
-  font-size: var(--fs-3xl);
-  font-weight: 700;
-  line-height: var(--lh-tight);
-  letter-spacing: -0.04em;
-  max-width: var(--measure-wide);
-}
-
-h2 {
-  font-size: var(--fs-xl);
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 12px;
-}
-
-p {
-  max-width: var(--measure);
-  margin-top: 14px;
-}
-
-.hero-sub {
-  font-size: var(--fs-md);
-  margin-top: 18px;
-  color: var(--muted);
 }
 
 
@@ -196,17 +107,8 @@ section {
   border-bottom: 1px solid var(--border);
 }
 
-.header.scrolled {
-  padding: 16px 64px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-}
-
 :root[data-theme="midnight"] .header {
   background: rgba(15, 23, 42, 0.75);
-}
-
-:root[data-theme]:not([data-theme="midnight"]) .header {
-  background: rgba(255,255,255,0.7);
 }
 
 
@@ -225,7 +127,8 @@ section {
   gap: 28px;
 }
 
-/* links */
+
+/* NAV LINKS */
 
 .nav a {
   display: inline-flex;
@@ -246,7 +149,7 @@ section {
 }
 
 
-/* underline */
+/* UNDERLINE */
 
 .nav a::after {
   content: "";
@@ -272,7 +175,7 @@ section {
 
 
 /* =========================
-   CHEVRON (PREMIUM)
+   CHEVRON
    ========================= */
 
 .nav a.has-dropdown::before {
@@ -294,17 +197,32 @@ section {
 
 
 /* =========================
-   DROPDOWN
+   DROPDOWN (FIXED)
    ========================= */
 
 .nav-item {
   position: relative;
+  padding-bottom: 10px; /* hover bridge */
 }
+
+/* invisible hover bridge (critical fix) */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 12px;
+}
+
+/* dropdown */
 
 .dropdown {
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 0;
+
+  margin-top: 6px;
 
   min-width: 200px;
   padding: 10px 0;
@@ -313,22 +231,27 @@ section {
   border: 1px solid var(--border);
 
   backdrop-filter: blur(12px);
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.9);
 
   box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(6px);
   pointer-events: none;
 
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
 }
+
+/* show */
 
 .nav-item:hover .dropdown {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
+
+
+/* dropdown links */
 
 .dropdown a {
   display: block;
@@ -344,6 +267,7 @@ section {
   color: var(--primary);
   transform: translateX(4px);
 }
+
 
 /* midnight dropdown */
 
@@ -363,11 +287,15 @@ section {
 }
 
 .hero-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+
   background: linear-gradient(
     90deg,
     var(--primary),
     var(--primary-strong)
   );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -390,8 +318,4 @@ section {
 
 body[data-page="404"] .hero-title {
   opacity: 0.9;
-}
-
-body[data-page="404"] .content-list a {
-  font-size: 16px;
 }

@@ -67,7 +67,7 @@ title: Home
      SYSTEMS / WORK
 ========================================= -->
 
-<section>
+<section class="section-wide">
 
   <h2>What I Am Building</h2>
 

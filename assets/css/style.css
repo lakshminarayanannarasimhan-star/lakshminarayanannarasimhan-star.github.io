@@ -212,6 +212,7 @@ section {
   display: flex;
   align-items: center;
   gap: 28px;
+  z-index: 1002; /* above overlay */
 }
 
 /* IMPORTANT: DO NOT APPLY FLEX TO nav-item */
@@ -986,8 +987,8 @@ p {
     pointer-events: none;
 
     transition: opacity 0.3s ease;
-
-    z-index: 1000;
+    pointer-events: none;
+    z-index: 1001;
   }
 
   .nav-overlay.open {
@@ -1009,6 +1010,7 @@ p {
     box-shadow: none;
     border: none;
     padding-left: 10px;
+    z-index: 1003; /* above nav */
   }
 
 }

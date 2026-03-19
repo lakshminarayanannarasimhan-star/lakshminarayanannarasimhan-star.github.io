@@ -39,10 +39,14 @@
    FLOW COLOR SYSTEM
 ========================= */
 
+  --accent-rgb: 99, 102, 241; /* adjust based on your theme */
   --accent-strong: var(--accent);
-  --accent-soft: color-mix(in srgb, var(--accent), transparent 30%);
-  --accent-muted: color-mix(in srgb, var(--accent), transparent 60%);
-  --accent-medium: color-mix(in srgb, var(--accent), black 20%);
+  --flow-1: var(--accent);
+  --flow-2: rgba(var(--accent-rgb), 0.85);
+  --flow-3: rgba(var(--accent-rgb), 0.7);
+  --flow-4: rgba(var(--accent-rgb), 0.55);
+  --flow-5: rgba(var(--accent-rgb), 0.4);
+  
 }
 
 
@@ -2407,15 +2411,18 @@ a {
 
   border: 1px solid var(--border-subtle);
 
+  color: white;
   transition: all 0.2s ease;
-  background-color: var(--card-bg); /* fallback */
+
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.25);
 }
 
 /* FLOW ARROW */
 
 .flow-arrow {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  opacity: 0.6;
 }
 
 .framework-card {
@@ -2557,27 +2564,8 @@ a {
    FLOW STEP COLORS
 ========================= */
 
-.step-1 {
-  background: linear-gradient(135deg, var(--accent-strong), var(--accent-medium));
-  color: white;
-}
-
-.step-2 {
-  background: linear-gradient(135deg, var(--accent-medium), var(--accent));
-  color: white;
-}
-
-.step-3 {
-  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
-  color: white;
-}
-
-.step-4 {
-  background: linear-gradient(135deg, var(--accent-soft), var(--accent-muted));
-  color: var(--text-primary);
-}
-
-.step-5 {
-  background: linear-gradient(135deg, var(--accent-muted), var(--card-bg));
-  color: var(--text-primary);
-}
+.step-1 { background: var(--flow-1); }
+.step-2 { background: var(--flow-2); }
+.step-3 { background: var(--flow-3); }
+.step-4 { background: var(--flow-4); }
+.step-5 { background: var(--flow-5); }

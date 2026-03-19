@@ -27,26 +27,49 @@ title: Home
     </div>
   </div>
 
-  <!-- RIGHT (FEATURED) -->
+  <!-- RIGHT (FEATURED - DYNAMIC) -->
   <div class="hero-right">
 
+    {% assign featured = site.posts | where: "featured", true | first %}
+
+    {% if featured %}
     <div class="featured-card">
 
       <div class="featured-label">Featured</div>
 
       <h3 class="featured-title">
-        Scaling Thinking Systems: From Drills to Strategy Engine
+        <a href="{{ featured.url }}">
+          {{ featured.title }}
+        </a>
       </h3>
 
       <p class="featured-desc">
-        How structured drills evolved into a repeatable system for strategic thinking and execution.
+        {{ featured.excerpt | strip_html | truncate: 140 }}
       </p>
 
-      <a href="/posts/thinking-systems-case-study/" class="card-link">
-        Read Case Study
+      <a href="{{ featured.url }}" class="card-link">
+        Read Insight
       </a>
 
     </div>
+    {% else %}
+
+    <!-- FALLBACK -->
+    <div class="featured-card">
+
+      <div class="featured-label">Featured</div>
+
+      <h3 class="featured-title">
+        No featured insight yet
+      </h3>
+
+      <p class="featured-desc">
+        Publish your first flagship thinking piece to activate this section.
+      </p>
+
+    </div>
+
+    {% endif %}
 
   </div>
 

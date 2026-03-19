@@ -2,16 +2,20 @@
 layout: default
 ---
 
-<article class="container-narrow">
+<div class="reading-progress"></div>
 
-  <div class="page-header">
-    <h1 class="page-title">{{ page.title }}</h1>
+<article class="post-container">
 
-    <p class="page-sub">
+  <!-- HEADER -->
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    <div class="post-meta">
       {{ page.date | date: "%B %d, %Y" }}
-    </p>
-  </div>
+    </div>
+  </header>
 
+  <!-- CONTENT -->
   <div class="post-content">
     {{ content }}
   </div>

@@ -42,10 +42,11 @@
   --accent-rgb: 99, 102, 241; /* adjust based on your theme */
   --accent-strong: var(--accent);
   --flow-1: var(--accent);
-  --flow-2: rgba(var(--accent-rgb), 0.85);
-  --flow-3: rgba(var(--accent-rgb), 0.7);
-  --flow-4: rgba(var(--accent-rgb), 0.55);
-  --flow-5: rgba(var(--accent-rgb), 0.4);
+ --flow-1: var(--accent);
+  --flow-2: color-mix(in srgb, var(--accent), black 15%);
+  --flow-3: color-mix(in srgb, var(--accent), black 30%);
+  --flow-4: color-mix(in srgb, var(--accent), black 45%);
+  --flow-5: color-mix(in srgb, var(--accent), black 60%);
   
 }
 
@@ -2396,26 +2397,28 @@ a {
 .system-flow {
   display: flex;
   align-items: center;
+  justify-content: center; /* 🔥 center align */
   gap: 0.5rem;
-  overflow-x: auto;
-  padding: 0.4rem 0;
+
+  flex-wrap: wrap; /* allows wrapping if needed */
+  text-align: center;
+
+  margin: 0 auto;
 }
 
 /* FLOW CARD */
 
 .flow-card {
-  padding: 0.45rem 0.85rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 999px;
   font-size: 0.85rem;
-  white-space: nowrap;
-
-  border: 1px solid var(--border-subtle);
 
   color: white;
-  transition: all 0.2s ease;
+  border: none;
 
-  backdrop-filter: blur(6px);
-  box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.25);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  transition: all 0.2s ease;
 }
 
 /* FLOW ARROW */
@@ -2557,15 +2560,32 @@ a {
 
 .flow-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  filter: brightness(1.1);
 }
 
 /* =========================
    FLOW STEP COLORS
 ========================= */
 
-.step-1 { background: var(--flow-1); }
+.step-1 {
+  background: var(--accent);
+  color: white !important;
+}
 .step-2 { background: var(--flow-2); }
 .step-3 { background: var(--flow-3); }
 .step-4 { background: var(--flow-4); }
 .step-5 { background: var(--flow-5); }
+
+@media (max-width: 768px) {
+  .system-flow {
+    justify-content: flex-start; /* better for scrolling */
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.system-flow-wrapper {
+  display: flex;
+  justify-content: center;
+}

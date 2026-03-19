@@ -78,7 +78,7 @@ title: Home
 ========================================= -->
 
 <section class="section-wide">
-
+<div class="system-flow-wrapper">
  <div class="system-flow">
 
   <div class="flow-card step-1">Ambiguity</div>
@@ -95,6 +95,7 @@ title: Home
 
   <div class="flow-card step-5">Feedback</div>
 
+</div>
 </div>
 
 </section>

@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Strategic Thinking"
+title: "First Principles Strategy"
 date: 2026-03-19
-tags: [strategy, thinking]
-featuured: true
+
+category: strategy
+tags: [first-principles, decision-making]
+
+featured: true
+excerpt: "How to think from first principles in strategy."
 ---
 
 ## Context

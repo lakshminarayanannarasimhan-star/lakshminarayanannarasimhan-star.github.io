@@ -2497,3 +2497,24 @@ a {
     margin-top: 1.5rem;
   }
 }
+
+.system-page .problem-inline {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.system-page .how-it-works {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.system-page .step {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.system-page .section-title {
+  margin-bottom: 0.6rem;
+}

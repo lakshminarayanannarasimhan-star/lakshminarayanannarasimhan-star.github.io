@@ -85,35 +85,15 @@ permalink: /system/
 <!-- CORE LOOP -->
 
 <section class="system-section">
-  <h2 class="section-title">The Core Loop</h2>
-
-  <div class="system-flow">
-    <div class="flow-card">Ambiguity</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Structure</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Decision</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Execution</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Feedback</div>
-  </div>
-
-  <p class="section-subtext">
-    A repeatable loop for converting unclear situations into structured execution.
-  </p>
-</section>
-
-<section class="system-section">
 
   <h2 class="section-title">The Indispensable System</h2>
 
   <!-- Compact Problem -->
-  <div class="grid grid-3 compact">
-    <div class="card">Strategy → Execution breaks</div>
-    <div class="card">AI → No workflows</div>
-    <div class="card">Ideas → Decisions stall</div>
-  </div>
+  <div class="problem-inline">
+  Strategy → Execution breaks ·
+  Ideas → Decisions stall ·
+  Systems → Missing
+</div>
 
   <!-- Core Loop -->
   <div class="system-flow">
@@ -164,6 +144,36 @@ permalink: /system/
     <div class="framework-card">
       <h3>E — Evolve</h3>
       <p>Improve continuously</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="system-section">
+
+  <h2 class="section-title">How It Works</h2>
+
+  <div class="how-it-works">
+
+    <div class="step">
+      <strong>1.</strong> Ambiguity is clarified into structure
+    </div>
+
+    <div class="step">
+      <strong>2.</strong> Structure enables better decisions
+    </div>
+
+    <div class="step">
+      <strong>3.</strong> Decisions drive execution
+    </div>
+
+    <div class="step">
+      <strong>4.</strong> Execution generates feedback
+    </div>
+
+    <div class="step">
+      <strong>5.</strong> Feedback improves the system
     </div>
 
   </div>

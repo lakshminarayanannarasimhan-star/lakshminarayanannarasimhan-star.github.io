@@ -397,6 +397,10 @@ section {
   animation: heroFadeLift 0.8s ease-out both;
 }
 
+.hero-centered {
+  padding: 3rem 1.25rem 2rem;
+}
+
 .hero-title {
 	font-size: clamp(40px, 6vw, 64px);
 	font-weight: 700;
@@ -2367,9 +2371,9 @@ a {
 /* SYSTEM PAGE */
 
 .system-section {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 2.5rem 1.25rem; /* reduced from 4rem */
 }
 
 .system-flow {
@@ -2381,11 +2385,13 @@ a {
 }
 
 .flow-card {
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 0.9rem;
   border-radius: 999px;
   background: var(--card-bg);
   border: 1px solid var(--border-subtle);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .framework-card {

@@ -8,10 +8,10 @@ permalink: /system/
   <p class="hero-eyebrow">SYSTEM</p>
   <h1 class="hero-title">The Indispensable System</h1>
   <p class="hero-subtitle">
-    Turning ambiguity into execution using structured thinking and AI.
+    Turning ambiguity into execution through structured thinking systems.
   </p>
   <p class="hero-description">
-    A system for designing decision frameworks, execution loops, and AI-powered workflows that convert strategy into measurable outcomes.
+    A system for designing decision frameworks, execution loops, and Decision frameworks and execution loops that convert strategy into measurable outcomes.
   </p>
 
   <div class="hero-actions">
@@ -93,7 +93,7 @@ permalink: /system/
 
     <div class="framework-card">
       <h3>E — Extract</h3>
-      <p>What is actually happening</p>
+      <p><p>Clarify reality from ambiguity</p></p>
     </div>
 
     <div class="framework-card">

@@ -1732,3 +1732,80 @@ p {
 .card-link {
   margin-top: 14px;
 }
+
+/* =========================================
+   KNOWLEDGE LAYOUT — PRODUCT LEVEL
+   ========================================= */
+
+.knowledge-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* SIDEBAR */
+
+.knowledge-sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+/* NAV */
+
+.ks-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ks-item {
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+
+  color: var(--muted);
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+.ks-item:hover {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+/* 🔥 ACTIVE STATE (VERY IMPORTANT) */
+.ks-item.active {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* CONTENT */
+
+.knowledge-content {
+  max-width: 760px;
+}
+
+/* SECTION BLOCK */
+
+.knowledge-content section {
+  margin-top: 40px;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+  .knowledge-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .knowledge-sidebar {
+    position: relative;
+    top: 0;
+  }
+}

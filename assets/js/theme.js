@@ -104,3 +104,12 @@
 
 })();
 
+(function () {
+  const links = document.querySelectorAll(".ks-item");
+
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+})();

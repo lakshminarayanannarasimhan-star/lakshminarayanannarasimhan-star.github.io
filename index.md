@@ -79,7 +79,7 @@ title: Home
 
 <section class="section-wide">
 
-  <div class="system-flow">
+ <div class="system-flow">
 
   <div class="flow-card step-1">Ambiguity</div>
   <div class="flow-arrow">→</div>

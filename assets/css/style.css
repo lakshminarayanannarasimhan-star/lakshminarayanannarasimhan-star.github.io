@@ -35,6 +35,10 @@
 	--measure: 680px;
 	--spacing-section: 80px;
 
+  /* =========================
+   FLOW COLOR SYSTEM
+========================= */
+
   --accent-strong: var(--accent);
   --accent-medium: color-mix(in srgb, var(--accent), black 20%);
   --accent-soft: color-mix(in srgb, var(--accent), white 20%);
@@ -2381,22 +2385,36 @@ a {
   padding: 2.5rem 1.25rem; /* reduced from 4rem */
 }
 
+/* =========================
+   FLOW SYSTEM (HOMEPAGE)
+========================= */
+
 .system-flow {
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.4rem 0;
 }
 
+/* FLOW CARD */
+
 .flow-card {
-  padding: 0.5rem 0.9rem;
+  padding: 0.45rem 0.85rem;
   border-radius: 999px;
   font-size: 0.85rem;
   white-space: nowrap;
 
   border: 1px solid var(--border-subtle);
+
   transition: all 0.2s ease;
+}
+
+/* FLOW ARROW */
+
+.flow-arrow {
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
 
 .framework-card {
@@ -2534,6 +2552,10 @@ a {
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
+/* =========================
+   FLOW STEP COLORS
+========================= */
+
 .step-1 {
   background: linear-gradient(135deg, var(--accent-strong), var(--accent-medium));
   color: white;
@@ -2557,8 +2579,4 @@ a {
 .step-5 {
   background: linear-gradient(135deg, var(--accent-muted), var(--card-bg));
   color: var(--text-primary);
-}
-.flow-arrow {
-  color: var(--text-muted);
-  padding: 0 0.3rem;
 }

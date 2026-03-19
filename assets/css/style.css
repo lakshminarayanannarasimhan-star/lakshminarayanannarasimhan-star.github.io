@@ -2392,7 +2392,7 @@ a {
   flex-shrink: 0;
 
   /* NEW */
-  color: white;
+  color: var(--text-primary);
   border: 1px solid var(--border-subtle);
 
   background: linear-gradient(

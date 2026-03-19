@@ -18,6 +18,12 @@ layout: default
     </header>
 
     <div class="post-content" id="postContent">
+      {% if page.summary %}
+<div class="ai-summary">
+  <strong>Summary:</strong>
+  {{ page.summary }}
+</div>
+{% endif %}
       {{ content }}
     </div>
 

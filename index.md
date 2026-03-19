@@ -13,14 +13,13 @@ title: Home
   <!-- LEFT -->
   <div class="hero-left">
     <h1 class="hero-title">
-      Thinking Systems for Strategy, AI & Execution
-    </h1>
+  I build thinking systems for strategy, AI, and execution at scale
+</h1>
 
-    <p class="hero-sub">
-      A structured platform to master strategic thinking, AI, and problem solving
-      through drills, systems, and real-world patterns.
-    </p>
-
+<p class="hero-sub">
+  1600+ drills. Structured systems. Real-world execution.  
+  Converting thinking into repeatable, scalable outcomes.
+</p>
     <div class="hero-actions">
       <a href="/competencies/" class="btn-primary">Explore Systems</a>
       <a href="/about" class="btn-secondary">About</a>
@@ -75,6 +74,38 @@ title: Home
 
 </section>
 
+<!-- =========================================
+     POSITIONING STRIP
+========================================= -->
+
+<section class="section-wide">
+
+  <div class="cred-grid">
+
+    <div class="cred-card">
+      <div class="cred-title">Strategic Thinking Systems</div>
+      <div class="cred-desc">
+        Built structured cognitive frameworks across decision-making and execution.
+      </div>
+    </div>
+
+    <div class="cred-card">
+      <div class="cred-title">AI + Execution Integration</div>
+      <div class="cred-desc">
+        Applying AI to real-world systems, not just experimentation.
+      </div>
+    </div>
+
+    <div class="cred-card">
+      <div class="cred-title">Operator Mindset</div>
+      <div class="cred-desc">
+        Focused on outcomes, systems, and scaling execution.
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 <!-- =========================================
      CREDIBILITY

@@ -2327,6 +2327,18 @@ section {
 .btn-ghost:hover {
   transform: translateY(-1px);
 }
+/* =========================================
+   AI SUMMARY BLOCK
+   ========================================= */
+
+.ai-summary {
+  background: var(--primary-soft);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
 
 /* =========================================
    LINK POLISH

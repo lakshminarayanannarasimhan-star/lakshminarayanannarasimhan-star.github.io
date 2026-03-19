@@ -1809,3 +1809,37 @@ p {
     top: 0;
   }
 }
+
+/* SEARCH */
+
+.ks-search {
+  margin-bottom: 20px;
+}
+
+.ks-search input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+/* SEARCH + FILTER POLISH */
+
+.ks-search input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* tag hover */
+
+.tag {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: var(--primary);
+  color: white;
+}

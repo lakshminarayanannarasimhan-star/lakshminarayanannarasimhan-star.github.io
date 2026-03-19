@@ -33,13 +33,17 @@ permalink: /knowledge/
 
     <!-- CONTENT -->
     <div class="knowledge-content">
+    <div class="ks-search">
+  <input type="text" id="searchInput" placeholder="Search thinking..." />
+</div>
 
       <div class="card-grid" id="ksGrid">
 
         {% for post in site.posts %}
         <div class="card ks-card"
-             data-category="{{ post.category }}"
-             data-tags="{{ post.tags | join: ',' }}">
+        id="{{ post.category }}"
+        data-category="{{ post.category }}"
+        data-tags="{{ post.tags | join: ',' }}">
 
           <h3>
             <a href="{{ post.url }}">{{ post.title }}</a>
@@ -55,7 +59,7 @@ permalink: /knowledge/
 
           <div class="post-tags">
             {% for tag in post.tags %}
-              <span class="tag">{{ tag }}</span>
+              <span class="tag" data-tag="{{ tag }}">{{ tag }}</span>
             {% endfor %}
           </div>
 
@@ -75,11 +79,11 @@ permalink: /knowledge/
 </section>
 
 
-<!-- FILTER SCRIPT -->
 <script>
 const items = document.querySelectorAll(".ks-item");
 const cards = document.querySelectorAll(".ks-card");
 
+// CLICK FILTER (existing behavior)
 items.forEach(item => {
   item.addEventListener("click", () => {
 
@@ -97,7 +101,65 @@ items.forEach(item => {
         card.style.display = "none";
       }
     });
+  });
+});
 
+// 🔥 SCROLL ACTIVE (NEW)
+window.addEventListener("scroll", () => {
+  let current = "all";
+
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+
+    if (rect.top < 200) {
+      current = card.dataset.category;
+    }
+  });
+
+  items.forEach(item => {
+    item.classList.remove("active");
+
+    if (item.dataset.filter === current) {
+      item.classList.add("active");
+    }
+  });
+});
+</script>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+
+    if (text.includes(query)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+</script>
+
+<script>
+const tags = document.querySelectorAll(".tag");
+
+tags.forEach(tag => {
+  tag.addEventListener("click", () => {
+    const selected = tag.dataset.tag;
+
+    cards.forEach(card => {
+      const tags = card.dataset.tags;
+
+      if (tags.includes(selected)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
   });
 });
 </script>

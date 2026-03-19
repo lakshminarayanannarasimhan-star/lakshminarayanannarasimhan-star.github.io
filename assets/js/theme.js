@@ -113,3 +113,73 @@
     }
   });
 })();
+
+/* =========================================
+   READING PROGRESS
+   ========================================= */
+
+(function () {
+  const bar = document.querySelector(".reading-progress");
+  if (!bar) return;
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+
+    const progress = (scrollTop / docHeight) * 100;
+    bar.style.width = progress + "%";
+  });
+})();
+
+/* =========================================
+   TABLE OF CONTENTS
+   ========================================= */
+
+(function () {
+  const content = document.getElementById("postContent");
+  const toc = document.getElementById("tocList");
+
+  if (!content || !toc) return;
+
+  const headings = content.querySelectorAll("h2, h3");
+
+  headings.forEach((heading, index) => {
+    const id = "section-" + index;
+    heading.id = id;
+
+    const link = document.createElement("a");
+    link.href = "#" + id;
+    link.textContent = heading.textContent;
+
+    if (heading.tagName === "H3") {
+      link.style.marginLeft = "12px";
+    }
+
+    toc.appendChild(link);
+  });
+
+  /* ACTIVE HIGHLIGHT */
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    headings.forEach(heading => {
+      const rect = heading.getBoundingClientRect();
+
+      if (rect.top < 120) {
+        current = heading.id;
+      }
+    });
+
+    const links = toc.querySelectorAll("a");
+
+    links.forEach(link => {
+      link.classList.remove("active");
+
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+})();

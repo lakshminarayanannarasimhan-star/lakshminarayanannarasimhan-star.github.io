@@ -13,8 +13,7 @@ permalink: /posts/
     </p>
   </div>
 
-  {% assign posts = site.posts | where_exp: "post", "post.featured != true" %}
-
+{% assign posts = site.posts %}
   <div class="card-grid">
 
     {% for post in posts %}

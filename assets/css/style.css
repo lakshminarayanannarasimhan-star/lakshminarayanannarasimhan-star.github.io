@@ -1843,3 +1843,523 @@ p {
   background: var(--primary);
   color: white;
 }
+
+/* =========================================
+   WORLD-CLASS SIDEBAR
+   ========================================= */
+
+.knowledge-sidebar {
+  position: sticky;
+  top: 100px;
+
+  padding-right: 12px;
+}
+
+.ks-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.ks-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ks-item {
+  display: inline-block;
+  width: fit-content;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  font-size: 13px;
+  color: var(--muted);
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ks-item:hover {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+/* 🔥 CLEAN ACTIVE (no heavy gradient) */
+.ks-item.active {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* =========================================
+   INTERACTION POLISH
+   ========================================= */
+
+/* CARD HOVER — ELEVATION SYSTEM */
+.ks-card {
+  transition: all 0.25s ease;
+}
+
+.ks-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* TAGS */
+
+.tag {
+  cursor: pointer;
+  font-size: 12px;
+
+  padding: 3px 8px;
+  border-radius: 999px;
+
+  background: var(--surface-soft);
+  color: var(--muted);
+
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* SEARCH */
+
+.ks-search input {
+  transition: all 0.2s ease;
+}
+
+.ks-search input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+}
+
+/* =========================================
+   POST — WORLD CLASS READING
+   ========================================= */
+
+.post-container {
+  max-width: 760px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-title {
+  font-size: clamp(36px, 5vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.post-meta {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* CONTENT */
+
+.post-content {
+  font-size: 19px;
+  line-height: 1.85;
+  color: var(--text);
+}
+
+/* headings */
+
+.post-content h2 {
+  margin-top: 48px;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.post-content h3 {
+  margin-top: 32px;
+  font-size: 22px;
+}
+
+/* paragraphs */
+
+.post-content p {
+  margin-top: 18px;
+}
+
+/* lists */
+
+.post-content ul {
+  margin-top: 16px;
+  padding-left: 22px;
+}
+
+.post-content li {
+  margin-bottom: 8px;
+}
+
+/* blockquote */
+
+.post-content blockquote {
+  margin: 24px 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--primary);
+  color: var(--muted);
+}
+
+/* links */
+
+.post-content a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   READING PROGRESS BAR
+   ========================================= */
+
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+
+  width: 0%;
+  z-index: 9999;
+}
+
+.post-container {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   POST LAYOUT (WITH TOC)
+   ========================================= */
+
+.post-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 760px) 220px;
+  gap: 60px;
+
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* TOC */
+
+.toc {
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+}
+
+.toc-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.toc a {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+
+  margin-bottom: 8px;
+  transition: all 0.2s ease;
+}
+
+.toc a:hover {
+  color: var(--primary);
+}
+
+/* active section */
+
+.toc a.active {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* MOBILE */
+
+@media (max-width: 1024px) {
+  .post-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .toc {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================
+   FIX: REMOVE UNDERLINE + CLEAN TITLES
+   ========================================= */
+
+/* remove underline everywhere */
+a {
+  text-decoration: none;
+}
+
+/* card titles (posts + knowledge) */
+.card h3 a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* hover effect */
+.card h3 a:hover {
+  color: var(--primary);
+}
+
+/* featured card title */
+.featured-title {
+  font-weight: 600;
+}
+
+/* =========================================
+   CARD HOVER — PREMIUM POLISH
+   ========================================= */
+
+/* smooth transition */
+.card {
+  transition: all 0.25s ease;
+}
+
+/* lift + depth */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* title micro movement */
+.card h3 a {
+  transition: all 0.2s ease;
+}
+
+.card:hover h3 a {
+  transform: translateX(2px);
+}
+
+/* =========================================
+   FEATURED CARD — ELITE UPGRADE
+   ========================================= */
+
+.featured-card {
+  position: relative;
+
+  border-radius: var(--radius-lg);
+  padding: 24px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  transition: all 0.3s ease;
+
+  /* subtle premium glow */
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08),
+    0 0 0 1px rgba(99,102,241,0.05);
+}
+
+/* hover = elevate + glow */
+.featured-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.12),
+    0 0 0 1px rgba(99,102,241,0.15);
+}
+
+/* top accent line */
+.featured-card::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+}
+
+/* label refinement */
+.featured-label {
+  font-size: 12px;
+  font-weight: 600;
+
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+/* title stronger */
+.featured-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* description softer */
+.featured-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* =========================================
+   FINAL POLISH — SMOOTH EXPERIENCE
+   ========================================= */
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* better rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================
+   PAGE FADE IN
+   ========================================= */
+
+main {
+  animation: pageFade 0.5s ease-out;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   SPACING RHYTHM
+   ========================================= */
+
+section {
+  margin-top: 72px;   /* cleaner than mixed spacing */
+}
+
+/* tighten hero */
+.hero {
+  margin-top: 40px;
+}
+
+/* consistency */
+.page-header {
+  margin-bottom: 32px;
+}
+
+/* =========================================
+   BUTTON POLISH
+   ========================================= */
+
+.btn-primary,
+.btn-secondary,
+.btn-ghost {
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-ghost:hover {
+  transform: translateY(-1px);
+}
+/* =========================================
+   AI SUMMARY BLOCK
+   ========================================= */
+
+.ai-summary {
+  background: var(--primary-soft);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   LINK POLISH
+   ========================================= */
+
+a {
+  transition: color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+
+}

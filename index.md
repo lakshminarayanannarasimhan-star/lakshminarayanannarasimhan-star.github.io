@@ -106,6 +106,38 @@ title: Home
   </div>
 
 </section>
+<!-- =========================================
+     WHO I AM
+========================================= -->
+
+<section class="section-wide">
+
+  <div class="cred-grid">
+
+    <div class="cred-card">
+      <div class="cred-title">System Builder</div>
+      <div class="cred-desc">
+        Designing structured thinking frameworks for strategy and execution.
+      </div>
+    </div>
+
+    <div class="cred-card">
+      <div class="cred-title">AI Integrator</div>
+      <div class="cred-desc">
+        Applying AI to real-world workflows, not just experimentation.
+      </div>
+    </div>
+
+    <div class="cred-card">
+      <div class="cred-title">Execution Operator</div>
+      <div class="cred-desc">
+        Focused on outcomes, scale, and system-driven execution.
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 <!-- =========================================
      CREDIBILITY

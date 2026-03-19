@@ -85,29 +85,68 @@ permalink: /knowledge/
 <script>
 const items = document.querySelectorAll(".ks-item");
 const cards = document.querySelectorAll(".ks-card");
+const tags = document.querySelectorAll(".tag");
+const searchInput = document.getElementById("searchInput");
 
-// CLICK FILTER (existing behavior)
+let activeCategory = "all";
+let activeTag = null;
+let searchQuery = "";
+
+/* CORE FILTER ENGINE */
+function filterCards() {
+  cards.forEach(card => {
+    const category = card.dataset.category;
+    const tags = card.dataset.tags;
+    const text = card.innerText.toLowerCase();
+
+    let visible = true;
+
+    if (activeCategory !== "all" && category !== activeCategory) {
+      visible = false;
+    }
+
+    if (activeTag && !tags.includes(activeTag)) {
+      visible = false;
+    }
+
+    if (searchQuery && !text.includes(searchQuery)) {
+      visible = false;
+    }
+
+    card.style.display = visible ? "block" : "none";
+  });
+}
+
+/* CATEGORY */
 items.forEach(item => {
   item.addEventListener("click", () => {
 
     items.forEach(i => i.classList.remove("active"));
     item.classList.add("active");
 
-    const filter = item.dataset.filter;
+    activeCategory = item.dataset.filter;
+    activeTag = null;
 
-    cards.forEach(card => {
-      const category = card.dataset.category;
-
-      if (filter === "all" || category === filter) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
+    filterCards();
   });
 });
 
-// 🔥 SCROLL ACTIVE (NEW)
+/* TAG */
+tags.forEach(tag => {
+  tag.addEventListener("click", () => {
+    activeTag = tag.dataset.tag;
+    filterCards();
+  });
+});
+
+/* SEARCH */
+searchInput.addEventListener("input", () => {
+  searchQuery = searchInput.value.toLowerCase();
+  filterCards();
+});
+</script>
+
+<script>
 window.addEventListener("scroll", () => {
   let current = "all";
 
@@ -125,44 +164,6 @@ window.addEventListener("scroll", () => {
     if (item.dataset.filter === current) {
       item.classList.add("active");
     }
-  });
-});
-</script>
-
-<script>
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("input", () => {
-  const query = searchInput.value.toLowerCase();
-
-  cards.forEach(card => {
-    const text = card.innerText.toLowerCase();
-
-    if (text.includes(query)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  });
-});
-</script>
-
-<script>
-const tags = document.querySelectorAll(".tag");
-
-tags.forEach(tag => {
-  tag.addEventListener("click", () => {
-    const selected = tag.dataset.tag;
-
-    cards.forEach(card => {
-      const tags = card.dataset.tags;
-
-      if (tags.includes(selected)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
   });
 });
 </script>

@@ -1843,3 +1843,100 @@ p {
   background: var(--primary);
   color: white;
 }
+
+/* =========================================
+   WORLD-CLASS SIDEBAR
+   ========================================= */
+
+.knowledge-sidebar {
+  position: sticky;
+  top: 100px;
+
+  padding-right: 12px;
+}
+
+.ks-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.ks-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ks-item {
+  display: inline-block;
+  width: fit-content;
+
+  padding: 6px 10px;
+  border-radius: 6px;
+
+  font-size: 13px;
+  color: var(--muted);
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ks-item:hover {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+/* 🔥 CLEAN ACTIVE (no heavy gradient) */
+.ks-item.active {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* =========================================
+   INTERACTION POLISH
+   ========================================= */
+
+/* CARD HOVER — ELEVATION SYSTEM */
+.ks-card {
+  transition: all 0.25s ease;
+}
+
+.ks-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* TAGS */
+
+.tag {
+  cursor: pointer;
+  font-size: 12px;
+
+  padding: 3px 8px;
+  border-radius: 999px;
+
+  background: var(--surface-soft);
+  color: var(--muted);
+
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* SEARCH */
+
+.ks-search input {
+  transition: all 0.2s ease;
+}
+
+.ks-search input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+}

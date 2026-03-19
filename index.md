@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 
-
 <!-- =========================================
      HERO
 ========================================= -->
@@ -13,16 +12,17 @@ title: Home
   <!-- LEFT -->
   <div class="hero-left">
     <h1 class="hero-title">
-  I build thinking systems for strategy, AI, and execution at scale
-</h1>
+      Building The Indispensable System
+    </h1>
 
-<p class="hero-sub">
-  1600+ drills. Structured systems. Real-world execution.  
-  Converting thinking into repeatable, scalable outcomes.
-</p>
+    <p class="hero-sub">
+      Turning ambiguity into execution through structured thinking systems.  
+      Converting strategy into decisions, and decisions into outcomes.
+    </p>
+
     <div class="hero-actions">
-      <a href="/competencies/" class="btn-primary">Explore Systems</a>
-      <a href="/about" class="btn-secondary">About</a>
+      <a href="/system/" class="btn-primary">Explore the System</a>
+      <a href="/posts/" class="btn-secondary">View Applications</a>
     </div>
   </div>
 
@@ -53,7 +53,6 @@ title: Home
     </div>
     {% else %}
 
-    <!-- FALLBACK -->
     <div class="featured-card">
 
       <div class="featured-label">Featured</div>
@@ -75,39 +74,29 @@ title: Home
 </section>
 
 <!-- =========================================
-     POSITIONING STRIP
+     SYSTEM PREVIEW
 ========================================= -->
 
 <section class="section-wide">
 
-  <div class="cred-grid">
+  <div class="system-flow">
 
-    <div class="cred-card">
-      <div class="cred-title">Strategic Thinking Systems</div>
-      <div class="cred-desc">
-        Built structured cognitive frameworks across decision-making and execution.
-      </div>
-    </div>
-
-    <div class="cred-card">
-      <div class="cred-title">AI + Execution Integration</div>
-      <div class="cred-desc">
-        Applying AI to real-world systems, not just experimentation.
-      </div>
-    </div>
-
-    <div class="cred-card">
-      <div class="cred-title">Operator Mindset</div>
-      <div class="cred-desc">
-        Focused on outcomes, systems, and scaling execution.
-      </div>
-    </div>
+    <div class="flow-card">Ambiguity</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Structure</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Decision</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Execution</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Feedback</div>
 
   </div>
 
 </section>
+
 <!-- =========================================
-     WHO I AM
+     POSITIONING
 ========================================= -->
 
 <section class="section-wide">
@@ -115,23 +104,23 @@ title: Home
   <div class="cred-grid">
 
     <div class="cred-card">
-      <div class="cred-title">System Builder</div>
+      <div class="cred-title">System Design</div>
       <div class="cred-desc">
-        Designing structured thinking frameworks for strategy and execution.
+        Building structured frameworks that convert strategy into execution.
       </div>
     </div>
 
     <div class="cred-card">
-      <div class="cred-title">AI Integrator</div>
+      <div class="cred-title">Decision Systems</div>
       <div class="cred-desc">
-        Applying AI to real-world workflows, not just experimentation.
+        Designing repeatable decision-making models under complexity.
       </div>
     </div>
 
     <div class="cred-card">
-      <div class="cred-title">Execution Operator</div>
+      <div class="cred-title">Execution Architecture</div>
       <div class="cred-desc">
-        Focused on outcomes, scale, and system-driven execution.
+        Translating systems into real-world execution and outcomes.
       </div>
     </div>
 
@@ -151,30 +140,29 @@ title: Home
       <div class="cred-number">1600+</div>
       <div class="cred-title">Strategic Drills Completed</div>
       <div class="cred-desc">
-        Structured training across systems thinking, execution discipline, and AI.
+        Structured training across systems thinking, execution discipline, and decision frameworks.
       </div>
     </div>
 
     <div class="cred-card">
       <div class="cred-number">3</div>
-      <div class="cred-title">Thinking Systems Built</div>
+      <div class="cred-title">Systems Built</div>
       <div class="cred-desc">
-        Elite Think Tank, AI Mastery, and execution frameworks under development.
+        Think Tank, AI Mastery, and execution systems under continuous development.
       </div>
     </div>
 
     <div class="cred-card">
-      <div class="cred-number">Large Scale</div>
-      <div class="cred-title">Team Building & Execution</div>
+      <div class="cred-number">Execution</div>
+      <div class="cred-title">Real-World Application</div>
       <div class="cred-desc">
-        Built and operationalized high-performing teams with execution rigor.
+        Built and operationalized systems with real execution outcomes.
       </div>
     </div>
 
   </div>
 
 </section>
-
 
 <!-- =========================================
      DASHBOARD (CORE DIFFERENTIATOR)
@@ -185,9 +173,9 @@ title: Home
   <div class="dashboard">
 
     <div class="dashboard-header">
-      <h2>Report Dashboard</h2>
+      <h2>System Dashboard</h2>
       <div class="dashboard-sub">
-        Live proof of thinking, systems, and execution capability
+        Live proof of thinking systems, decision frameworks, and execution capability
       </div>
     </div>
 
@@ -227,7 +215,6 @@ title: Home
 
       </div>
 
-
       <!-- AI Mastery -->
       <div class="dashboard-card">
 
@@ -237,7 +224,7 @@ title: Home
         </div>
 
         <div class="dashboard-meta">
-          Applied AI · Execution systems · Real-world use cases
+          Applied systems · Workflow design · Execution frameworks
         </div>
 
         <div class="progress-block">

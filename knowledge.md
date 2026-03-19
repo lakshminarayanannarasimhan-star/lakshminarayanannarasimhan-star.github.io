@@ -4,6 +4,12 @@ title: Knowledge System
 permalink: /knowledge/
 ---
 
+---
+layout: default
+title: Knowledge System
+permalink: /knowledge/
+---
+
 <section class="section-wide">
 
   <!-- HEADER -->
@@ -14,7 +20,7 @@ permalink: /knowledge/
     </p>
   </div>
 
-  <!-- 🔥 LAYOUT WRAPPER (CRITICAL) -->
+  <!-- LAYOUT WRAPPER -->
   <div class="knowledge-layout">
 
     <!-- SIDEBAR -->
@@ -33,17 +39,20 @@ permalink: /knowledge/
 
     <!-- CONTENT -->
     <div class="knowledge-content">
-    <div class="ks-search">
-  <input type="text" id="searchInput" placeholder="Search thinking..." />
-</div>
 
+      <!-- SEARCH -->
+      <div class="ks-search">
+        <input type="text" id="searchInput" placeholder="Search thinking..." />
+      </div>
+
+      <!-- GRID -->
       <div class="card-grid" id="ksGrid">
 
         {% for post in site.posts %}
         <div class="card ks-card"
-        id="{{ post.category }}"
-        data-category="{{ post.category }}"
-        data-tags="{{ post.tags | join: ',' }}">
+             id="{{ post.category }}"
+             data-category="{{ post.category }}"
+             data-tags="{{ post.tags | join: ',' }}">
 
           <h3>
             <a href="{{ post.url }}">{{ post.title }}</a>
@@ -74,7 +83,7 @@ permalink: /knowledge/
 
     </div>
 
-  <!-- </div> -->
+  </div> <!-- 🔥 FIXED -->
 
 </section>
 

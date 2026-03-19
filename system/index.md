@@ -6,6 +6,8 @@ permalink: /system/
 
 <div class="system-page">
 
+<!-- HERO -->
+
 <section class="hero hero-split">
 
   <!-- LEFT -->
@@ -59,30 +61,7 @@ permalink: /system/
 
 </section>
 
-<!-- PROBLEM -->
-
-<section class="system-section">
-  <h2 class="section-title">The Execution Gap</h2>
-
-  <div class="grid grid-3">
-    <div class="card hover-lift">
-      <h3>Strategy exists</h3>
-      <p>Execution breaks</p>
-    </div>
-
-    <div class="card hover-lift">
-      <h3>AI exists</h3>
-      <p>Workflows don’t</p>
-    </div>
-
-    <div class="card hover-lift">
-      <h3>Ideas exist</h3>
-      <p>Decisions stall</p>
-    </div>
-  </div>
-</section>
-
-<!-- CORE LOOP -->
+<!-- SYSTEM (CORE EXPLANATION) -->
 
 <section class="system-section">
 
@@ -90,30 +69,22 @@ permalink: /system/
 
   <!-- Compact Problem -->
   <div class="problem-inline">
-  Strategy → Execution breaks ·
-  Ideas → Decisions stall ·
-  Systems → Missing
-</div>
-
-  <!-- Core Loop -->
-  <div class="system-flow">
-    <div class="flow-card">Ambiguity</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Structure</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Decision</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Execution</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Feedback</div>
+    Strategy → Execution breaks ·
+    Ideas → Decisions stall ·
+    Systems → Missing
   </div>
+
+  <!-- Context Line -->
+  <p class="section-subtext">
+    The system operates through a structured execution framework:
+  </p>
 
   <!-- Framework -->
   <div class="grid-2">
 
     <div class="framework-card">
       <h3>E — Extract</h3>
-      <p><p>Clarify reality from ambiguity</p></p>
+      <p>Clarify reality from ambiguity</p>
     </div>
 
     <div class="framework-card">
@@ -149,6 +120,8 @@ permalink: /system/
   </div>
 
 </section>
+
+<!-- HOW IT WORKS -->
 
 <section class="system-section">
 
@@ -205,4 +178,5 @@ permalink: /system/
 
   <a href="/knowledge/" class="btn btn-secondary">Start Exploring</a>
 </section>
+
 </div>

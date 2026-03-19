@@ -14,7 +14,7 @@ permalink: /knowledge/
     </p>
   </div>
 
-  <!-- 🔥 CRITICAL WRAPPER -->
+  <!-- 🔥 LAYOUT WRAPPER (CRITICAL) -->
   <div class="knowledge-layout">
 
     <!-- SIDEBAR -->
@@ -23,10 +23,10 @@ permalink: /knowledge/
       <div class="ks-title">Knowledge</div>
 
       <div class="ks-nav">
-        <div class="ks-item active" data-filter="all">All</div>
-        <div class="ks-item" data-filter="strategy">Strategy</div>
-        <div class="ks-item" data-filter="ai">AI</div>
-        <div class="ks-item" data-filter="systems">Systems</div>
+        <span class="ks-item active" data-filter="all">All</span>
+        <span class="ks-item" data-filter="strategy">Strategy</span>
+        <span class="ks-item" data-filter="ai">AI</span>
+        <span class="ks-item" data-filter="systems">Systems</span>
       </div>
 
     </aside>

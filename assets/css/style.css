@@ -2437,3 +2437,63 @@ a {
 .system-section + .system-section {
   border-top: 1px solid var(--border-subtle);
 }
+
+/* =========================
+   SYSTEM PAGE ONLY
+========================= */
+
+.system-page .hero-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.2rem 1.25rem;
+}
+
+.system-page .hero-left {
+  max-width: 520px;
+}
+
+.system-page .hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.system-page .system-preview {
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255,255,255,0.02);
+}
+
+.system-page .framework-mini {
+  margin-top: 1rem;
+}
+
+.system-page .framework-row {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.system-page .framework-row span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Mobile safe */
+
+@media (max-width: 768px) {
+  .system-page .hero-split {
+    grid-template-columns: 1fr;
+  }
+
+  .system-page .hero-right {
+    margin-top: 1.5rem;
+  }
+}

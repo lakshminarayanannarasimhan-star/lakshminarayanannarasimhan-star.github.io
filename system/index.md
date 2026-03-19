@@ -4,19 +4,59 @@ title: The Indispensable System
 permalink: /system/
 ---
 
-<section class="hero hero-centered">
-  <p class="hero-eyebrow">SYSTEM</p>
-  <h1 class="hero-title">The Indispensable System</h1>
-  <p class="hero-subtitle">
-    Turning ambiguity into execution through structured thinking systems.
-  </p>
-  <p class="hero-description">
-    A system for designing decision frameworks, execution loops, and Decision frameworks and execution loops that convert strategy into measurable outcomes.
-  </p>
+<div class="system-page">
 
-  <div class="hero-actions">
-    <a href="/posts/" class="btn btn-primary">Explore Applications</a>
+<section class="hero hero-split">
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <p class="hero-eyebrow">SYSTEM</p>
+
+    <h1 class="hero-title">The Indispensable System</h1>
+
+    <p class="hero-subtitle">
+      Turning ambiguity into execution through structured thinking systems.
+    </p>
+
+    <p class="hero-description">
+      A system for designing decision frameworks and execution loops that convert strategy into measurable outcomes.
+    </p>
+
+    <div class="hero-actions">
+      <a href="/posts/" class="btn btn-primary">Explore Applications</a>
+    </div>
   </div>
+
+  <!-- RIGHT -->
+  <div class="hero-right">
+
+    <div class="system-preview">
+
+      <div class="system-flow">
+        <div class="flow-card">Ambiguity</div>
+        <div class="flow-card">→</div>
+        <div class="flow-card">Structure</div>
+        <div class="flow-card">→</div>
+        <div class="flow-card">Decision</div>
+        <div class="flow-card">→</div>
+        <div class="flow-card">Execution</div>
+        <div class="flow-card">→</div>
+        <div class="flow-card">Feedback</div>
+      </div>
+
+      <div class="framework-mini">
+        <div class="framework-row">
+          <span>E</span><span>L</span><span>E</span><span>V</span>
+        </div>
+        <div class="framework-row">
+          <span>A</span><span>T</span><span>E</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 <!-- PROBLEM -->
@@ -155,3 +195,4 @@ permalink: /system/
 
   <a href="/knowledge/" class="btn btn-secondary">Start Exploring</a>
 </section>
+</div>

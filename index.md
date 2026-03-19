@@ -141,7 +141,7 @@ title: Home
   <div class="cred-grid">
 
     <div class="cred-card">
-      <div class="cred-number">1600+</div>
+      <div class="cred-number">1900+</div>
       <div class="cred-title">Strategic Drills Completed</div>
       <div class="cred-desc">
         Structured training across systems thinking, execution discipline, and decision frameworks.

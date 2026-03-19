@@ -11,10 +11,15 @@ permalink: /posts/
     Strategy · Systems · First Principles · Execution
   </p>
 
+  {% assign posts = site.posts | where_exp: "post", "post.featured != true" %}
+
+  {% if posts.size > 0 %}
+
   <div class="card-grid">
 
-    {% for post in site.posts %}
+    {% for post in posts %}
       <div class="card">
+
         <h3>
           <a href="{{ post.url }}">{{ post.title }}</a>
         </h3>
@@ -23,16 +28,29 @@ permalink: /posts/
           {{ post.date | date: "%B %d, %Y" }}
         </p>
 
-        {% if post.excerpt %}
-          <p>{{ post.excerpt }}</p>
-        {% endif %}
+        <p>
+          {{ post.excerpt | strip_html | truncate: 140 }}
+        </p>
 
         <a href="{{ post.url }}" class="card-link">
           Read
         </a>
+
       </div>
     {% endfor %}
 
   </div>
+
+  {% else %}
+
+  <!-- EMPTY STATE -->
+  <div class="card" style="max-width: 480px; margin-top: 40px;">
+    <h3>No posts yet</h3>
+    <p class="meta">
+      Start publishing structured thinking to build your library.
+    </p>
+  </div>
+
+  {% endif %}
 
 </section>

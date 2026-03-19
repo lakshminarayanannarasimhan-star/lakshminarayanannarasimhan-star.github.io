@@ -2395,12 +2395,21 @@ a {
 }
 
 .framework-card {
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
   background: var(--card-bg);
   border-left: 2px solid var(--accent);
 }
 
+.framework-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.framework-card p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
 .hover-lift {
   transition: all 0.2s ease;
 }
@@ -2412,4 +2421,19 @@ a {
 
 .center {
   text-align: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.compact .card {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+}
+
+.system-section + .system-section {
+  border-top: 1px solid var(--border-subtle);
 }

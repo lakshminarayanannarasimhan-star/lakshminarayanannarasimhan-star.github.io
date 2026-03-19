@@ -64,36 +64,56 @@ permalink: /system/
   </p>
 </section>
 
-<!-- ELEVATE FRAMEWORK -->
-
 <section class="system-section">
-  <h2 class="section-title">ELEVATE Framework</h2>
 
-  <div class="grid grid-2">
+  <h2 class="section-title">The Indispensable System</h2>
+
+  <!-- Compact Problem -->
+  <div class="grid grid-3 compact">
+    <div class="card">Strategy → Execution breaks</div>
+    <div class="card">AI → No workflows</div>
+    <div class="card">Ideas → Decisions stall</div>
+  </div>
+
+  <!-- Core Loop -->
+  <div class="system-flow">
+    <div class="flow-card">Ambiguity</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Structure</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Decision</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Execution</div>
+    <div class="flow-card">→</div>
+    <div class="flow-card">Feedback</div>
+  </div>
+
+  <!-- Framework -->
+  <div class="grid-2">
 
     <div class="framework-card">
       <h3>E — Extract</h3>
-      <p>Identify what is actually happening</p>
+      <p>What is actually happening</p>
     </div>
 
     <div class="framework-card">
       <h3>L — Layer</h3>
-      <p>Structure the system behind the problem</p>
+      <p>Structure the system</p>
     </div>
 
     <div class="framework-card">
       <h3>E — Evaluate</h3>
-      <p>Generate and compare options</p>
+      <p>Compare options</p>
     </div>
 
     <div class="framework-card">
       <h3>V — Validate</h3>
-      <p>Select the right decision</p>
+      <p>Select the decision</p>
     </div>
 
     <div class="framework-card">
       <h3>A — Act</h3>
-      <p>Execute with clarity</p>
+      <p>Execute clearly</p>
     </div>
 
     <div class="framework-card">
@@ -103,10 +123,11 @@ permalink: /system/
 
     <div class="framework-card">
       <h3>E — Evolve</h3>
-      <p>Continuously improve the system</p>
+      <p>Improve continuously</p>
     </div>
 
   </div>
+
 </section>
 
 <!-- DIFFERENTIATION -->

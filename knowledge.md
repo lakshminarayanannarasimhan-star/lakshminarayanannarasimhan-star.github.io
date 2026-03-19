@@ -4,12 +4,6 @@ title: Knowledge System
 permalink: /knowledge/
 ---
 
----
-layout: default
-title: Knowledge System
-permalink: /knowledge/
----
-
 <section class="section-wide">
 
   <!-- HEADER -->

@@ -35,7 +35,6 @@
 	--measure: 680px;
 	--spacing-section: 80px;
 
-
   --accent-strong: var(--accent);
   --accent-medium: color-mix(in srgb, var(--accent), black 20%);
   --accent-soft: color-mix(in srgb, var(--accent), white 20%);
@@ -2397,8 +2396,6 @@ a {
   white-space: nowrap;
 
   border: 1px solid var(--border-subtle);
-
-  color: white;
   transition: all 0.2s ease;
 }
 
@@ -2537,36 +2534,31 @@ a {
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Ambiguity (strongest) */
-.system-flow .flow-card:nth-child(1) {
+.step-1 {
   background: linear-gradient(135deg, var(--accent-strong), var(--accent-medium));
+  color: white;
 }
 
-/* Structure */
-.system-flow .flow-card:nth-child(3) {
+.step-2 {
   background: linear-gradient(135deg, var(--accent-medium), var(--accent));
+  color: white;
 }
 
-/* Decision */
-.system-flow .flow-card:nth-child(5) {
+.step-3 {
   background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  color: white;
 }
 
-/* Execution */
-.system-flow .flow-card:nth-child(7) {
+.step-4 {
   background: linear-gradient(135deg, var(--accent-soft), var(--accent-muted));
-  color: var(--text-primary); /* lighter bg → darker text */
-}
-
-/* Feedback */
-.system-flow .flow-card:nth-child(9) {
-  background: linear-gradient(135deg, var(--accent-muted), var(--card-bg));
   color: var(--text-primary);
 }
 
-.system-flow .flow-card:nth-child(even) {
-  background: transparent;
+.step-5 {
+  background: linear-gradient(135deg, var(--accent-muted), var(--card-bg));
+  color: var(--text-primary);
+}
+.flow-arrow {
   color: var(--text-muted);
-  border: none;
-  box-shadow: none;
+  padding: 0 0.3rem;
 }

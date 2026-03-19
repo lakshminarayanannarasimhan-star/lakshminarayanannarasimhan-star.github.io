@@ -81,17 +81,21 @@ title: Home
 
   <div class="system-flow">
 
-    <div class="flow-card">Ambiguity</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Structure</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Decision</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Execution</div>
-    <div class="flow-card">→</div>
-    <div class="flow-card">Feedback</div>
+  <div class="flow-card step-1">Ambiguity</div>
+  <div class="flow-arrow">→</div>
 
-  </div>
+  <div class="flow-card step-2">Structure</div>
+  <div class="flow-arrow">→</div>
+
+  <div class="flow-card step-3">Decision</div>
+  <div class="flow-arrow">→</div>
+
+  <div class="flow-card step-4">Execution</div>
+  <div class="flow-arrow">→</div>
+
+  <div class="flow-card step-5">Feedback</div>
+
+</div>
 
 </section>
 

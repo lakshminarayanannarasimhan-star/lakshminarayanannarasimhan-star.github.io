@@ -74,7 +74,7 @@ permalink: /knowledge/
 
     </div>
 
-  </div>
+  <!-- </div> -->
 
 </section>
 

@@ -26,7 +26,12 @@ permalink: /knowledge/
   <!-- CONTENT -->
   <div class="knowledge-content">
 
-    <div class="ks-header">
+    <div class="page-header">
+  <h1 class="page-title">Thinking System</h1>
+  <p class="page-sub">
+    Structured knowledge across strategy, AI, and execution
+  </p>
+</div>
       <h1>Thinking System</h1>
       <p class="hero-sub">
         Structured knowledge across strategy, AI, and execution

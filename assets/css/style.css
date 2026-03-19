@@ -2137,3 +2137,28 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
+/* =========================================
+   FIX: REMOVE UNDERLINE + CLEAN TITLES
+   ========================================= */
+
+/* remove underline everywhere */
+a {
+  text-decoration: none;
+}
+
+/* card titles (posts + knowledge) */
+.card h3 a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* hover effect */
+.card h3 a:hover {
+  color: var(--primary);
+}
+
+/* featured card title */
+.featured-title {
+  font-weight: 600;
+}

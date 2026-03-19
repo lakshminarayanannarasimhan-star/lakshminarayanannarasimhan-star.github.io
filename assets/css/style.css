@@ -1486,3 +1486,97 @@ p {
   background: var(--primary-soft);
   color: var(--primary);
 }
+
+/* =========================================
+   KNOWLEDGE OS
+   ========================================= */
+
+.knowledge {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* SIDEBAR */
+
+.knowledge-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.ks-title {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.ks-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ks-item {
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.ks-item:hover {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.ks-item.active {
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-strong)
+  );
+  color: white;
+}
+
+/* CONTENT */
+
+.knowledge-content {
+  max-width: 900px;
+}
+
+.ks-header h1 {
+  font-size: 28px;
+}
+
+/* GRID */
+
+.ks-card {
+  transition: all 0.2s ease;
+}
+
+/* MIDNIGHT */
+
+:root[data-theme="midnight"] .ks-item:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .knowledge {
+    grid-template-columns: 1fr;
+  }
+
+  .knowledge-sidebar {
+    position: static;
+  }
+
+  .ks-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

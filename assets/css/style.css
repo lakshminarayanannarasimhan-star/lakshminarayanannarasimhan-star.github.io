@@ -2162,3 +2162,27 @@ a {
 .featured-title {
   font-weight: 600;
 }
+
+/* =========================================
+   CARD HOVER — PREMIUM POLISH
+   ========================================= */
+
+/* smooth transition */
+.card {
+  transition: all 0.25s ease;
+}
+
+/* lift + depth */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* title micro movement */
+.card h3 a {
+  transition: all 0.2s ease;
+}
+
+.card:hover h3 a {
+  transform: translateX(2px);
+}

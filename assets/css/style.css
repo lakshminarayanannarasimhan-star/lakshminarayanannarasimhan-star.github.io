@@ -2259,3 +2259,95 @@ a {
   font-size: 14px;
   color: var(--muted);
 }
+
+/* =========================================
+   FINAL POLISH — SMOOTH EXPERIENCE
+   ========================================= */
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* better rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================
+   PAGE FADE IN
+   ========================================= */
+
+main {
+  animation: pageFade 0.5s ease-out;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   SPACING RHYTHM
+   ========================================= */
+
+section {
+  margin-top: 72px;   /* cleaner than mixed spacing */
+}
+
+/* tighten hero */
+.hero {
+  margin-top: 40px;
+}
+
+/* consistency */
+.page-header {
+  margin-bottom: 32px;
+}
+
+/* =========================================
+   BUTTON POLISH
+   ========================================= */
+
+.btn-primary,
+.btn-secondary,
+.btn-ghost {
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-ghost:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   LINK POLISH
+   ========================================= */
+
+a {
+  transition: color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+
+}

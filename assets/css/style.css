@@ -2518,3 +2518,8 @@ a {
 .system-page .section-title {
   margin-bottom: 0.6rem;
 }
+
+.system-page .system-ending {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}

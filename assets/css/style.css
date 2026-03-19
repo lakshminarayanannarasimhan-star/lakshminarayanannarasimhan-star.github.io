@@ -34,6 +34,12 @@
 
 	--measure: 680px;
 	--spacing-section: 80px;
+
+
+  --accent-strong: var(--accent);
+  --accent-medium: color-mix(in srgb, var(--accent), black 20%);
+  --accent-soft: color-mix(in srgb, var(--accent), white 20%);
+  --accent-muted: color-mix(in srgb, var(--accent), white 40%);
 }
 
 
@@ -2389,22 +2395,11 @@ a {
   border-radius: 999px;
   font-size: 0.85rem;
   white-space: nowrap;
-  flex-shrink: 0;
 
-  /* NEW */
-  color: var(--text-primary);
   border: 1px solid var(--border-subtle);
 
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    color-mix(in srgb, var(--accent), black 20%)
-  );
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-
+  color: white;
   transition: all 0.2s ease;
-  backdrop-filter: blur(6px);
 }
 
 .framework-card {
@@ -2542,30 +2537,36 @@ a {
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
+/* Ambiguity (strongest) */
 .system-flow .flow-card:nth-child(1) {
-  background: linear-gradient(135deg, var(--accent), #1e3a8a);
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent-medium));
 }
 
+/* Structure */
 .system-flow .flow-card:nth-child(3) {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, var(--accent-medium), var(--accent));
 }
 
+/* Decision */
 .system-flow .flow-card:nth-child(5) {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
 }
 
+/* Execution */
 .system-flow .flow-card:nth-child(7) {
-  background: linear-gradient(135deg, #f97316, #ea580c);
+  background: linear-gradient(135deg, var(--accent-soft), var(--accent-muted));
+  color: var(--text-primary); /* lighter bg → darker text */
 }
 
+/* Feedback */
 .system-flow .flow-card:nth-child(9) {
-  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  background: linear-gradient(135deg, var(--accent-muted), var(--card-bg));
+  color: var(--text-primary);
 }
 
 .system-flow .flow-card:nth-child(even) {
   background: transparent;
   color: var(--text-muted);
-  box-shadow: none;
   border: none;
-  font-weight: 500;
+  box-shadow: none;
 }

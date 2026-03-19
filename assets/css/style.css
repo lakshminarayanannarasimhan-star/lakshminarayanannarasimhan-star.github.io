@@ -2387,11 +2387,24 @@ a {
 .flow-card {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-subtle);
   font-size: 0.85rem;
   white-space: nowrap;
   flex-shrink: 0;
+
+  /* NEW */
+  color: white;
+  border: 1px solid var(--border-subtle);
+
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    color-mix(in srgb, var(--accent), black 20%)
+  );
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+  transition: all 0.2s ease;
+  backdrop-filter: blur(6px);
 }
 
 .framework-card {
@@ -2522,4 +2535,37 @@ a {
 .system-page .system-ending {
   font-size: 0.95rem;
   opacity: 0.7;
+}
+
+.flow-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.system-flow .flow-card:nth-child(1) {
+  background: linear-gradient(135deg, var(--accent), #1e3a8a);
+}
+
+.system-flow .flow-card:nth-child(3) {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.system-flow .flow-card:nth-child(5) {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.system-flow .flow-card:nth-child(7) {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.system-flow .flow-card:nth-child(9) {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.system-flow .flow-card:nth-child(even) {
+  background: transparent;
+  color: var(--text-muted);
+  box-shadow: none;
+  border: none;
+  font-weight: 500;
 }

@@ -22,13 +22,13 @@ description: Elevate Thinking Through Systems, Not Information
 # oasis    → calm / balanced (minimal maroon, more blue blend)
 # summer_sunset → warm / nostalgic (maroon, blue blend)
 # ocean_breeze → cool / refreshing (maroon, blue blend)
-# emerald  → strategy / consulting (recommended) (Green, blue blend)
-# indigo   → tech / AI (default) (Indigo, blue blend)
 # feast   → rich / indulgent (black, blue blend)
 # violet   → creative / visionary (violet, blue blend)
 
 # pumpkin_spice → cozy / comforting (orange, blue blend) - This is good
-# evergreen → growth / nature (green, blue blend) - This is good - This is good
+# evergreen → growth / nature (green, blue blend) - This is good
+# emerald  → strategy / consulting (Green, blue blend) - This is good
+# indigo   → tech / AI (default) (Indigo, blue blend) - This is good
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -37,7 +37,7 @@ description: Elevate Thinking Through Systems, Not Information
 # cyan     → analytical / fresh
 # mono     → minimal black/white
 
-elevate_theme: emerald
+elevate_theme: indigo
 
 typography: executive   # options: executive, compact, spacious
 

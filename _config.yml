@@ -16,16 +16,16 @@ description: Elevate Thinking Through Systems, Not Information
 # Available options:
 
 # personal favorite themes:
+# adventure → rugged / exploratory (All blue tinges)
+# delight   → bold / passionate (Maroon, blue blend)
+# berry    → vibrant / energetic (little Maroon, more blue blend)
+# oasis    → calm / balanced (minimal maroon, more blue blend)
+
 # indigo   → tech / AI (default) 
 # emerald  → strategy / consulting (recommended)
 # feast   → rich / indulgent
 # ocean_breeze → cool / refreshing
-# adventure → rugged / exploratory (All blue tinges)
-# delight   → bold / passionate (Maroon, blue blend)
-# berry    → vibrant / energetic (little Maroon, more blue blend)
 # summer_sunset → warm / nostalgic 
-# berry    → vibrant / energetic
-
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
 # amber    → warm / authority
@@ -35,8 +35,7 @@ description: Elevate Thinking Through Systems, Not Information
 
 # violet   → creative / visionary
 
-
-elevate_theme: oasis
+elevate_theme: summer_sunset
 
 typography: executive   # options: executive, compact, spacious
 

@@ -20,6 +20,7 @@ description: Elevate Thinking Through Systems, Not Information
 # emerald  → strategy / consulting (recommended)
 # feast   → rich / indulgent
 # ocean_breeze → cool / refreshing
+# adventure → rugged / exploratory
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -27,14 +28,14 @@ description: Elevate Thinking Through Systems, Not Information
 # rose     → bold / expressive
 # cyan     → analytical / fresh
 # mono     → minimal black/white
+
 # violet   → creative / visionary
 # oasis    → calm / balanced
 # berry    → vibrant / energetic
 # delight   → bold / passionate
 # summer_sunset → warm / nostalgic 
-# adventure → rugged / exploratory
 
-elevate_theme: adverture
+elevate_theme: summer_sunset
 
 typography: compact   # options: executive, compact, spacious
 

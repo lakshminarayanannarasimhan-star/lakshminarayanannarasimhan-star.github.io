@@ -22,9 +22,8 @@ description: Elevate Thinking Through Systems, Not Information
 # oasis    → calm / balanced (minimal maroon, more blue blend)
 # summer_sunset → warm / nostalgic (maroon, blue blend)
 # ocean_breeze → cool / refreshing (maroon, blue blend)
-
-# indigo   → tech / AI (default) 
-# emerald  → strategy / consulting (recommended)
+# emerald  → strategy / consulting (recommended) (Green, blue blend)
+# indigo   → tech / AI (default) (Indigo, blue blend)
 # feast   → rich / indulgent
 
 # slate    → executive minimal 
@@ -36,7 +35,7 @@ description: Elevate Thinking Through Systems, Not Information
 
 # violet   → creative / visionary
 
-elevate_theme: emerald
+elevate_theme: feast
 
 typography: executive   # options: executive, compact, spacious
 

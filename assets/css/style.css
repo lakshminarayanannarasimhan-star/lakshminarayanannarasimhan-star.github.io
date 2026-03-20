@@ -34,6 +34,20 @@
 
 	--measure: 680px;
 	--spacing-section: 80px;
+
+  /* =========================
+   FLOW COLOR SYSTEM
+========================= */
+
+  --accent-rgb: 99, 102, 241; /* adjust based on your theme */
+  --accent-strong: var(--accent);
+  --flow-1: var(--accent);
+ --flow-1: var(--accent);
+  --flow-2: color-mix(in srgb, var(--accent), black 15%);
+  --flow-3: color-mix(in srgb, var(--accent), black 30%);
+  --flow-4: color-mix(in srgb, var(--accent), black 45%);
+  --flow-5: color-mix(in srgb, var(--accent), black 60%);
+  
 }
 
 
@@ -251,7 +265,7 @@ section {
 
 	letter-spacing: 0.08em;
 	color: var(--primary-strong);
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 
@@ -395,6 +409,10 @@ section {
   margin: 40px auto 40px;
   max-width: 900px;
   animation: heroFadeLift 0.8s ease-out both;
+}
+
+.hero-centered {
+  padding: 3rem 1.25rem 2rem;
 }
 
 .hero-title {
@@ -2362,4 +2380,213 @@ a {
     border-radius: 12px;
   }
 
+}
+
+/* SYSTEM PAGE */
+
+.system-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem; /* reduced from 4rem */
+}
+
+/* =========================
+   FLOW SYSTEM (HOMEPAGE)
+========================= */
+
+.system-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 🔥 center align */
+  gap: 0.5rem;
+
+  flex-wrap: wrap; /* allows wrapping if needed */
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+/* FLOW CARD */
+
+.flow-card {
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+
+  color: white;
+  border: none;
+
+  background: var(--primary-strong); /* 🔥 single theme color */
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  transition: all 0.2s ease;
+  backdrop-filter: blur(6px);
+}
+
+/* FLOW ARROW */
+
+.flow-arrow {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.framework-card {
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  background: var(--card-bg);
+  border-left: 2px solid var(--accent);
+}
+
+.framework-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.framework-card p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.hover-lift {
+  transition: all 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.center {
+  text-align: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.compact .card {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+}
+
+.system-section + .system-section {
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* =========================
+   SYSTEM PAGE ONLY
+========================= */
+
+.system-page .hero-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.2rem 1.25rem;
+}
+
+.system-page .hero-left {
+  max-width: 520px;
+}
+
+.system-page .hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.system-page .system-preview {
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255,255,255,0.02);
+}
+
+.system-page .framework-mini {
+  margin-top: 1rem;
+}
+
+.system-page .framework-row {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.system-page .framework-row span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+}
+
+/* Mobile safe */
+
+@media (max-width: 768px) {
+  .system-page .hero-split {
+    grid-template-columns: 1fr;
+  }
+
+  .system-page .hero-right {
+    margin-top: 1.5rem;
+  }
+}
+
+.system-page .problem-inline {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.system-page .how-it-works {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.system-page .step {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.system-page .section-title {
+  margin-bottom: 0.6rem;
+}
+
+.system-page .system-ending {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.flow-card:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* =========================
+   FLOW STEP COLORS
+========================= */
+
+.step-1 { filter: brightness(1.05); }
+.step-2 { filter: brightness(1); }
+.step-3 { filter: brightness(0.95); }
+.step-4 { filter: brightness(0.9); }
+.step-5 { filter: brightness(0.85); }
+
+@media (max-width: 768px) {
+  .system-flow {
+    justify-content: flex-start; /* better for scrolling */
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.system-flow-wrapper {
+  display: flex;
+  justify-content: center;
 }

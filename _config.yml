@@ -25,6 +25,7 @@ description: Elevate Thinking Through Systems, Not Information
 # emerald  → strategy / consulting (recommended) (Green, blue blend)
 # indigo   → tech / AI (default) (Indigo, blue blend)
 # feast   → rich / indulgent (black, blue blend)
+# violet   → creative / visionary (violet, blue blend)
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -33,9 +34,7 @@ description: Elevate Thinking Through Systems, Not Information
 # cyan     → analytical / fresh
 # mono     → minimal black/white
 
-# violet   → creative / visionary
-
-elevate_theme: violet
+elevate_theme: ocean_breeze
 
 typography: executive   # options: executive, compact, spacious
 

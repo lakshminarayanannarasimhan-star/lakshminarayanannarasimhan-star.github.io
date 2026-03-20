@@ -19,7 +19,6 @@ description: Elevate Thinking Through Systems, Not Information
 # adventure → rugged / exploratory (All blue tinges)
 # delight   → bold / passionate (Maroon, blue blend)
 # berry    → vibrant / energetic (little Maroon, more blue blend)
-# oasis    → calm / balanced (minimal maroon, more blue blend)
 # feast   → rich / indulgent (black, blue blend)
 # violet   → creative / visionary (violet, blue blend)
 
@@ -30,6 +29,7 @@ description: Elevate Thinking Through Systems, Not Information
 # mono     → minimal black/white - This is good
 # ocean_breeze → cool / refreshing (maroon, blue blend) - This is good
 # summer_sunset → warm / nostalgic (maroon, blue blend) - This is good
+# oasis    → calm / balanced (minimal maroon, more blue blend) - This is good
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -37,7 +37,7 @@ description: Elevate Thinking Through Systems, Not Information
 # rose     → bold / expressive
 # cyan     → analytical / fresh
 
-elevate_theme: oasis
+elevate_theme: berry
 
 typography: executive   # options: executive, compact, spacious
 

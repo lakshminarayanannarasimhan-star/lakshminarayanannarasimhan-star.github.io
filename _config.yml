@@ -27,7 +27,7 @@ description: Elevate Thinking Through Systems, Not Information
 # feast   → rich / indulgent (black, blue blend)
 # violet   → creative / visionary (violet, blue blend)
 # pumpkin_spice → cozy / comforting (orange, blue blend) - This is good
-# banana_cream → bright / optimistic (yellow, blue blend)
+# evergreen → growth / nature (green, blue blend) - This is good
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -36,7 +36,7 @@ description: Elevate Thinking Through Systems, Not Information
 # cyan     → analytical / fresh
 # mono     → minimal black/white
 
-elevate_theme: banana_cream
+elevate_theme: evergreen
 
 typography: executive   # options: executive, compact, spacious
 

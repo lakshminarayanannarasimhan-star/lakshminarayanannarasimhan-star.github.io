@@ -119,8 +119,8 @@
 	--primary: #FA7921;
 }
 
-:root[data-theme="banana_cream"] {
-	--primary: #FDE74C;
+:root[data-theme="evergreen"] {
+	--primary: #002500;
 }
 
 #FDE74C

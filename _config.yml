@@ -45,7 +45,7 @@ typography: executive   # options: executive, compact, spacious
 # -------------------------
 
 # Your custom domain
-url: "https://indispensable.getunstuck.in"
+url: "https://theindispensable.getunstuck.in"
 
 # IMPORTANT:
 # For custom domain, baseurl MUST be empty

@@ -21,11 +21,11 @@ description: Elevate Thinking Through Systems, Not Information
 # berry    → vibrant / energetic (little Maroon, more blue blend)
 # oasis    → calm / balanced (minimal maroon, more blue blend)
 # summer_sunset → warm / nostalgic (maroon, blue blend)
+# ocean_breeze → cool / refreshing (maroon, blue blend)
 
 # indigo   → tech / AI (default) 
 # emerald  → strategy / consulting (recommended)
 # feast   → rich / indulgent
-# ocean_breeze → cool / refreshing
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -36,7 +36,7 @@ description: Elevate Thinking Through Systems, Not Information
 
 # violet   → creative / visionary
 
-elevate_theme: ocean_breeze
+elevate_theme: emerald
 
 typography: executive   # options: executive, compact, spacious
 

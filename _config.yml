@@ -24,6 +24,7 @@ description: Elevate Thinking Through Systems, Not Information
 # delight   → bold / passionate (Maroon, blue blend)
 # berry    → vibrant / energetic (little Maroon, more blue blend)
 # summer_sunset → warm / nostalgic 
+# berry    → vibrant / energetic
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -33,7 +34,7 @@ description: Elevate Thinking Through Systems, Not Information
 # mono     → minimal black/white
 
 # violet   → creative / visionary
-# oasis    → calm / balanced
+
 
 elevate_theme: oasis
 

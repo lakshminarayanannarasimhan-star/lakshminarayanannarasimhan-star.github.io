@@ -20,7 +20,9 @@ description: Elevate Thinking Through Systems, Not Information
 # emerald  → strategy / consulting (recommended)
 # feast   → rich / indulgent
 # ocean_breeze → cool / refreshing
-# adventure → rugged / exploratory
+# adventure → rugged / exploratory (All blue tinges)
+# delight   → bold / passionate (Maroon, blue blend)
+# summer_sunset → warm / nostalgic 
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -32,12 +34,10 @@ description: Elevate Thinking Through Systems, Not Information
 # violet   → creative / visionary
 # oasis    → calm / balanced
 # berry    → vibrant / energetic
-# delight   → bold / passionate
-# summer_sunset → warm / nostalgic 
 
-elevate_theme: summer_sunset
+elevate_theme: berry
 
-typography: compact   # options: executive, compact, spacious
+typography: executive   # options: executive, compact, spacious
 
 # -------------------------
 # URL SETTINGS (CUSTOM DOMAIN)

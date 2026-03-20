@@ -37,7 +37,7 @@ description: Elevate Thinking Through Systems, Not Information
 # cyan     → analytical / fresh
 # mono     → minimal black/white
 
-elevate_theme: midnight
+elevate_theme: mono
 
 typography: executive   # options: executive, compact, spacious
 

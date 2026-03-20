@@ -123,12 +123,11 @@
 	--primary: #002500;
 }
 
-#FDE74C
 /* DARK THEME */
 
 :root[data-theme="midnight"] {
   /* BASE */
-  --bg: #202022;                /* deeper than before */
+  --bg: #111113;                /* deeper than before */
   --text: #e6edf3;
   --muted: #94a3b8;
   --border: rgba(255,255,255,0.06);

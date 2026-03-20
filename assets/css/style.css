@@ -2412,13 +2412,17 @@ a {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
   font-size: 0.85rem;
+  white-space: nowrap;
 
   color: white;
   border: none;
 
+  background: var(--accent); /* 🔥 single theme color */
+
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 
   transition: all 0.2s ease;
+  backdrop-filter: blur(6px);
 }
 
 /* FLOW ARROW */
@@ -2566,15 +2570,11 @@ a {
 /* =========================
    FLOW STEP COLORS
 ========================= */
-
-.step-1 {
-  background: var(--accent);
-  color: white !important;
-}
-.step-2 { background: var(--flow-2); }
-.step-3 { background: var(--flow-3); }
-.step-4 { background: var(--flow-4); }
-.step-5 { background: var(--flow-5); }
+.step-1 { filter: brightness(1.05); }
+.step-2 { filter: brightness(1); }
+.step-3 { filter: brightness(0.95); }
+.step-4 { filter: brightness(0.9); }
+.step-5 { filter: brightness(0.85); }
 
 @media (max-width: 768px) {
   .system-flow {

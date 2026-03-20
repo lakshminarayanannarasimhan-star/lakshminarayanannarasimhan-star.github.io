@@ -19,6 +19,7 @@ description: Elevate Thinking Through Systems, Not Information
 # indigo   → tech / AI (default) 
 # emerald  → strategy / consulting (recommended)
 # feast   → rich / indulgent
+# ocean_breeze → cool / refreshing
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -32,9 +33,8 @@ description: Elevate Thinking Through Systems, Not Information
 # delight   → bold / passionate
 # summer_sunset → warm / nostalgic 
 # adventure → rugged / exploratory
-# ocean_breeze → cool / refreshing
 
-elevate_theme: ocean_breeze
+elevate_theme: adverture
 
 typography: compact   # options: executive, compact, spacious
 

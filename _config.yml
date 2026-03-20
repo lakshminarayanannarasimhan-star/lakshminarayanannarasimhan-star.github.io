@@ -28,8 +28,9 @@ description: Elevate Thinking Through Systems, Not Information
 # delight   → bold / passionate
 # summer_sunset → warm / nostalgic 
 # adventure → rugged / exploratory
+# feast   → rich / indulgent
 
-elevate_theme: emerald
+elevate_theme: feast
 
 typography: compact   # options: executive, compact, spacious
 

@@ -107,6 +107,10 @@
 	--primary: #00303d;
 }
 
+:root[data-theme="adventure"] {
+	--primary: #283618;
+}
+
 /* DARK THEME */
 
 :root[data-theme="midnight"] {

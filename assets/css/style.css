@@ -116,10 +116,14 @@
 }
 
 :root[data-theme="pumpkin_spice"] {
-	--primary: #FA7921
-;
+	--primary: #FA7921;
 }
 
+:root[data-theme="banana_cream"] {
+	--primary: #FDE74C;
+}
+
+#FDE74C
 /* DARK THEME */
 
 :root[data-theme="midnight"] {

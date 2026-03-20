@@ -22,19 +22,23 @@ description: Elevate Thinking Through Systems, Not Information
 # oasis    → calm / balanced (minimal maroon, more blue blend)
 # summer_sunset → warm / nostalgic (maroon, blue blend)
 # ocean_breeze → cool / refreshing (maroon, blue blend)
-# emerald  → strategy / consulting (recommended) (Green, blue blend)
-# indigo   → tech / AI (default) (Indigo, blue blend)
 # feast   → rich / indulgent (black, blue blend)
 # violet   → creative / visionary (violet, blue blend)
+
+# pumpkin_spice → cozy / comforting (orange, blue blend) - This is good
+# evergreen → growth / nature (green, blue blend) - This is good
+# emerald  → strategy / consulting (Green, blue blend) - This is good
+# indigo   → tech / AI (default) (Indigo, blue blend) - This is good
+# mono     → minimal black/white - This is good
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
 # amber    → warm / authority
 # rose     → bold / expressive
 # cyan     → analytical / fresh
-# mono     → minimal black/white
 
-elevate_theme: ocean_breeze
+
+elevate_theme: emerald
 
 typography: executive   # options: executive, compact, spacious
 
@@ -43,7 +47,7 @@ typography: executive   # options: executive, compact, spacious
 # -------------------------
 
 # Your custom domain
-url: "https://indispensable.getunstuck.in"
+url: "https://theindispensable.getunstuck.in"
 
 # IMPORTANT:
 # For custom domain, baseurl MUST be empty

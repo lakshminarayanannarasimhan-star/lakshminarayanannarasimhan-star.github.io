@@ -115,11 +115,19 @@
 	--primary: #e63946;
 }
 
+:root[data-theme="pumpkin_spice"] {
+	--primary: #FA7921;
+}
+
+:root[data-theme="evergreen"] {
+	--primary: #002500;
+}
+
 /* DARK THEME */
 
 :root[data-theme="midnight"] {
   /* BASE */
-  --bg: #020617;                /* deeper than before */
+  --bg: #09090b;                /* deeper than before */
   --text: #e6edf3;
   --muted: #94a3b8;
   --border: rgba(255,255,255,0.06);
@@ -917,7 +925,7 @@ p {
 /* glow activates */
 
 .nav-linkedin-elite:hover::before {
-	content: "LNN @ LinkedIn ↗";
+	content: "Connect ↗";
 
 	color: white;
 

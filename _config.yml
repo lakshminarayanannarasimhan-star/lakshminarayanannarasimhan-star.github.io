@@ -20,12 +20,13 @@ description: Elevate Thinking Through Systems, Not Information
 # delight   → bold / passionate (Maroon, blue blend)
 # berry    → vibrant / energetic (little Maroon, more blue blend)
 # oasis    → calm / balanced (minimal maroon, more blue blend)
+# summer_sunset → warm / nostalgic (maroon, blue blend)
 
 # indigo   → tech / AI (default) 
 # emerald  → strategy / consulting (recommended)
 # feast   → rich / indulgent
 # ocean_breeze → cool / refreshing
-# summer_sunset → warm / nostalgic 
+
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
 # amber    → warm / authority
@@ -35,7 +36,7 @@ description: Elevate Thinking Through Systems, Not Information
 
 # violet   → creative / visionary
 
-elevate_theme: summer_sunset
+elevate_theme: ocean_breeze
 
 typography: executive   # options: executive, compact, spacious
 

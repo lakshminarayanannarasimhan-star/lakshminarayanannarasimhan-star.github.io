@@ -22,6 +22,7 @@ description: Elevate Thinking Through Systems, Not Information
 # ocean_breeze → cool / refreshing
 # adventure → rugged / exploratory (All blue tinges)
 # delight   → bold / passionate (Maroon, blue blend)
+# berry    → vibrant / energetic (little Maroon, more blue blend)
 # summer_sunset → warm / nostalgic 
 
 # slate    → executive minimal 
@@ -33,9 +34,8 @@ description: Elevate Thinking Through Systems, Not Information
 
 # violet   → creative / visionary
 # oasis    → calm / balanced
-# berry    → vibrant / energetic
 
-elevate_theme: berry
+elevate_theme: oasis
 
 typography: executive   # options: executive, compact, spacious
 

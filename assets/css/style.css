@@ -107,6 +107,14 @@
 	--primary: #00303d;
 }
 
+:root[data-theme="feast"] {
+	--primary: #283618;
+}
+
+:root[data-theme="ocean_breeze"] {
+	--primary: #e63946;
+}
+
 /* DARK THEME */
 
 :root[data-theme="midnight"] {

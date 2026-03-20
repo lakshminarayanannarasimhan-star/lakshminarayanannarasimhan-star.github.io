@@ -153,30 +153,13 @@ permalink: /system/
 
 </section>
 
-<!-- DIFFERENTIATION -->
-
 <section class="system-section center">
-  <h2 class="section-title">Built for Execution</h2>
 
-  <p class="large-text">
-    This is not content. This is not theory.
+  <p class="system-ending">
+    Systems create outcomes. Not ideas.
   </p>
 
-  <p class="section-subtext">
-    It is a system designed to eliminate ambiguity, accelerate decisions, and drive execution.
-  </p>
 </section>
 
-<!-- CTA -->
-
-<section class="system-section center">
-  <h2 class="section-title">Become Indispensable</h2>
-
-  <p class="section-subtext">
-    Build systems. Drive decisions. Execute consistently.
-  </p>
-
-  <a href="/knowledge/" class="btn btn-secondary">Start Exploring</a>
-</section>
 
 </div>

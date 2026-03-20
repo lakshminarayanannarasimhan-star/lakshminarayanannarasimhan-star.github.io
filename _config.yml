@@ -14,24 +14,29 @@ description: Elevate Thinking Through Systems, Not Information
 # THEME (VISUAL STYLE)
 # --------------------------
 # Available options:
-# indigo   → tech / AI (default) 
-# emerald  → strategy / consulting (recommended)
+
+# personal favorite themes:
+# adventure → rugged / exploratory (All blue tinges)
+# delight   → bold / passionate (Maroon, blue blend)
+# berry    → vibrant / energetic (little Maroon, more blue blend)
+# oasis    → calm / balanced (minimal maroon, more blue blend)
+# summer_sunset → warm / nostalgic (maroon, blue blend)
+# ocean_breeze → cool / refreshing (maroon, blue blend)
+# emerald  → strategy / consulting (recommended) (Green, blue blend)
+# indigo   → tech / AI (default) (Indigo, blue blend)
+# feast   → rich / indulgent (black, blue blend)
+# violet   → creative / visionary (violet, blue blend)
+
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
 # amber    → warm / authority
 # rose     → bold / expressive
 # cyan     → analytical / fresh
 # mono     → minimal black/white
-# violet   → creative / visionary
-# oasis    → calm / balanced
-# berry    → vibrant / energetic
-# delight   → bold / passionate
-# summer_sunset → warm / nostalgic 
-# adventure → rugged / exploratory
 
-elevate_theme: berry
+elevate_theme: ocean_breeze
 
-typography: compact   # options: executive, compact, spacious
+typography: executive   # options: executive, compact, spacious
 
 # -------------------------
 # URL SETTINGS (CUSTOM DOMAIN)

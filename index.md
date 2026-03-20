@@ -201,7 +201,7 @@ title: Home
         <div class="progress-block">
           <div class="progress-label">
             <span>Progress</span>
-            <span>1600 drills</span>
+            <span>1900 drills</span>
           </div>
 
           <div class="progress-bar">

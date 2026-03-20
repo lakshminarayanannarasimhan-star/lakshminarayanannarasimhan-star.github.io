@@ -4,64 +4,49 @@ title: About
 permalink: /about/
 ---
 
-<section class="section-wide">
+## About
 
-<div class="page-header">
-  <h1 class="page-title">About</h1>
-  <p class="page-sub">
-    Thinking Systems · AI · Execution
-  </p>
-</div>
+Most problems are not solved because they are not structured.
+
+Strategy exists. Execution breaks.  
+Ideas exist. Decisions stall.
+
+I focus on solving this gap — by building structured thinking systems that convert ambiguity into execution.
 
 ---
 
 ## What I Do
 
-I build thinking systems that translate strategy into execution.
+I design systems that:
 
-My work focuses on:
-- Structuring decision-making
-- Applying first principles thinking
-- Integrating AI into real-world execution systems
+- Clarify ambiguity  
+- Structure problems  
+- Drive decisions  
+- Enable execution  
 
----
-
-## Current Focus
-
-- Designing repeatable thinking frameworks  
-- Building AI-assisted execution systems  
-- Converting knowledge into scalable systems  
+The goal is not better ideas.  
+The goal is consistent execution.
 
 ---
 
-## Proof of Work
+## How This Was Built
 
-- 1600+ structured cognitive drills completed  
-- Multiple thinking systems under development  
-- Real-world execution experience across teams and systems  
+This work is built through disciplined practice.
 
----
+1600+ structured thinking drills across strategy, systems, and execution.
 
-## How I Think
-
-I believe:
-- Thinking can be systematized  
-- Strategy without execution is noise  
-- AI is only valuable when integrated into real workflows  
+Continuous refinement of decision-making, problem structuring, and execution loops.
 
 ---
 
-## What This Platform Is
+## Positioning
 
-This is not a blog.
+I am not focused on tools.  
+I am focused on systems.
 
-This is a system.
-
-A place where:
-- Thinking is structured  
-- Systems are built  
-- Execution is tracked  
+Tools change.  
+Systems endure.
 
 ---
 
-</section>
+This platform is a record of that work.

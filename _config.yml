@@ -26,6 +26,7 @@ description: Elevate Thinking Through Systems, Not Information
 # indigo   → tech / AI (default) (Indigo, blue blend)
 # feast   → rich / indulgent (black, blue blend)
 # violet   → creative / visionary (violet, blue blend)
+# pumpkin_spice → cozy / comforting (orange, blue blend)
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -34,7 +35,7 @@ description: Elevate Thinking Through Systems, Not Information
 # cyan     → analytical / fresh
 # mono     → minimal black/white
 
-elevate_theme: emerald
+elevate_theme: pumpkin_spice
 
 typography: executive   # options: executive, compact, spacious
 

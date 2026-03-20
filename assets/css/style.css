@@ -115,6 +115,11 @@
 	--primary: #e63946;
 }
 
+:root[data-theme="pumpkin_spice"] {
+	--primary: #FA7921
+;
+}
+
 /* DARK THEME */
 
 :root[data-theme="midnight"] {

@@ -2570,6 +2570,7 @@ a {
 /* =========================
    FLOW STEP COLORS
 ========================= */
+
 .step-1 { filter: brightness(1.05); }
 .step-2 { filter: brightness(1); }
 .step-3 { filter: brightness(0.95); }

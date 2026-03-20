@@ -128,7 +128,7 @@
 
 :root[data-theme="midnight"] {
   /* BASE */
-  --bg: #020617;                /* deeper than before */
+  --bg: #202022;                /* deeper than before */
   --text: #e6edf3;
   --muted: #94a3b8;
   --border: rgba(255,255,255,0.06);

@@ -16,20 +16,20 @@ description: Elevate Thinking Through Systems, Not Information
 # Available options:
 
 # personal favorite themes:
-# adventure → rugged / exploratory (All blue tinges)
-# delight   → bold / passionate (Maroon, blue blend)
-# berry    → vibrant / energetic (little Maroon, more blue blend)
-# oasis    → calm / balanced (minimal maroon, more blue blend)
-# summer_sunset → warm / nostalgic (maroon, blue blend)
-# ocean_breeze → cool / refreshing (maroon, blue blend)
-# feast   → rich / indulgent (black, blue blend)
-# violet   → creative / visionary (violet, blue blend)
 
 # pumpkin_spice → cozy / comforting (orange, blue blend) - This is good
 # evergreen → growth / nature (green, blue blend) - This is good
 # emerald  → strategy / consulting (Green, blue blend) - This is good
 # indigo   → tech / AI (default) (Indigo, blue blend) - This is good
 # mono     → minimal black/white - This is good
+# ocean_breeze → cool / refreshing (maroon, blue blend) - This is good
+# summer_sunset → warm / nostalgic (maroon, blue blend) - This is good
+# oasis    → calm / balanced (minimal maroon, more blue blend) - This is good
+# violet   → creative / visionary (violet, blue blend) - This is good
+# berry    → vibrant / energetic (little Maroon, more blue blend) - This is good
+# feast   → rich / indulgent (black, blue blend) - This is good
+# delight   → bold / passionate (Maroon, blue blend) - This is good
+# adventure → rugged / exploratory (All blue tinges) - This is good
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -37,8 +37,7 @@ description: Elevate Thinking Through Systems, Not Information
 # rose     → bold / expressive
 # cyan     → analytical / fresh
 
-
-elevate_theme: emerald
+elevate_theme: adventure
 
 typography: executive   # options: executive, compact, spacious
 

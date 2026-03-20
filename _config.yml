@@ -18,7 +18,7 @@ description: Elevate Thinking Through Systems, Not Information
 # personal favorite themes:
 # adventure → rugged / exploratory (All blue tinges)
 # delight   → bold / passionate (Maroon, blue blend)
-# feast   → rich / indulgent (black, blue blend)
+
 
 # pumpkin_spice → cozy / comforting (orange, blue blend) - This is good
 # evergreen → growth / nature (green, blue blend) - This is good
@@ -30,6 +30,7 @@ description: Elevate Thinking Through Systems, Not Information
 # oasis    → calm / balanced (minimal maroon, more blue blend) - This is good
 # violet   → creative / visionary (violet, blue blend) - This is good
 # berry    → vibrant / energetic (little Maroon, more blue blend) - This is good
+# feast   → rich / indulgent (black, blue blend) - This is good
 
 # slate    → executive minimal 
 # midnight → dark mode (deep thinking)
@@ -37,7 +38,7 @@ description: Elevate Thinking Through Systems, Not Information
 # rose     → bold / expressive
 # cyan     → analytical / fresh
 
-elevate_theme: feast
+elevate_theme: delight
 
 typography: executive   # options: executive, compact, spacious
 

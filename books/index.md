@@ -38,7 +38,7 @@ permalink: /theindispensable-books/
         Each layer builds on the previous — from understanding systems to shaping entire ecosystems.
       </p>
 
-      <a href="/book-1-position/" class="card-link">
+      <a href="/theindispensable-books/book-1-position/" class="card-link">
         Begin Journey
       </a>
 

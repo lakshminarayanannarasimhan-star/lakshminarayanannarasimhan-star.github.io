@@ -229,9 +229,10 @@ permalink: /competencies/elite-think-tank-report/
 
 # 🚀 9. Current Phase Definition
 
-```text
+```
 From:
 “I understand systems”
 
 To:
 “I can diagnose and predict system behavior”
+```

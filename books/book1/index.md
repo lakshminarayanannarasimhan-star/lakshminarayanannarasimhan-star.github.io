@@ -74,12 +74,10 @@ permalink: /theindispensable-books/book-1-position/
 
 <ul>
      <li>Map cause and effect clearly</li>
-      <li>Break problems into mechanisms</li>
-      <li>Recognize recurring system patterns</li>
+      <li>Break problems into mechanisms</li>      
       <li>Identify hidden constraints</li>
       <li>Distinguish signal from noise</li>
-      <li>Think in trade-offs and consequences</li>
-      <li>Build clarity through structured repetition</li>
+      <li>Think in trade-offs and consequences</li>      
 </ul>
 
 <div class="card-actions">

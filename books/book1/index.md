@@ -4,27 +4,83 @@ title: The Indispensable Position
 permalink: /theindispensable-books/book-1-position/
 ---
 
-# 📘 The Indispensable Position
-
-### *How You See*
-
 ---
 
-<p>
-Most professionals operate at the level of events.  
-They react, fix symptoms, and repeat patterns without understanding why outcomes occur.
+layout: default
+title: The Indispensable Position
+permalink: /book-1-position/
+----------------------------
+
+<!-- =========================================
+     HERO (MATCHED TO HOMEPAGE)
+========================================= -->
+
+<section class="hero hero-split">
+
+  <!-- LEFT -->
+
+  <div class="hero-left">
+    <h1 class="hero-title">
+      The Indispensable Position
+    </h1>
+
+```
+<p class="hero-sub">
+  Most people react to events.  
+  Few understand the systems that produce them.
 </p>
 
 <p>
-This book builds the ability to <strong>see systems clearly</strong> — beyond events, beyond patterns, into structure, constraints, and decisions.
+  This book builds the ability to see structure, constraints, and decisions clearly —  
+  so you can understand, predict, and influence outcomes.
 </p>
 
----
+<div class="hero-actions">
+  <a href="/book-1-position/drills/" class="btn-primary">Start Drills</a>
+  <a href="/book-1-position/chapters/" class="btn-secondary">Explore Chapters</a>
+</div>
+```
+
+  </div>
+
+  <!-- RIGHT -->
+
+  <div class="hero-right">
+
+```
+<div class="featured-card">
+
+  <div class="featured-label">Core Idea</div>
+
+  <h3 class="featured-title">
+    See what others cannot
+  </h3>
+
+  <p class="featured-desc">
+    You do not become indispensable by doing more.  
+    You become indispensable by understanding the systems that others fail to see.
+  </p>
+
+  <a href="/book-1-position/outcomes/" class="card-link">
+    View Transformation
+  </a>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================
+     NAVIGATION CARDS
+========================================= -->
 
 <div class="card-grid">
 
   <div class="card">
 
+```
 <h3>📚 Chapters</h3>
 
 <div class="meta">
@@ -39,13 +95,15 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 </ul>
 
 <div class="card-actions">
-  <a href="/book-1-position/chapters/" class="card-link">Explore Chapters</a>
+  <a href="/book-1-position/chapters/" class="card-link">Explore</a>
 </div>
+```
 
   </div>
 
   <div class="card">
 
+```
 <h3>🧪 Drills</h3>
 
 <div class="meta">
@@ -60,14 +118,15 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 </ul>
 
 <div class="card-actions">
-  <a href="/book-1-position/drills/" class="card-link">Start Drills</a>
+  <a href="/book-1-position/drills/" class="card-link">Practice</a>
 </div>
+```
 
   </div>
 
   <div class="card">
 
-
+```
 <h3>📊 Progress</h3>
 
 <div class="meta">
@@ -88,11 +147,13 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 <div class="card-actions">
   <a href="/book-1-position/progress/" class="card-link">View Progress</a>
 </div>
+```
 
   </div>
 
   <div class="card">
 
+```
 <h3>🎯 Outcomes</h3>
 
 <div class="meta">
@@ -107,14 +168,17 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 </ul>
 
 <div class="card-actions">
-  <a href="/book-1-position/outcomes/" class="card-link">View Outcomes</a>
+  <a href="/book-1-position/outcomes/" class="card-link">View Outcome</a>
 </div>
+```
 
   </div>
 
 </div>
 
----
+<!-- =========================================
+     TRANSFORMATION
+========================================= -->
 
 ## 🔄 Transformation
 
@@ -122,13 +186,11 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 
 * Event-driven thinking
 * Reactive problem solving
-* Surface-level understanding
 
 **To**
 
 * Structural thinking
 * Constraint-first reasoning
-* System-level clarity
 
 ---
 

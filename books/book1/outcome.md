@@ -57,7 +57,6 @@ Ability to:
 
 ## 🧠 Identity Shift
 
-```text
 From:
 Participant in the system
 

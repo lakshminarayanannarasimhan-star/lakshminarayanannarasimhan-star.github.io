@@ -20,8 +20,8 @@ permalink: /theindispensable-books/book-1-position/
 </p>
 
 <div class="hero-actions">
-  <a href="/book-1-position/drills/" class="btn-primary">Start Drills</a>
-  <a href="/book-1-position/chapters/" class="btn-secondary">Explore Chapters</a>
+ <a href="/book-1-position/chapters/" class="btn-primary">Explore Chapters</a>
+  <a href="/book-1-position/outcomes/" class="btn-secondary">View Outcomes</a>  
 </div>
 
 </div> <div class="hero-right"> <div class="featured-card">
@@ -43,8 +43,8 @@ permalink: /theindispensable-books/book-1-position/
     <strong>To:</strong> Structural, constraint-first reasoning
   </p>
 
-  <a href="/book-1-position/outcomes/" class="card-link">
-    View Outcome
+  <a href="/book-1-position/drills/" class="card-link">
+    View Drills
   </a>
 
 </div>
@@ -55,9 +55,9 @@ permalink: /theindispensable-books/book-1-position/
 
 <ul>
   <li>From events to structure</li>
-  <li>Understand how systems behave</li>
+  <li>Understand how the systems behave</li>
   <li>Identify what drives outcomes</li>
-  <li>Develop clarity in complexity</li>
+  <li>Develop the clarity in complexity</li>
 </ul>
 
 <div class="card-actions">

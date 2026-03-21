@@ -75,61 +75,67 @@ permalink: /theindispensable-books/book-1-position/
 
 <div class="card-grid">
 
+  <!-- CHAPTERS -->
+
   <div class="card">
 
 <h3>📚 Chapters</h3>
 
 <div class="meta">
-  Structure, parts, and chapter outcomes
+  Build a structured understanding of systems, constraints, and decisions
 </div>
 
 <ul>
-  <li>9 Chapters</li>
-  <li>5 Parts</li>
-  <li>Progressive structure</li>
-  <li>Outcome-driven design</li>
+  <li>From events to structure</li>
+  <li>Understand how systems behave</li>
+  <li>Identify what drives outcomes</li>
+  <li>Develop clarity in complex situations</li>
 </ul>
 
 <div class="card-actions">
-  <a href="/book-1-position/chapters/" class="card-link">Explore</a>
+  <a href="/book-1-position/chapters/" class="card-link">Explore Structure</a>
 </div>
 
   </div>
+
+  <!-- DRILLS -->
 
   <div class="card">
 
 <h3>🧪 Drills</h3>
 
 <div class="meta">
-  Mechanisms, constraints, and thinking systems
+  Train how you think — not what you know
 </div>
 
 <ul>
-  <li>1906 drills completed</li>
-  <li>Mechanism clarity</li>
-  <li>Archetype recognition</li>
-  <li>Constraint thinking</li>
+  <li>Map cause and effect clearly</li>
+  <li>Recognize recurring system patterns</li>
+  <li>Identify hidden constraints</li>
+  <li>Think in trade-offs and consequences</li>
 </ul>
 
 <div class="card-actions">
-  <a href="/book-1-position/drills/" class="card-link">Practice</a>
+  <a href="/book-1-position/drills/" class="card-link">Train Thinking</a>
 </div>
 
   </div>
+
+  <!-- PROGRESS -->
 
   <div class="card">
 
 <h3>📊 Progress</h3>
 
 <div class="meta">
-  Capability tracking and milestones
+  Track the evolution of your thinking capability
 </div>
 
 <ul>
-  <li>See cause, not events</li>
-<li>Recognize recurring patterns</li>
-<li>Identify hidden constraints</li>
-<li>Think in trade-offs</li>
+  <li>From reactive to structured thinking</li>
+  <li>Increasing speed and clarity</li>
+  <li>Improving precision in analysis</li>
+  <li>Building consistency through drills</li>
 </ul>
 
 <div class="progress-bar">
@@ -137,29 +143,33 @@ permalink: /theindispensable-books/book-1-position/
 </div>
 
 <div class="card-actions">
-  <a href="/book-1-position/progress/" class="card-link">View Progress</a>
+  <a href="/book-1-position/progress/" class="card-link">View Evolution</a>
 </div>
 
   </div>
+
+  <!-- OUTCOMES -->
 
   <div class="card">
 
 <h3>🎯 Outcomes</h3>
 
 <div class="meta">
-  Transformation and capability shift
+  Develop the ability to see and influence systems
 </div>
 
 <ul>
-  <li>Structural thinking</li>
-  <li>Constraint-first reasoning</li>
-  <li>Decision clarity</li>
-  <li>Predictive system thinking</li>
+  <li>Diagnose systems with clarity</li>
+  <li>Identify bottlenecks and constraints</li>
+  <li>Understand trade-offs before acting</li>
+  <li>Predict outcomes with confidence</li>
 </ul>
 
 <div class="card-actions">
-  <a href="/book-1-position/outcomes/" class="card-link">View Outcome</a>
-</div>
+  <a href="/book-1-position/outcomes/" class="card-link">See Transformation</a>
 </div>
 
+  </div>
+
 </div>
+

@@ -38,7 +38,6 @@ permalink: /theindispensable-books/book-1-position/
 
   <div class="hero-right">
 
-
 <div class="featured-card">
 
   <div class="featured-label">Core Idea</div>
@@ -99,7 +98,6 @@ permalink: /theindispensable-books/book-1-position/
 
   <div class="card">
 
-
 <h3>🧪 Drills</h3>
 
 <div class="meta">
@@ -142,11 +140,9 @@ permalink: /theindispensable-books/book-1-position/
   <a href="/book-1-position/progress/" class="card-link">View Progress</a>
 </div>
 
-
   </div>
 
   <div class="card">
-
 
 <h3>🎯 Outcomes</h3>
 

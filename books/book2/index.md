@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Indispensable Strategy
-permalink: /book-2-strategy/
+permalink: /theindispensable-books/book-2-strategy/
 ---
 
 <section class="hero hero-split">

@@ -126,10 +126,10 @@ permalink: /theindispensable-books/book-1-position/
 </div>
 
 <ul>
-  <li>Completed: 1906</li>
-  <li>Target: 3000</li>
-  <li>Stage: Advanced</li>
-  <li>Consistency: High</li>
+  <li>See cause, not events</li>
+<li>Recognize recurring patterns</li>
+<li>Identify hidden constraints</li>
+<li>Think in trade-offs</li>
 </ul>
 
 <div class="progress-bar">

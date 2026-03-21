@@ -25,7 +25,6 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 
   <div class="card">
 
-```
 <h3>📚 Chapters</h3>
 
 <div class="meta">
@@ -42,13 +41,11 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 <div class="card-actions">
   <a href="/book-1-position/chapters/" class="card-link">Explore Chapters</a>
 </div>
-```
 
   </div>
 
   <div class="card">
 
-```
 <h3>🧪 Drills</h3>
 
 <div class="meta">
@@ -65,13 +62,12 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 <div class="card-actions">
   <a href="/book-1-position/drills/" class="card-link">Start Drills</a>
 </div>
-```
 
   </div>
 
   <div class="card">
 
-```
+
 <h3>📊 Progress</h3>
 
 <div class="meta">
@@ -92,13 +88,11 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 <div class="card-actions">
   <a href="/book-1-position/progress/" class="card-link">View Progress</a>
 </div>
-```
 
   </div>
 
   <div class="card">
 
-```
 <h3>🎯 Outcomes</h3>
 
 <div class="meta">
@@ -115,7 +109,6 @@ This book builds the ability to <strong>see systems clearly</strong> — beyond 
 <div class="card-actions">
   <a href="/book-1-position/outcomes/" class="card-link">View Outcomes</a>
 </div>
-```
 
   </div>
 

@@ -17,7 +17,6 @@ permalink: /theindispensable-books/book-1-position/
       The Indispensable Position
     </h1>
 
-```
 <p class="hero-sub">
   Most people react to events.  
   Few understand the systems that produce them.
@@ -32,7 +31,6 @@ permalink: /theindispensable-books/book-1-position/
   <a href="/book-1-position/drills/" class="btn-primary">Start Drills</a>
   <a href="/book-1-position/chapters/" class="btn-secondary">Explore Chapters</a>
 </div>
-```
 
   </div>
 
@@ -40,7 +38,7 @@ permalink: /theindispensable-books/book-1-position/
 
   <div class="hero-right">
 
-```
+
 <div class="featured-card">
 
   <div class="featured-label">Core Idea</div>
@@ -67,7 +65,6 @@ permalink: /theindispensable-books/book-1-position/
   </a>
 
 </div>
-```
 
   </div>
 
@@ -81,7 +78,6 @@ permalink: /theindispensable-books/book-1-position/
 
   <div class="card">
 
-```
 <h3>📚 Chapters</h3>
 
 <div class="meta">
@@ -98,13 +94,12 @@ permalink: /theindispensable-books/book-1-position/
 <div class="card-actions">
   <a href="/book-1-position/chapters/" class="card-link">Explore</a>
 </div>
-```
 
   </div>
 
   <div class="card">
 
-```
+
 <h3>🧪 Drills</h3>
 
 <div class="meta">
@@ -121,13 +116,11 @@ permalink: /theindispensable-books/book-1-position/
 <div class="card-actions">
   <a href="/book-1-position/drills/" class="card-link">Practice</a>
 </div>
-```
 
   </div>
 
   <div class="card">
 
-```
 <h3>📊 Progress</h3>
 
 <div class="meta">
@@ -148,13 +141,13 @@ permalink: /theindispensable-books/book-1-position/
 <div class="card-actions">
   <a href="/book-1-position/progress/" class="card-link">View Progress</a>
 </div>
-```
+
 
   </div>
 
   <div class="card">
 
-```
+
 <h3>🎯 Outcomes</h3>
 
 <div class="meta">
@@ -171,18 +164,6 @@ permalink: /theindispensable-books/book-1-position/
 <div class="card-actions">
   <a href="/book-1-position/outcomes/" class="card-link">View Outcome</a>
 </div>
-```
-
-  </div>
-
 </div>
 
-<!-- =========================================
-     CORE IDEA (OPTIONAL FOOTER EMPHASIS)
-========================================= -->
-
-## 🧠 Core Idea
-
-```text id="6v13sm"
-Seeing the system changes everything.
-```
+</div>

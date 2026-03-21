@@ -65,7 +65,7 @@ permalink: /theindispensable-books/
     </ul>
 
     <div class="card-actions">
-      <a href="/book-1-position/" class="card-link">Enter Book 1</a>
+      <a href="/theindispensable-books/book-1-position/" class="card-link">Enter Book 1</a>
     </div>
 
     <div class="meta">
@@ -89,7 +89,7 @@ permalink: /theindispensable-books/
     </ul>
 
     <div class="card-actions">
-      <a href="/book-2-strategy/" class="card-link">Enter Book 2</a>
+      <a href="/theindispensable-books/book-2-strategy/" class="card-link">Enter Book 2</a>
     </div>
 
     <div class="meta">
@@ -113,7 +113,7 @@ permalink: /theindispensable-books/
     </ul>
 
     <div class="card-actions">
-      <a href="/book-3-team/" class="card-link">Enter Book 3</a>
+      <a href="/theindispensable-books/book-3-team/" class="card-link">Enter Book 3</a>
     </div>
 
     <div class="meta">
@@ -137,7 +137,7 @@ permalink: /theindispensable-books/
     </ul>
 
     <div class="card-actions">
-      <a href="/book-4-organization/" class="card-link">Enter Book 4</a>
+      <a href="/theindispensable-books/book-4-organization/" class="card-link">Enter Book 4</a>
     </div>
 
     <div class="meta">
@@ -161,7 +161,7 @@ permalink: /theindispensable-books/
     </ul>
 
     <div class="card-actions">
-      <a href="/book-5-platform/" class="card-link">Enter Book 5</a>
+      <a href="/theindispensable-books/book-5-platform/" class="card-link">Enter Book 5</a>
     </div>
 
     <div class="meta">

@@ -19,8 +19,8 @@ permalink: /theindispensable-books/
     </p>
 
     <div class="hero-actions">
-      <a href="/book-1-position/" class="btn-primary">Start with Book 1</a>
-      <a href="/book-2-strategy/" class="btn-secondary">Explore Strategy</a>
+      <a href="/theindispensable-books/book-1-position/" class="btn-primary">Start with Book 1</a>
+      <a href="/theindispensable-books/book-2-strategy/" class="btn-primary">Explore Strategy</a>
     </div>
   </div>
 

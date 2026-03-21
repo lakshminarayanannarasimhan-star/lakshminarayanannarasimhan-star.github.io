@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Indispensable Position
-permalink: /book-1-position/
+permalink: /theindispensable-books/book-1-position/
 ---
 
 <!-- =========================================

@@ -37,7 +37,7 @@ description: Elevate Thinking Through Systems, Not Information
 # rose     → bold / expressive
 # cyan     → analytical / fresh
 
-elevate_theme: adventure
+elevate_theme: ocean_breeze
 
 typography: executive   # options: executive, compact, spacious
 

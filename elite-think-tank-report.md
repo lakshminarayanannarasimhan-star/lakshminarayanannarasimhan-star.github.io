@@ -1,3 +1,9 @@
+---
+layout: default
+title: Elite Think Tank — Progress
+permalink: /competencies/elite-think-tank-report/
+---
+
 # 🧠 The Indispensable Position — Drill Progress Report
 
 ## 📅 Report Snapshot

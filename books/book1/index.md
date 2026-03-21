@@ -1,18 +1,11 @@
 ---
 layout: default
 title: The Indispensable Position
-permalink: /theindispensable-books/book-1-position/
----
-
----
-
-layout: default
-title: The Indispensable Position
 permalink: /book-1-position/
-----------------------------
+---
 
 <!-- =========================================
-     HERO (MATCHED TO HOMEPAGE)
+     HERO (REFINED)
 ========================================= -->
 
 <section class="hero hero-split">
@@ -53,16 +46,24 @@ permalink: /book-1-position/
   <div class="featured-label">Core Idea</div>
 
   <h3 class="featured-title">
-    See what others cannot
+    You do not become indispensable by doing more
   </h3>
 
   <p class="featured-desc">
-    You do not become indispensable by doing more.  
-    You become indispensable by understanding the systems that others fail to see.
+    You become indispensable by seeing what others cannot —  
+    understanding the systems, constraints, and decisions that shape outcomes.
+  </p>
+
+  <div class="featured-label" style="margin-top: 16px;">Transformation</div>
+
+  <p class="featured-desc">
+    <strong>From:</strong> Event-driven thinking  
+    <br>
+    <strong>To:</strong> Structural, constraint-first reasoning
   </p>
 
   <a href="/book-1-position/outcomes/" class="card-link">
-    View Transformation
+    View Outcome
   </a>
 
 </div>
@@ -177,26 +178,11 @@ permalink: /book-1-position/
 </div>
 
 <!-- =========================================
-     TRANSFORMATION
+     CORE IDEA (OPTIONAL FOOTER EMPHASIS)
 ========================================= -->
-
-## 🔄 Transformation
-
-**From**
-
-* Event-driven thinking
-* Reactive problem solving
-
-**To**
-
-* Structural thinking
-* Constraint-first reasoning
-
----
 
 ## 🧠 Core Idea
 
-```text
-You do not become indispensable by doing more.
-You become indispensable by seeing what others cannot.
+```text id="6v13sm"
+Seeing the system changes everything.
 ```

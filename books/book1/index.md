@@ -4,13 +4,6 @@ title: The Indispensable Position
 permalink: /theindispensable-books/book-1-position/
 ---
 
----
-
-layout: default
-title: The Indispensable Position
-permalink: /book-1-position/
-----------------------------
-
 # 📘 The Indispensable Position
 
 ### *How You See*

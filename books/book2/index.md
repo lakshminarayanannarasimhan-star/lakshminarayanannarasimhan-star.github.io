@@ -114,25 +114,6 @@ permalink: /theindispensable-books/book-2-strategy/
 </div>
 
 <div class="meta">
-  <strong>Track your strategic capability</strong>
-</div>
-
-<ul>
-  <li>From analysis to action</li>
-  <li>Increasing decision quality</li>
-  <li>Improving leverage identification</li>
-  <li>Consistency in strategic thinking</li>
-</ul>
-
-<div class="progress-bar">
-  <div class="progress" style="width: 0%"></div>
-</div>
-
-<div class="card-actions">
-  <a href="/book-2-strategy/progress/" class="card-link">View Progress</a>
-</div>
-
-<div class="meta">
   Measure how you design outcomes
 </div>
 

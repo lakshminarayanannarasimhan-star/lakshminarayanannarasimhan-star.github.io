@@ -1,9 +1,3 @@
-
----
-
-# 📁 FILE 2 — `chapters.md` (OUTLINE PAGE)
-
-```md
 ---
 layout: default
 title: Chapters — The Indispensable Position

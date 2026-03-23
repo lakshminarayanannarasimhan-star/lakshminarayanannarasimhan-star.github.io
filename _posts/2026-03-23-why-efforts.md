@@ -15,17 +15,21 @@ When outcomes do not improve, the natural response is to increase effort.
 
 More work, more people, more activity.
 
-Yet systems often fail to respond.
+Yet the system does not respond.
+
+Because outcomes are not determined by effort.
 
 ---
 
 ## Model
 
-Output is not determined by effort.
+Systems produce outcomes through flow.
 
-It is determined by the system’s ability to process flow.
+Flow is shaped by structure and limited by capacity.
 
-When flow reaches a limit, movement slows and accumulation begins.
+When flow reaches a constraint, it cannot increase further.
+
+Output is capped at that point.
 
 ---
 
@@ -33,16 +37,19 @@ When flow reaches a limit, movement slows and accumulation begins.
 
 1. Input into the system increases  
 2. Flow approaches system capacity  
-3. Movement slows  
-4. Accumulation builds  
-5. Output stabilizes despite increased effort  
+3. A constraint limits further movement  
+4. Accumulation forms as inflow exceeds processing  
+5. Output remains unchanged despite increased effort  
 
 ---
 
 ## Insight
 
-Effort increases activity.
+Effort increases input.
 
-Constraints determine results.
+Constraints determine output.
 
----
+Control exists at the constraint.
+
+Until the constraint is addressed,  
+additional effort has no effect.

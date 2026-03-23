@@ -5,7 +5,7 @@ layout: post
 title: "Why Effort Does Not Increase Output"
 date: 2026-03-23
 tags: [systems-thinking, productivity, constraints]
-featured: false
+featured: true
 excerpt: "Effort increases activity. Constraints determine results."
 ---
 

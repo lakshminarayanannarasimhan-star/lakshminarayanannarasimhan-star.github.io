@@ -51,5 +51,4 @@ Constraints determine output.
 
 Control exists at the constraint.
 
-Until the constraint is addressed,  
-additional effort has no effect.
+Until the constraint is addressed, additional effort has no effect.

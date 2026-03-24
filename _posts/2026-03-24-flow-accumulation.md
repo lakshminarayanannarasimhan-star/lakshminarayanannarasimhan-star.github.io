@@ -5,7 +5,7 @@ layout: post
 title: "Flow vs Accumulation"
 date: 2026-03-24
 tags: [systems-thinking, flow, accumulation]
-featured: false
+featured: true
 excerpt: "Flow explains movement. Accumulation explains behavior."
 ---
 

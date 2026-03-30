@@ -1,3 +1,9 @@
+---
+layout: default
+title: Drills — The Indispensable Position
+permalink: /book-1-position/drills/
+---
+
 # Drills — The Indispensable Position
 
 These drills are structured across three layers:

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Chapters — The Indispensable Position
+permalink: /book-1-position/chapters/
+---
+
 # The Indispensable Series — Book 1
 
 ---

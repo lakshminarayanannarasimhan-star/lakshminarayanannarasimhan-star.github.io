@@ -4,7 +4,7 @@ title: Chapters — The Indispensable Position
 permalink: /book-1-position/chapters/
 ---
 
-# The Indispensable Series — Book 1
+# The Indispensable Series — The Indispensable Position
 
 ---
 
